@@ -1,0 +1,145 @@
+.topbar{
+    background : url("../img/background1.jpg") no-repeat center;
+    // opacity: 0.5;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    text-align: right;
+    &__lang{
+        text-align: center;
+        position: relative;
+        right: 550px;
+        top: 20px;
+        &__detail{
+            text-decoration: none;
+            font-family: 'roboto';
+            font-weight: 300;
+            font-size: 20px;
+            color: $colorLang;
+            &--active{
+                color: $colorLangActive;
+            }
+            &:hover{
+                color: $colorLangActive;
+            }
+        }
+        &__detail + &__detail{
+            margin-left: 10px;
+        }
+    }
+    &__nav{
+        margin-top: -10px;
+        &__list{
+            text-align: center;
+
+            &__link{
+                text-decoration: none;
+                padding-bottom: 10px;
+                &__container{
+                    text-align: center;
+                    display: inline-block;
+                    &__detail{
+                        font-size: 30px;
+                        color: $colorLinkMenu;
+                        font-family: 'roboto';
+                        font-weight: lighter;
+                        margin-bottom: 10px;
+                    }
+                    &__icon{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                &:hover{
+                    border-bottom: 3px solid $backgroundColorHoverMenu;
+                }
+                &--active{
+                    border-bottom: 3px solid $backgroundColorHoverMenu;
+                }
+            }
+            &__link + &__link{
+                margin-left: 75px;
+            }
+            &__logo{
+                &__image{
+                    width: 230px;
+                    height: 228px;
+                    margin: 0 85px;
+
+                }
+            }
+
+        }
+    }
+    &__intro{
+        width: 830px;
+        margin: 150px auto;
+        text-align: center;
+        &__text{
+            font-family: 'roboto';
+            font-weight: 300;
+            font-size: 30px;
+            color: $colorTextIntro;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &__link{
+                text-decoration: none;
+            &__button{
+                font-size: 30px;
+                font-family: 'roboto';
+                font-weight: normal;
+                background-color: $backgroundColorButtonDon;
+                padding: 10px 15px;
+                color: $colorLinkDon;
+                border-radius: 10px;
+                display: inline-block;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+    &__social{
+        width: 230px;
+        position: absolute;
+        right: 275px;
+        &__link{
+            text-decoration: none;
+            &__logo{
+                width: 40px;
+                height:auto;
+            }
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        &__link + &__link{
+            margin-left: 10px;
+        }
+    }
+    // &__recherche{
+    //     position: relative;
+    //     text-align: right;
+    //     right: 200px;
+    //     top: 20px;
+    //     display: none;
+    //     &__label{
+    //         &__champ{
+    //
+    //         }
+    //         &__loupe{
+    //                 background: url("../img/loupe.png") no-repeat center;
+    //
+    //         }
+    //     }
+    //
+    // }
+    &__scroll{
+
+        background: url("../img/scroll.svg") no-repeat center;
+        height: 150px;
+        margin-top: 250px;
+    }
+}

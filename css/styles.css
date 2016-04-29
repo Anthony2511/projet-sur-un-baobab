@@ -1,0 +1,297 @@
+@charset "UTF-8";
+/* Baobab
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Anthony2511
+ * started at 24/04/2016
+ */
+/* Artiste
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by Anthony2511
+ * started at 02/03/2016
+ */
+@font-face {
+  font-family: 'pwl';
+  src: url("../fonts/pwlefthand-webfont.eot");
+  src: url("../fonts/pwlefthand-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pwlefthand-webfont.woff2") format("woff2"), url("../fonts/pwlefthand-webfont.woff") format("woff"), url("../fonts/pwlefthand-webfont.ttf") format("truetype"), url("../fonts/pwlefthand-webfont.svg#pwlefthandmedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/roboto-bold-webfont.eot");
+  src: url("../fonts/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff"), url("../fonts/roboto-bold-webfont.ttf") format("truetype"), url("../fonts/roboto-bold-webfont.svg#robotobold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.ttf") format("truetype"), url("../fonts/roboto-light-webfont.svg#robotolight") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/roboto-medium-webfont.eot");
+  src: url("../fonts/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff"), url("../fonts/roboto-medium-webfont.ttf") format("truetype"), url("../fonts/roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/robotocondensed-light-webfont.eot");
+  src: url("../fonts/robotocondensed-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotocondensed-light-webfont.woff2") format("woff2"), url("../fonts/robotocondensed-light-webfont.woff") format("woff"), url("../fonts/robotocondensed-light-webfont.ttf") format("truetype"), url("../fonts/robotocondensed-light-webfont.svg#roboto_condensedlight") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+h1 {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  display: none; }
+
+main {
+  clear: both; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.topbar {
+  background: url("../img/background1.jpg") no-repeat center;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  text-align: right; }
+  .topbar__lang {
+    text-align: center;
+    position: relative;
+    right: 550px;
+    top: 20px; }
+    .topbar__lang__detail {
+      text-decoration: none;
+      font-family: 'roboto';
+      font-weight: 300;
+      font-size: 20px;
+      color: #a19c9d; }
+      .topbar__lang__detail--active {
+        color: white; }
+      .topbar__lang__detail:hover {
+        color: white; }
+    .topbar__lang__detail + .topbar__lang__detail {
+      margin-left: 10px; }
+  .topbar__nav {
+    margin-top: -10px; }
+    .topbar__nav__list {
+      text-align: center; }
+      .topbar__nav__list__link {
+        text-decoration: none;
+        padding-bottom: 10px; }
+        .topbar__nav__list__link__container {
+          text-align: center;
+          display: inline-block; }
+          .topbar__nav__list__link__container__detail {
+            font-size: 30px;
+            color: #e0e0e0;
+            font-family: 'roboto';
+            font-weight: lighter;
+            margin-bottom: 10px; }
+          .topbar__nav__list__link__container__icon {
+            width: 40px;
+            height: 40px; }
+        .topbar__nav__list__link:hover {
+          border-bottom: 3px solid #7f7f7f; }
+        .topbar__nav__list__link--active {
+          border-bottom: 3px solid #7f7f7f; }
+      .topbar__nav__list__link + .topbar__nav__list__link {
+        margin-left: 75px; }
+      .topbar__nav__list__logo__image {
+        width: 230px;
+        height: 228px;
+        margin: 0 85px; }
+  .topbar__intro {
+    width: 830px;
+    margin: 150px auto;
+    text-align: center; }
+    .topbar__intro__text {
+      font-family: 'roboto';
+      font-weight: 300;
+      font-size: 30px;
+      color: white;
+      text-align: center;
+      margin-bottom: 20px; }
+    .topbar__intro__link {
+      text-decoration: none; }
+      .topbar__intro__link__button {
+        font-size: 30px;
+        font-family: 'roboto';
+        font-weight: normal;
+        background-color: #6f2317;
+        padding: 10px 15px;
+        color: white;
+        border-radius: 10px;
+        display: inline-block; }
+        .topbar__intro__link__button:hover {
+          opacity: 0.7; }
+  .topbar__social {
+    width: 230px;
+    position: absolute;
+    right: 275px; }
+    .topbar__social__link {
+      text-decoration: none; }
+      .topbar__social__link__logo {
+        width: 40px;
+        height: auto; }
+      .topbar__social__link:hover {
+        opacity: 0.7; }
+    .topbar__social__link + .topbar__social__link {
+      margin-left: 10px; }
+  .topbar__scroll {
+    background: url("../img/scroll.svg") no-repeat center;
+    height: 150px;
+    margin-top: 250px; }
+
+.head {
+  width: 1430px;
+  margin: 0 auto;
+  display: table; }
+  .head__actu {
+    text-align: right; }
+    .head__actu__title {
+      font-family: 'pwl';
+      font-weight: normal;
+      font-size: 100px;
+      text-align: center;
+      color: #6f2317;
+      margin: 100px 0; }
+    .head__actu__blog {
+      text-align: center; }
+      .head__actu__blog__zone {
+        display: inline-block; }
+        .head__actu__blog__zone__link {
+          text-decoration: none;
+          z-index: 1000;
+          display: block; }
+          .head__actu__blog__zone__link__container {
+            border: 1px solid black; }
+            .head__actu__blog__zone__link__container__image {
+              width: 470px;
+              height: 265px; }
+            .head__actu__blog__zone__link__container__text {
+              font-family: 'roboto';
+              font-weight: 300;
+              font-size: 30px;
+              text-align: center;
+              padding: 15px 0;
+              color: black; }
+      .head__actu__blog__zone + .head__actu__blog__zone {
+        margin-left: 230px; }
+  .head__arrow {
+    background: url("../img/flèche.svg") no-repeat center;
+    height: 200px;
+    position: relative;
+    top: -75px; }
+  .head__projet {
+    width: 470px;
+    float: right;
+    margin: -125px 125px 100px 0; }
+    .head__projet__container__title {
+      font-family: 'pwl';
+      font-weight: normal;
+      font-size: 100px;
+      color: #6f2317;
+      margin-bottom: 50px; }
+    .head__projet__container__text {
+      font-family: 'roboto';
+      font-weight: 300;
+      font-size: 25px;
+      margin-bottom: 20px; }
+    .head__projet__container__link {
+      text-decoration: none;
+      float: right; }
+      .head__projet__container__link__button {
+        background-color: #a8a8a8;
+        color: white;
+        font-size: 25px;
+        font-family: 'roboto';
+        font-weight: regular;
+        border-radius: 10px;
+        padding: 5px 20px; }
+
+.partenaires {
+  text-align: center;
+  display: block;
+  clear: both;
+  margin-bottom: 50px;
+  position: relative; }
+  .partenaires__title {
+    font-family: 'pwl';
+    font-weight: normal;
+    color: white;
+    font-size: 70px;
+    background-color: #b5877b;
+    padding: 50px 0;
+    margin-bottom: 50px; }
+  .partenaires__logo {
+    vertical-align: bottom; }
+    .partenaires__logo__sponsor {
+      width: 170px;
+      height: auto; }
+    .partenaires__logo__sponsor + .partenaires__logo__sponsor {
+      margin-left: 30px; }
+
+/*# sourceMappingURL=styles.css.map */

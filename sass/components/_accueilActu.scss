@@ -1,0 +1,112 @@
+.head{
+    width: 1430px;
+    margin: 0 auto;
+    display: table;
+    &__actu{
+        text-align: right;
+        &__title{
+            font-family: 'pwl';
+            font-weight: normal;
+            font-size: 100px;
+            text-align: center;
+            color: $colorTitle;
+            margin : 100px 0;
+        }
+        &__blog{
+            text-align: center;
+            &__zone{
+                display: inline-block;
+                &__link{
+                    text-decoration: none;
+                    z-index: 1000;
+                    display: block;
+                    &__container{
+                        border: 1px solid black;
+                        &__image{
+                            width: 470px;
+                            height: 265px;
+                        }
+                        &__text{
+                            font-family: 'roboto';
+                            font-weight: 300;
+                            font-size: 30px;
+                            text-align: center;
+                            padding: 15px 0;
+                            color: $colorTitleActu;
+                        }
+                    }
+                }
+            }
+            &__zone + &__zone{
+                margin-left: 230px;
+            }
+        }
+    }
+    &__arrow{
+        background: url("../img/flèche.svg") no-repeat center;
+        height: 200px;
+        position: relative;
+        top: -75px;
+    }
+    &__projet{
+        width: 470px;
+        float: right;
+        margin: -125px 125px 100px 0;
+        &__container{
+            &__title{
+                font-family: 'pwl';
+                font-weight: normal;
+                font-size: 100px;
+                color: $colorTitle;
+                margin-bottom: 50px;
+            }
+            &__text{
+                font-family: 'roboto';
+                font-weight: 300;
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            &__link{
+                text-decoration: none;
+                float: right;
+                &__button{
+                    background-color: $backgroundColorButtonProjet;
+                    color: $colorTextIntro;
+                    font-size: 25px;
+                    font-family: 'roboto';
+                    font-weight: regular;
+                    border-radius: 10px;
+                    padding: 5px 20px;
+                }
+            }
+        }
+    }
+}
+.partenaires{
+
+
+    text-align: center;
+    display: block;
+    clear: both;
+    margin-bottom: 50px;
+    position: relative;
+    &__title{
+        font-family: 'pwl';
+        font-weight: normal;
+        color: $colorTextIntro;
+        font-size: 70px;
+        background-color: $backgroundColorPartenaires;
+        padding: 50px 0;
+        margin-bottom: 50px;
+    }
+    &__logo{
+        vertical-align: bottom;
+        &__sponsor{
+            width: 170px;
+            height: auto;
+        }
+        &__sponsor + &__sponsor{
+            margin-left: 30px;
+        }
+    }
+}
