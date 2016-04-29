@@ -5,4 +5,4 @@ dev/*
 dev/wp-content/*
 !dev/wp-content/themes/
 dev/wp-content/themes/*
-!dev/wp-content/themes/sur-un-baobab/
+!dev/wp-content/themes/Baobab/
