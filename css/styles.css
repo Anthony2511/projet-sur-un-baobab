@@ -116,94 +116,94 @@ table {
   height: 100vh;
   background-size: cover;
   position: relative;
-  text-align: right; }
+  font: 100%; }
   .topbar__lang {
     text-align: center;
     position: relative;
-    right: 550px;
+    right: 530px;
     top: 20px; }
     .topbar__lang__detail {
       text-decoration: none;
       font-family: 'roboto';
       font-weight: 300;
-      font-size: 20px;
+      font-size: 1.250em;
       color: #a19c9d; }
       .topbar__lang__detail--active {
         color: white; }
       .topbar__lang__detail:hover {
         color: white; }
     .topbar__lang__detail + .topbar__lang__detail {
-      margin-left: 10px; }
+      margin-left: 0.625em; }
   .topbar__nav {
-    margin-top: -10px; }
+    margin-top: -0.625em; }
     .topbar__nav__list {
       text-align: center; }
       .topbar__nav__list__link {
         text-decoration: none;
-        padding-bottom: 10px; }
+        padding-bottom: 0.625em; }
         .topbar__nav__list__link__container {
           text-align: center;
           display: inline-block; }
           .topbar__nav__list__link__container__detail {
-            font-size: 30px;
+            font-size: 1.875em;
             color: #e0e0e0;
             font-family: 'roboto';
-            font-weight: lighter;
-            margin-bottom: 10px; }
+            font-weight: 300;
+            margin-bottom: 0.625em; }
           .topbar__nav__list__link__container__icon {
-            width: 40px;
-            height: 40px; }
+            width: 2.5em;
+            height: 2.5em; }
         .topbar__nav__list__link:hover {
-          border-bottom: 3px solid #7f7f7f; }
+          border-bottom: 0.1875em solid #b2b2b2; }
         .topbar__nav__list__link--active {
-          border-bottom: 3px solid #7f7f7f; }
+          border-bottom: 0.1875em solid #b2b2b2; }
       .topbar__nav__list__link + .topbar__nav__list__link {
-        margin-left: 75px; }
+        margin-left: 3.125em; }
       .topbar__nav__list__logo__image {
-        width: 230px;
-        height: 228px;
-        margin: 0 85px; }
+        width: 14.375em;
+        height: 14.25em;
+        margin: 0 5.3125em; }
   .topbar__intro {
-    width: 830px;
-    margin: 150px auto;
+    width: 51.875em;
+    margin: 9.375em auto;
     text-align: center; }
     .topbar__intro__text {
       font-family: 'roboto';
       font-weight: 300;
-      font-size: 30px;
+      font-size: 1.875em;
       color: white;
       text-align: center;
-      margin-bottom: 20px; }
+      margin-bottom: 1.25em; }
     .topbar__intro__link {
       text-decoration: none; }
       .topbar__intro__link__button {
-        font-size: 30px;
+        font-size: 1.875em;
         font-family: 'roboto';
         font-weight: normal;
         background-color: #6f2317;
-        padding: 10px 15px;
+        padding: 0.5em 0.6666666em;
         color: white;
-        border-radius: 10px;
+        border-radius: 0.333333em;
         display: inline-block; }
         .topbar__intro__link__button:hover {
           opacity: 0.7; }
   .topbar__social {
-    width: 230px;
+    width: 14.375em;
     position: absolute;
     right: 275px; }
     .topbar__social__link {
       text-decoration: none; }
       .topbar__social__link__logo {
-        width: 40px;
+        width: 2.5em;
         height: auto; }
       .topbar__social__link:hover {
         opacity: 0.7; }
     .topbar__social__link + .topbar__social__link {
-      margin-left: 10px; }
+      margin-left: 0.625em; }
   .topbar__scroll {
     background: url("../img/scroll.svg") no-repeat center;
-    height: 150px;
-    margin-top: 250px; }
+    height: 9.375em;
+    margin-top: 200px; }
 
 .head {
   width: 1430px;

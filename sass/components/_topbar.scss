@@ -4,17 +4,18 @@
     height: 100vh;
     background-size: cover;
     position: relative;
-    text-align: right;
+    font: 100%;
+
     &__lang{
         text-align: center;
         position: relative;
-        right: 550px;
+        right: 530px;
         top: 20px;
         &__detail{
             text-decoration: none;
             font-family: 'roboto';
             font-weight: 300;
-            font-size: 20px;
+            font-size: 1.250em; //20px
             color: $colorLang;
             &--active{
                 color: $colorLangActive;
@@ -24,48 +25,48 @@
             }
         }
         &__detail + &__detail{
-            margin-left: 10px;
+            margin-left: 0.625em; //10px
         }
     }
     &__nav{
-        margin-top: -10px;
+        margin-top: -0.625em; //10px
         &__list{
             text-align: center;
 
             &__link{
                 text-decoration: none;
-                padding-bottom: 10px;
+                padding-bottom: 0.625em; //10px
                 &__container{
                     text-align: center;
                     display: inline-block;
                     &__detail{
-                        font-size: 30px;
+                        font-size: 1.875em; //30px
                         color: $colorLinkMenu;
                         font-family: 'roboto';
-                        font-weight: lighter;
-                        margin-bottom: 10px;
+                        font-weight: 300;
+                        margin-bottom: 0.625em; //10px
                     }
                     &__icon{
-                        width: 40px;
-                        height: 40px;
+                        width: 2.5em; //40px
+                        height: 2.5em; //40px
                     }
                 }
 
                 &:hover{
-                    border-bottom: 3px solid $backgroundColorHoverMenu;
+                    border-bottom: 0.1875em  solid $backgroundColorHoverMenu; //3px
                 }
                 &--active{
-                    border-bottom: 3px solid $backgroundColorHoverMenu;
+                    border-bottom: 0.1875em solid $backgroundColorHoverMenu; //3px
                 }
             }
             &__link + &__link{
-                margin-left: 50px;
+                margin-left: 3.125em; //50px
             }
             &__logo{
                 &__image{
-                    width: 230px;
-                    height: 228px;
-                    margin: 0 85px;
+                    width: 14.375em; //230px
+                    height: 14.25em; //228px
+                    margin: 0 5.3125em; // 0 85px
 
                 }
             }
@@ -73,27 +74,27 @@
         }
     }
     &__intro{
-        width: 830px;
-        margin: 150px auto;
+        width: 51.875em; //830px
+        margin: 9.375em auto; //150px
         text-align: center;
         &__text{
             font-family: 'roboto';
             font-weight: 300;
-            font-size: 30px;
+            font-size: 1.875em; //30px
             color: $colorTextIntro;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 1.25em; //20px
         }
         &__link{
                 text-decoration: none;
             &__button{
-                font-size: 30px;
+                font-size: 1.875em; //30px
                 font-family: 'roboto';
                 font-weight: normal;
                 background-color: $backgroundColorButtonDon;
-                padding: 10px 15px;
+                padding: 0.5em 0.6666666em; //15px 20px  (30px)
                 color: $colorLinkDon;
-                border-radius: 10px;
+                border-radius: 0.333333em; //10px  (30px)
                 display: inline-block;
                 &:hover{
                     opacity: 0.7;
@@ -102,13 +103,13 @@
         }
     }
     &__social{
-        width: 230px;
+        width: 14.375em; //230px
         position: absolute;
         right: 275px;
         &__link{
             text-decoration: none;
             &__logo{
-                width: 40px;
+                width: 2.5em; //40px
                 height:auto;
             }
             &:hover{
@@ -116,7 +117,7 @@
             }
         }
         &__link + &__link{
-            margin-left: 10px;
+            margin-left: 0.625em; //10px
         }
     }
     // &__recherche{
@@ -139,7 +140,9 @@
     &__scroll{
 
         background: url("../img/scroll.svg") no-repeat center;
-        height: 150px;
-        margin-top: 250px;
+        height: 9.375em; //150px
+        margin-top: 200px;
+
+
     }
 }
