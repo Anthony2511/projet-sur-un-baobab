@@ -93,6 +93,7 @@
         }
         &__nav{
             &__list{
+                margin-top: 1.25em; //20px
                 &__link{
                     &__container{
                         &__detail{
@@ -116,11 +117,29 @@
                 }
             }
         }
+        &__intro{
+            &__text{
+                font-size: 1.6875em; //27px
+                margin-bottom: 0.9375em; //15px
+            }
+            &__link{
+
+                &__button{
+                    font-size: 1.6875em; //27px
+                }
+            }
+        }
+        &__scroll{
+            height: 7.5em; //120px
+            position: relative;
+            top: 50px;
+        }
     }
 }
 @media screen and (max-width: 1064px){
     .topbar{
-        background-size: cover;
+        max-width: 100%;
+	    height: auto;
         &__lang{
             right: 360px;
             &__detail{
@@ -128,7 +147,9 @@
             }
         }
         &__nav{
+
             &__list{
+                    margin-top: 2.5em; //40px
                 &__link{
                     &__container{
                         &__detail{
@@ -151,6 +172,22 @@
                     }
                 }
             }
+        }
+        &__intro{
+            &__text{
+                font-size: 1.5em; //24px
+                margin-bottom: 0.625em; //10px
+            }
+            &__link{
+                &__button{
+                    font-size: 1.5em; //24px
+                }
+            }
+        }
+        &__scroll{
+            height: 5.625em; //90px
+            position: relative;
+            top: -50px;
         }
     }
 }
@@ -188,45 +225,20 @@
                 }
             }
         }
+        &__intro{
+            width: auto;
+            &__text{
+                font-size: 1.3125em; //21px
+            }
+            &__link{
+                &__button{
+                    font-size: 1.3125em; //21px
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 775px){
-    /**Stylisation Bouton**/
-    .menu-icon svg {
-        position: relative;
-        z-index: 1;
-        fill: #052b23;
-        stroke-width: 1px;
-        stroke: #FFF;
-    }
-    .menu-icon svg {
-        stroke-dashoffset: 170;
-        stroke-dasharray: 170;
-        transition: stroke-dashoffset 0.5s;
-    }
-    .menu-icon.is-opened{
-        stroke-dashoffset: 0;
-    }
-    .menu-icon span::before, .menu-icon span::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-6px);
-
-    display: block;
-    width: 22px;
-    height: 2px;
-
-    background-color: #FFF;
-
-    transition: transform 0.5s;
-}
-.menu-icon span::after {
-    transform: translateY(6px);
-}
-    /**Stylisation Bouton**/
-
     /** Menu Hamburger **/
     .site-container, .site-pusher{
         height: 100%;
@@ -257,6 +269,10 @@
         background-color: $backgroundColorHamburgerActive;
      }
     /** Menu Hamburger **/
+    &__lang{
+        right: 305px;
+        margin-left: 20px;
+    }
     .topbar{
         position: static;
         &__icon{
@@ -270,15 +286,10 @@
                 content: '';
                 position: absolute;
                 display: block;
-                width: 1.5em;
+                width: 1.25em;
                 height: 0;
                 left: 15px;
-                box-shadow: 0 10px 0 1px $backgroundColorMenuHamburger, 0 16px 0 1px $backgroundColorMenuHamburger, 0 22px 0 1px $backgroundColorMenuHamburger;
-            }
-        }
-        &__lang{
-
-            &__detail{
+                box-shadow: 0 0.625em 0 0.09375em $backgroundColorMenuHamburger, 0 1em 0 0.09375em $backgroundColorMenuHamburger, 0 1.375em 0 0.09375em $backgroundColorMenuHamburger; //10px 16px 22px
             }
         }
         &__nav{
@@ -286,41 +297,49 @@
             right: 0;
             top: 0;
             bottom: 0;
-            background-color: grey;
-            width: 300px;
-            transform: translateX(300px);
-
+            background-color: $backgroundColorMenuCache;
+            width: 18.75em; //300px
+            transform: translateX(18.75em); //300px
             &__list{
-                margin-top: 20px;
+                margin-top: 1.25em; //20px
                 &__link{
-                    height: 40px;
+                    height: 2.5em; //40px
                     text-align: center;
-                    line-height: 20px;
+                    line-height: 1.25em; //20px
                     direction: rtl;
-
                     &__container{
                         display: block;
-                        border-bottom: 1px solid white;
+                        border-bottom: 0.09375em solid white; //1px
                         &__detail{
                             display: inline-block;
                         }
                         &__icon{
-                            margin-right: 20px;
+                            margin-right: 1.25em; //20px
                         }
                     }
-                    &:hover{
-                    }
-                    &--active{
-                    }
-                }
-                &__link + &__link{
                 }
                 &__logo{
                     display: none;
-                    &__image{
-                    }
                 }
             }
+        }
+        &__intro{
+            width: auto;
+            position: relative;
+            top: 80px;
+            &__text{
+                font-size: 1.125em; //18px
+            }
+            &__link{
+                &__button{
+                    font-size: 1.125em; //18px
+                }
+            }
+        }
+        &__scroll{
+            height: 3.75em; //60px
+            position: relative;
+            top: -20px;
         }
     }
 }
