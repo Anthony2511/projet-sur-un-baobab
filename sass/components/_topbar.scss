@@ -1,16 +1,9 @@
 .topbar{
     background : url("../img/background1.jpg") no-repeat center;
     // opacity: 0.5;
-    height: 100vh;
     background-size: cover;
-    position: relative;
-    font: 100%;
-
     &__lang{
         text-align: center;
-        position: relative;
-        right: 530px;
-        top: 20px;
         &__detail{
             text-decoration: none;
             font-family: 'roboto';
@@ -24,34 +17,21 @@
                 color: $colorLangActive;
             }
         }
-        &__detail + &__detail{
-            margin-left: 0.625em; //10px
-        }
     }
     &__nav{
-        margin-top: -0.625em; //10px
         &__list{
             text-align: center;
-
             &__link{
                 text-decoration: none;
-                padding-bottom: 0.625em; //10px
                 &__container{
                     text-align: center;
-                    display: inline-block;
                     &__detail{
                         font-size: 1.875em; //30px
                         color: $colorLinkMenu;
                         font-family: 'roboto';
                         font-weight: 300;
-                        margin-bottom: 0.625em; //10px
-                    }
-                    &__icon{
-                        width: 2.5em; //40px
-                        height: 2.5em; //40px
                     }
                 }
-
                 &:hover{
                     border-bottom: 0.1875em  solid $backgroundColorHoverMenu; //3px
                 }
@@ -59,23 +39,9 @@
                     border-bottom: 0.1875em solid $backgroundColorHoverMenu; //3px
                 }
             }
-            &__link + &__link{
-                margin-left: 3.125em; //50px
-            }
-            &__logo{
-                &__image{
-                    width: 14.375em; //230px
-                    height: 14.25em; //228px
-                    margin: 0 5.3125em; // 0 85px
-
-                }
-            }
-
         }
     }
     &__intro{
-        width: 51.875em; //830px
-        margin: 9.375em auto; //150px
         text-align: center;
         &__text{
             font-family: 'roboto';
@@ -83,7 +49,6 @@
             font-size: 1.875em; //30px
             color: $colorTextIntro;
             text-align: center;
-            margin-bottom: 1.25em; //20px
         }
         &__link{
                 text-decoration: none;
@@ -92,10 +57,8 @@
                 font-family: 'roboto';
                 font-weight: normal;
                 background-color: $backgroundColorButtonDon;
-                padding: 0.5em 0.6666666em; //15px 20px  (30px)
                 color: $colorLinkDon;
                 border-radius: 0.333333em; //10px  (30px)
-                display: inline-block;
                 &:hover{
                     opacity: 0.7;
                 }
@@ -103,46 +66,261 @@
         }
     }
     &__social{
-        width: 14.375em; //230px
-        position: absolute;
-        right: 275px;
         &__link{
             text-decoration: none;
-            &__logo{
-                width: 2.5em; //40px
-                height:auto;
-            }
             &:hover{
                 opacity: 0.7;
             }
         }
-        &__link + &__link{
-            margin-left: 0.625em; //10px
+    }
+    &__scroll{
+        background: url("../img/scroll.svg") no-repeat center top;
+    }
+}
+
+//********************MEDIA QUERIES********************//
+
+@media screen and (max-width: 1209px){
+    .topbar{
+        background-size: cover;
+        margin-top: -0.3125em; //5px
+        &__lang{
+            text-align: center;
+            right: 420px;
+            &__detail{
+                font-size: 1.0625em; //17px
+            }
+        }
+        &__nav{
+            &__list{
+                &__link{
+                    &__container{
+                        &__detail{
+                            font-size: 1.6875em; //27px
+                        }
+                        &__icon{
+                            width: 2.1875em; //35px
+                            height: 2.1875em; //35px
+                        }
+                    }
+                }
+                &__link + &__link{
+                    margin-left: 2.5em; //40px
+                }
+                &__logo{
+                    &__image{
+                        width: 12.5em; //200px
+                        height: 12.375em; //198px
+                        margin: 0 4.6875em; // 0 75px
+                    }
+                }
+            }
         }
     }
-    // &__recherche{
-    //     position: relative;
-    //     text-align: right;
-    //     right: 200px;
-    //     top: 20px;
-    //     display: none;
-    //     &__label{
-    //         &__champ{
-    //
-    //         }
-    //         &__loupe{
-    //                 background: url("../img/loupe.png") no-repeat center;
-    //
-    //         }
-    //     }
-    //
-    // }
-    &__scroll{
+}
+@media screen and (max-width: 1064px){
+    .topbar{
+        background-size: cover;
+        &__lang{
+            right: 360px;
+            &__detail{
+                font-size: 0.875em; //14px
+            }
+        }
+        &__nav{
+            &__list{
+                &__link{
+                    &__container{
+                        &__detail{
+                            font-size: 1.5em; //24px
+                        }
+                        &__icon{
+                            width: 1.875em; //30px
+                            height: 1.875em; //30px
+                        }
+                    }
+                }
+                &__link + &__link{
+                    margin-left: 1.875em; //30px
+                }
+                &__logo{
+                    &__image{
+                        width: 10.625em; //170px
+                        height: 10.5em; //168px
+                        margin: 0 4.0625em; // 0 65px
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 919px){
+    .topbar{
+        background-size: cover;
+        &__lang{
+            right: 305px;
+            &__detail{
+                font-size: 0.6875em; //11px
+            }
+        }
+        &__nav{
+            &__list{
+                &__link{
+                    &__container{
+                        &__detail{
+                            font-size: 1.3125em; //21px
+                        }
+                        &__icon{
+                            width: 1.5625em; //25px
+                            height: 1.5625em; //25px
+                        }
+                    }
+                }
+                &__link + &__link{
+                    margin-left: 1.25em; //20px
+                }
+                &__logo{
+                    &__image{
+                        width: 8.75em; //140px
+                        height: 8.625em; //138px
+                        margin: 0 3.4375em; // 0 55px
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 775px){
+    /**Stylisation Bouton**/
+    .menu-icon svg {
+        position: relative;
+        z-index: 1;
+        fill: #052b23;
+        stroke-width: 1px;
+        stroke: #FFF;
+    }
+    .menu-icon svg {
+        stroke-dashoffset: 170;
+        stroke-dasharray: 170;
+        transition: stroke-dashoffset 0.5s;
+    }
+    .menu-icon.is-opened{
+        stroke-dashoffset: 0;
+    }
+    .menu-icon span::before, .menu-icon span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-6px);
 
-        background: url("../img/scroll.svg") no-repeat center;
-        height: 9.375em; //150px
-        margin-top: 200px;
+    display: block;
+    width: 22px;
+    height: 2px;
 
+    background-color: #FFF;
 
+    transition: transform 0.5s;
+}
+.menu-icon span::after {
+    transform: translateY(6px);
+}
+    /**Stylisation Bouton**/
+
+    /** Menu Hamburger **/
+    .site-container, .site-pusher{
+        height: 100%;
+    }
+    .site-container{
+        overflow: hidden;
+    }
+    .site-pusher{
+        transition-duration: 0.5s;
+    }
+    .site-content{
+        position: absolute;
+        top: 66px; /* La hauteur du header */
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 0;
+    }
+    .with--sidebar .site-pusher {
+        transform: translateX(-18.75em); // -300px
+    }
+    .with--sidebar .site-cache {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $backgroundColorHamburgerActive;
+     }
+    /** Menu Hamburger **/
+    .topbar{
+        position: static;
+        &__icon{
+            position: relative;
+            display: block;
+            float: right;
+            width: 3.125em; // 50px
+            height: 4.125em; // 66px
+            cursor: pointer;
+            &::after{
+                content: '';
+                position: absolute;
+                display: block;
+                width: 1.5em;
+                height: 0;
+                left: 15px;
+                box-shadow: 0 10px 0 1px $backgroundColorMenuHamburger, 0 16px 0 1px $backgroundColorMenuHamburger, 0 22px 0 1px $backgroundColorMenuHamburger;
+            }
+        }
+        &__lang{
+
+            &__detail{
+            }
+        }
+        &__nav{
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: grey;
+            width: 300px;
+            transform: translateX(300px);
+
+            &__list{
+                margin-top: 20px;
+                &__link{
+                    height: 40px;
+                    text-align: center;
+                    line-height: 20px;
+                    direction: rtl;
+
+                    &__container{
+                        display: block;
+                        border-bottom: 1px solid white;
+                        &__detail{
+                            display: inline-block;
+                        }
+                        &__icon{
+                            margin-right: 20px;
+                        }
+                    }
+                    &:hover{
+                    }
+                    &--active{
+                    }
+                }
+                &__link + &__link{
+                }
+                &__logo{
+                    display: none;
+                    &__image{
+                    }
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,71 @@
+.topbar{
+    height: 100vh;
+    position: relative;
+    &__lang{
+        position: relative;
+        right: 475px;
+        top: 20px;
+        &__detail + &__detail{
+            margin-left: 0.625em; //10px
+        }
+    }
+    &__nav{
+        margin-top: -0.625em; //10px
+        &__list{
+            &__link{
+                padding-bottom: 0.625em; //10px
+                &__container{
+                    display: inline-block;
+                    &__detail{
+                        margin-bottom: 0.625em; //10px
+                    }
+                    &__icon{
+                        width: 2.5em; //40px
+                        height: 2.5em; //40px
+                    }
+                }
+            }
+            &__link + &__link{
+                margin-left: 3.125em;  //50px
+            }
+            &__logo{
+                &__image{
+                    width: 14.375em; //230px
+                    height: 14.25em; //228px
+                    margin: 0 5.3125em; // 0 85px
+                }
+            }
+        }
+    }
+    &__intro{
+        width: 51.875em; //830px
+        margin: 9.375em auto; //150px
+        &__text{
+            margin-bottom: 1.25em; //20px
+        }
+        &__link{
+            &__button{
+                padding: 0.5em 0.6666666em; //15px 20px  (30px)
+                display: inline-block;
+            }
+        }
+    }
+    &__social{
+        width: 14.375em; //230px
+        position: absolute;
+        right: 275px;
+        display: none;
+        &__link{
+            &__logo{
+                width: 2.5em; //40px
+                height:auto;
+            }
+        }
+        &__link + &__link{
+            margin-left: 0.625em; //10px
+        }
+    }
+    &__scroll{
+        height: 9.375em; //150px
+    }
+}

@@ -1,9 +1,8 @@
 .head{
-    width: 1430px;
-    margin: 0 auto;
-    display: table;
+    clear: both;
     &__actu{
-        text-align: right;
+        width: 1430px;
+        margin: 0 auto;
         &__title{
             font-family: 'pwl';
             font-weight: normal;
@@ -11,9 +10,12 @@
             text-align: center;
             color: $colorTitle;
             margin : 100px 0;
+
+
         }
         &__blog{
             text-align: center;
+            margin-bottom: 200px;
             &__zone{
                 display: inline-block;
                 &__link{
@@ -41,46 +43,48 @@
                 margin-left: 230px;
             }
         }
+        &__projet{
+            width: 470px;
+            float: right;
+            margin: -125px 125px 100px 0;
+
+            &__container{
+                &__title{
+                    font-family: 'pwl';
+                    font-weight: normal;
+                    font-size: 100px;
+                    color: $colorTitle;
+                    margin-bottom: 50px;
+                }
+                &__text{
+                    font-family: 'roboto';
+                    font-weight: 300;
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+                &__link{
+                    text-decoration: none;
+                    float: right;
+                    &__button{
+                        background-color: $backgroundColorButtonProjet;
+                        color: $colorTextIntro;
+                        font-size: 25px;
+                        font-family: 'roboto';
+                        font-weight: regular;
+                        border-radius: 10px;
+                        padding: 5px 20px;
+                    }
+                }
+            }
+        }
     }
     &__arrow{
         background: url("../img/flèche.svg") no-repeat center;
         height: 200px;
         position: relative;
-        top: -75px;
+        top: -250px;
     }
-    &__projet{
-        width: 470px;
-        float: right;
-        margin: -125px 125px 100px 0;
-        &__container{
-            &__title{
-                font-family: 'pwl';
-                font-weight: normal;
-                font-size: 100px;
-                color: $colorTitle;
-                margin-bottom: 50px;
-            }
-            &__text{
-                font-family: 'roboto';
-                font-weight: 300;
-                font-size: 25px;
-                margin-bottom: 20px;
-            }
-            &__link{
-                text-decoration: none;
-                float: right;
-                &__button{
-                    background-color: $backgroundColorButtonProjet;
-                    color: $colorTextIntro;
-                    font-size: 25px;
-                    font-family: 'roboto';
-                    font-weight: regular;
-                    border-radius: 10px;
-                    padding: 5px 20px;
-                }
-            }
-        }
-    }
+
 }
 .partenaires{
 
@@ -107,6 +111,35 @@
         }
         &__sponsor + &__sponsor{
             margin-left: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1467px){
+    .head{
+        &__actu{
+            max-width: 100%;
+            &__title{
+                font-size: 80px;
+                text-align: center;
+                max-width: 100%;
+            }
+            &__blog{
+                &__zone{
+                    &__link{
+                        &__container{
+                            &__image{
+                                box-sizing: border-box;
+                                max-width: 100%;
+                                object-fit: cover;
+                            }
+                            &__text{
+
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
