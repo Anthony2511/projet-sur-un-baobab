@@ -38,6 +38,7 @@
                 }
                 &__list{
                     &__detail{
+                        line-height: 20px;
                         &__link{
                             text-decoration: none;
                             color: white;
@@ -56,15 +57,18 @@
         &__footer-end{
             width: 930px;
             margin: 0 auto;
-            clear: both;
             border-top: 1px solid white;
             padding-top: 20px;
             font-family: 'roboto';
+            &::after{
+                clear: both;
+                display: block;
+                content: "";
+            }
             &__copyright{
                 display: inline-block;
                 float: left;
                 &__by{
-
                 }
             }
             &__social{

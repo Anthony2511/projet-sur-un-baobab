@@ -503,21 +503,26 @@ table {
             color: #d8953d; }
         .end__opacity__footer__contact__text + .end__opacity__footer__contact__text {
           margin-top: 20px; }
-        .end__opacity__footer__contact__list__detail__link {
-          text-decoration: none;
-          color: white;
-          font-weight: 100; }
-          .end__opacity__footer__contact__list__detail__link:hover {
-            color: #d8953d; }
+        .end__opacity__footer__contact__list__detail {
+          line-height: 20px; }
+          .end__opacity__footer__contact__list__detail__link {
+            text-decoration: none;
+            color: white;
+            font-weight: 100; }
+            .end__opacity__footer__contact__list__detail__link:hover {
+              color: #d8953d; }
       .end__opacity__footer__contact + .end__opacity__footer__contact {
         margin-left: 100px; }
     .end__opacity__footer-end {
       width: 930px;
       margin: 0 auto;
-      clear: both;
       border-top: 1px solid white;
       padding-top: 20px;
       font-family: 'roboto'; }
+      .end__opacity__footer-end::after {
+        clear: both;
+        display: block;
+        content: ""; }
       .end__opacity__footer-end__copyright {
         display: inline-block;
         float: left; }

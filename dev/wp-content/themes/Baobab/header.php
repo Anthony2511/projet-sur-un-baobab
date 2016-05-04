@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <title>Mon super site</title>
 </head>
-<body>
+<body <?php body_class();?>>
       <header class="mon-header">
             <h1><?php bloginfo('name');?></h1>
       </header>

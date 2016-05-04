@@ -31,12 +31,12 @@ get_header();
             <h2 class="latest-articles__title">Mes articles</h2>
 
             <div class="latest-articles__container">
-                  
+
             <?php
                   $posts = new WP_Query( ['posts_per_page' => 3] );
                   if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post();
             ?>
-                        
+
                   <article class="article">
                         <h3 class="article__title"><?php the_title();?></h3>
                         <p class="article__date">Publié le <time datetime="<?php the_time('c');?>"><?php the_time('l j F');?></time></p>
@@ -47,6 +47,32 @@ get_header();
             <?php endwhile; endif; ?>
 
             </div>
+      </section>
+      <section class="latest-project">
+          <h2 class="latest-project__title">Mes dernières réalisations</h2>
+          <div class="latest-project__container">
+              <?php
+                    $posts = new WP_Query( ['posts_per_page' => 2, 'post_type' => 'project']
+                 );
+                    if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post();
+              ?>
+
+                    <article class="project">
+                          <h3 class="project__title"><?php the_title();?></h3>
+                          <figure class="project__fig">
+                              <img src="<?php the_post_thumbnail_url('medium');?>" alt="Affiche" class="project__thumb" />
+                          </figure>
+                          <dl class="project__details">
+                              <dt class="project__label">Pays :</dt>
+                              <dd class="project__value"><?php the_field('localisation');?></dd>
+                              <dt class="project__label">Durée :</dt>
+                              <dd class="project__value"><?php the_field('duree');?></dd>
+                          </dl>
+                          <a href="<?php the_permalink();?>" class="project__link">Voir la vidéo</a>
+                    </article>
+
+              <?php endwhile; endif; ?>
+          </div>
       </section>
 
 <?php
