@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title><?php bloginfo('name');?></title>
-    </head>
-    <body>
-        <h1 class="titre"><?php bloginfo('name');?></h1>
-        <p class="slogan">
-            <?php bloginfo('description');?>
-        </p>
+<head>
+      <meta charset="UTF-8">
+      <title>Mon super site</title>
+</head>
+<body>
+      <header class="mon-header">
+            <h1><?php bloginfo('name');?></h1>
+      </header>
+      <main class="ma-page">
