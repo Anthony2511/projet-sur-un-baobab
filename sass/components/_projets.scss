@@ -1,0 +1,79 @@
+.container{
+    font-family: 'roboto';
+    width: 970px;
+    margin: 0 auto;
+}
+.fil-ariane{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    left: -100px;
+    &__chemin{
+
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    &__link{
+        text-decoration: none;
+        color: $colorFilAriane;
+    }
+}
+.projets{
+    &__title{
+        font-size: 100px;
+        font-family: 'pwl';
+        text-align: center;
+        color: $colorTitle;
+        margin-bottom: 100px;
+    }
+    &__films{
+
+    }
+    &__movie{
+        text-decoration: none;
+        &__container{
+            margin-bottom: 100px;
+            &--one{
+                background: url("../img/actu1.jpg") no-repeat center;
+                background-size: cover;
+                height: 550px;
+            }
+            &--two{
+                background: url("../img/tongasoa.jpg") no-repeat center;
+                background-size: cover;
+                height: 550px;
+            }
+        }
+        &__opacity{
+            background-color: black;
+            height: 550px;
+            opacity: 0.5;
+            position: relative;
+        }
+        &__title{
+            text-align: center;
+            width: 570px;
+            margin: 0 auto;
+            font-family: 'pwl';
+            color: white;
+            font-size: 90px;
+            border: 2px solid white;
+            position: absolute;
+            top: 150px;
+            left: 170px;
+            padding: 20px;
+            opacity: 1;
+        }
+        &__link{
+            text-decoration: none;
+            color: white;
+            position: absolute;
+            top: 400px;
+            left: 350px;
+            font-size: 40px;
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+        }
+    }
+}

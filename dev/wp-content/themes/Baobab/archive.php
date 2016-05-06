@@ -12,7 +12,7 @@ get_header();
                         <?php the_custom_excerpt();?>
                     </div>
                     <a href="<?php the_permalink();?>" class="item__link">
-                        <?php echo str_replace('%s', '<span class="sro">' . get_the_title() . '</span>',__('Voir l\'item %s', 'b'))
+                        <?php the_link('Voir l)
                         ?>
                     </a>
                 </article>
