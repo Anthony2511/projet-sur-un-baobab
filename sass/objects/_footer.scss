@@ -1,0 +1,66 @@
+.footer{
+    height: 20.9375em; //335px
+    &__opacity{
+        height: 20.9375em; //335px
+    }
+    &__section-one{
+        width: 58.125em; //930px
+        margin: 0 auto;
+        padding: 2.5em 0; //40px
+        &__contact{
+            display: inline-block;
+            vertical-align: top;
+        }
+        &__contact + &__contact{
+            margin-left: 6.25em; //100px
+        }
+        &__title{
+            margin-bottom: 1.176470em; //40px (34px)
+        }
+        &__numero{
+            display: block;
+        }
+        &__numero + &__numero{
+            margin-top: 1.25em; //20px
+        }
+        &__nouvelles{
+            display: block;
+        }
+        &__nouvelles + &__nouvelles{
+            margin-top: 1.25em; //20px
+        }
+    }
+    &__section-two{
+        width: 58.125em; //930px
+        margin: 0 auto;
+        border-top: 0.0625em solid white; //1px
+        padding-top: 1.25em; //20px
+        &::after{
+            clear: both;
+            display: block;
+            content: "";
+        }
+        &__copyright{
+            display: inline-block;
+            float: left;
+        }
+        &__social{
+            display: inline-block;
+            width: 14.375em; //230px
+            position: relative;
+            left: 200px;
+            top: -10px;
+        }
+        &__link + &__link{
+            margin-left: 0.625em; //10px
+        }
+        &__logo{
+            width: 2.5em; //40px
+            height:auto;
+        }
+        &__back{
+            display: inline-block;
+            float: right;
+        }
+    }
+}

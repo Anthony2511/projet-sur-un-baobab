@@ -148,6 +148,56 @@ table {
   .topbar__scroll {
     height: 9.375em; }
 
+.footer {
+  height: 20.9375em; }
+  .footer__opacity {
+    height: 20.9375em; }
+  .footer__section-one {
+    width: 58.125em;
+    margin: 0 auto;
+    padding: 2.5em 0; }
+    .footer__section-one__contact {
+      display: inline-block;
+      vertical-align: top; }
+    .footer__section-one__contact + .footer__section-one__contact {
+      margin-left: 6.25em; }
+    .footer__section-one__title {
+      margin-bottom: 1.176470em; }
+    .footer__section-one__numero {
+      display: block; }
+    .footer__section-one__numero + .footer__section-one__numero {
+      margin-top: 1.25em; }
+    .footer__section-one__nouvelles {
+      display: block; }
+    .footer__section-one__nouvelles + .footer__section-one__nouvelles {
+      margin-top: 1.25em; }
+  .footer__section-two {
+    width: 58.125em;
+    margin: 0 auto;
+    border-top: 0.0625em solid white;
+    padding-top: 1.25em; }
+    .footer__section-two::after {
+      clear: both;
+      display: block;
+      content: ""; }
+    .footer__section-two__copyright {
+      display: inline-block;
+      float: left; }
+    .footer__section-two__social {
+      display: inline-block;
+      width: 14.375em;
+      position: relative;
+      left: 200px;
+      top: -10px; }
+    .footer__section-two__link + .footer__section-two__link {
+      margin-left: 0.625em; }
+    .footer__section-two__logo {
+      width: 2.5em;
+      height: auto; }
+    .footer__section-two__back {
+      display: inline-block;
+      float: right; }
+
 .topbar {
   background: url("../img/background1.jpg") no-repeat center;
   background-size: cover; }
@@ -478,45 +528,28 @@ table {
 
 .footer {
   background: url("../img/background-footer.jpg") no-repeat center;
-  background-size: cover;
-  height: 335px; }
+  background-size: cover; }
   .footer__opacity {
     background-color: black;
     opacity: 0.7;
-    color: white;
-    height: 335px; }
+    color: white; }
   .footer__section-one {
-    width: 930px;
-    margin: 0 auto;
-    padding: 40px 0;
     font-family: 'roboto'; }
-    .footer__section-one__contact {
-      display: inline-block;
-      vertical-align: top; }
-    .footer__section-one__contact + .footer__section-one__contact {
-      margin-left: 100px; }
     .footer__section-one__title {
-      font-size: 34px;
-      font-weight: normal;
-      margin-bottom: 40px; }
+      font-size: 2.125em;
+      font-weight: normal; }
     .footer__section-one__numero {
-      display: block;
-      font-size: 22px;
+      font-size: 1.375em;
       font-weight: 100;
       text-decoration: none;
       color: white; }
-    .footer__section-one__numero + .footer__section-one__numero {
-      margin-top: 20px; }
     .footer__section-one__nouvelles {
-      display: block;
-      font-size: 22px;
+      font-size: 1.375em;
       font-weight: 100;
       text-decoration: none;
       color: white; }
       .footer__section-one__nouvelles:hover {
         color: #d8953d; }
-    .footer__section-one__nouvelles + .footer__section-one__nouvelles {
-      margin-top: 20px; }
     .footer__section-one__link {
       text-decoration: none;
       color: white;
@@ -524,40 +557,16 @@ table {
       .footer__section-one__link:hover {
         color: #d8953d; }
   .footer__section-two {
-    width: 930px;
-    margin: 0 auto;
-    border-top: 1px solid white;
-    padding-top: 20px;
+    border-top: 0.0625em solid white;
     font-family: 'roboto'; }
-    .footer__section-two::after {
-      clear: both;
-      display: block;
-      content: ""; }
-    .footer__section-two__copyright {
-      display: inline-block;
-      float: left; }
-    .footer__section-two__social {
-      display: inline-block;
-      width: 14.375em;
-      position: relative;
-      left: 200px;
-      top: -10px; }
     .footer__section-two__link {
       text-decoration: none; }
       .footer__section-two__link:hover {
         opacity: 0.7; }
-    .footer__section-two__link + .footer__section-two__link {
-      margin-left: 0.625em; }
-    .footer__section-two__logo {
-      width: 2.5em;
-      height: auto; }
-    .footer__section-two__back {
-      display: inline-block;
-      float: right; }
     .footer__section-two__high {
       text-decoration: none;
       color: white;
-      font-size: 15px; }
+      font-size: 0.9375em; }
 
 .container {
   font-family: 'roboto';
@@ -565,7 +574,7 @@ table {
   margin: 0 auto; }
 
 .fil-ariane {
-  width: 200px;
+  width: 970px;
   margin-top: 10px;
   margin-bottom: 50px;
   position: relative;

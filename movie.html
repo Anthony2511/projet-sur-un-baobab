@@ -2,14 +2,14 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Baobab - Accueil</title>
+        <title>Baobab - Projets</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="site-container">
             <div class="site-pusher">
-                <header class="topbar">
+                <header class="topbar--other">
                     <div class="topbar__lang">
                         <a href="#" class="topbar__lang__detail topbar__lang__detail--active">Français</a>
                         <a href="#" class="topbar__lang__detail">Espagnol</a>
@@ -19,13 +19,13 @@
                     <nav class="topbar__nav">
                         <h1 aria-level="1">Navigation principale</h1>
                         <ul class="topbar__nav__list">
-                            <a href="index.html" class="topbar__nav__list__link topbar__nav__list__link--active">
+                            <a href="index.html" class="topbar__nav__list__link">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">Accueil</li>
                                     <img src="img/iconHome.png" class="topbar__nav__list__link__container__icon" alt="Icon Home" width="179" height="166"/>
                                 </div>
                             </a>
-                            <a href="projets.html" class="topbar__nav__list__link">
+                            <a href="projets.html" class="topbar__nav__list__link topbar__nav__list__link--active">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">Projets</li>
                                     <img src="img/iconProjets.png" class="topbar__nav__list__link__container__icon" alt="Icon Projets" width="166" height="156"/>
@@ -60,16 +60,6 @@
                             </a>
                         </ul>
                     </nav>
-                        <div class="topbar__intro">
-                            <p class="topbar__intro__text">
-                                Nous voyageons sac au dos en proposant des ateliers de cinéma d’animation pour enfants, adolescents et/ou adultes.
-                            </p>
-                            <a href="#" class="topbar__intro__link">
-                                <span class="topbar__intro__link__button">Soutenez-nous</span>
-                            </a>
-                        </div>
-                        <div class="topbar__scroll">
-                    </div>
                 </header>
                 <div class="site-content">
                     <div class="site-content__container">
@@ -79,59 +69,61 @@
                 </div>
             </div>
         </div>
-        <main>
-            <div class="head">
-                <div class="head__actu">
-                    <h2 aria-level="2" class="head__actu__title">Dernières réalisations</h2>
-                    <div class="head__actu__blog">
-                        <div class="head__actu__blog__zone">
-                            <a href="#" class="head__actu__blog__zone__link">
-                                <div class="head__actu__blog__zone__link__container">
-                                    <img src="img/actu1.jpg" class="head__actu__blog__zone__link__container__image" alt="Dernier court métrage" width="300" height="169"/>
-                                    <p class="head__actu__blog__zone__link__container__text">
-                                        Dernier court-métrage
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="head__actu__blog__zone">
-                            <a href="#" class="head__actu__blog__zone__link">
-                                <div class="head__actu__blog__zone__link__container">
-                                    <img src="img/actu2.jpg" class="head__actu__blog__zone__link__container__image" alt="Dernière photo" width="1500" height="1000" />
-                                    <p class="head__actu__blog__zone__link__container__text">
-                                        Dernière photo
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="head__actu__projet">
-                        <div class="head__actu__projet__container">
-                            <h2 aria-level="2" class="head__actu__projet__container__title">Notre projet</h2>
-                            <p class="head__actu__projet__container__text">
-                                Nous voyageons en proposant un atelier itinérant de cinéma d’animation
-                                qui s’inscrit dans le soutien d’une cause sociale. Pour cela, nous
-                                accompagnons un groupe de jeunes enfants, adolescents et/ou adultes
-                                pendant plusieurs semaines dans la réalisation collective d’un
-                                cout-métrage d’animation à partir d’un thème, d’un conte ou
-                                d’une histoire, choisie ou écrite ensemble.
-                            </p>
-                            <a href="#" class="head__actu__projet__container__link">
-                                <span class="head__actu__projet__container__link__button">En savoir plus</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="head__arrow">
-                </div>
+        <main class="container">
+            <div class="fil-ariane">
+                <p class="fil-ariane__chemin">
+                    <a href="index.html" class="fil-ariane__link">Accueil</a> >
+                    <a href="projets.html" class="fil-ariane__link">Projets</a> >
+                    <a href="movie.html" class="fil-ariane__link">Safidn'i Pela</a>
+                </p>
             </div>
-            <div class="partenaires">
-                <h2 class="partenaires__title">Nos partenaires</h2>
-                <div class="partenaires__logo">
-                    <img src="img/logoIrea.png" class="partenaires__logo__sponsor"alt="Logo Ireast" width="1162" height="1127"/>
-                    <img src="img/logoSncf.png" class="partenaires__logo__sponsor"alt="Logo SNCF" width="2356" height="1248"/>
-                    <img src="img/logoHeine.png" class="partenaires__logo__sponsor"alt="Logo Heine" width="1000" height="853"/>
-                    <img src="img/logoWilson.png" class="partenaires__logo__sponsor"alt="Logo Wilson" width="2272" height="1704"/>
+            <div class="movie">
+                <h2 aria-level="2" class="movie__title">Safidn'i Pela</h2>
+                <ul class="movie__menu">
+                    <a href="#"><li class="movie__menu__list movie__menu__list--active">Voir le film</li></a>
+                    <a href="#"><li class="movie__menu__list movie__menu__list--active">Le projet</li></a>
+                    <a href="#"><li class="movie__menu__list movie__menu__list--active">Making-of</li></a>
+                    <a href="#"><li class="movie__menu__list movie__menu__list--active">Fiche technique</li></a>
+                </ul>
+                <iframe class="movie__video"width="560" height="315" src="https://www.youtube.com/embed/92IwfppA5SQ" frameborder="0" allowfullscreen></iframe>
+                <a href="#" class="movie__partage">Partager</a>
+                <div class="movie__pictures">
+                    <h3 aria-level="3" class="movie__pictures__title">Photos de tournage</h3>
+                    <img src="img/photo-one.jpg" class="movie__pictures__image" alt="Décor du tournage" width="300" height="202"/>
+                    <img src="img/photo-two.jpg" class="movie__pictures__image" alt="Ramsay, personnage du court-métrag" width="300" height="200"/>
+                    <img src="img/photo-one.jpg" class="movie__pictures__image" alt="Décor du tournage" width="300" height="200"/>
+                    <div class="movie__pictures__plus">
+                    </div>
+                </div>
+                <div class="movie__commentaires">
+                    <div class="movie__mon-mommentaire">
+                        <img src="img/photoProfil.png" class="movie__mon-commentaire__profil" alt="Photo de profil" width="40" height="50"/>
+                        <form class="movie__mon-commentaire__form" action="index.html" method="post">
+                            <input type="text" class="movie__mon-commentaire__champ" placeholder="Votre commentaire" name="name" value="">
+                        </form>
+                        <div class="movie__mon-commentaire__ligne">
+                        </div>
+                    </div>
+                    <div class="movie__publier">
+                        <img src="img/photoProfil.png" class="movie__publier__profil" alt="Photo de profil" width="40" height="50"/>
+                        <p class="movie__publier__author">
+                            Julien Heyndels, 21 mars 2015 à 17h31
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed ut dignissim nisl. Interdum
+                        </p>
+                    </div>
+                </div>
+                <div class="movie__don">
+                    <h3 aria-level="3" class="movie__don__title">Soutenez-nous dans notre projet</h3>
+                    <div class="movie__don__arrow-one">
+                    </div>
+                    <p>
+                        <a href="#">Soutenez-nous</a>
+                    </p>
+                    <div class="movie__don__arrow-two">
+                    </div>
                 </div>
             </div>
         </main>
