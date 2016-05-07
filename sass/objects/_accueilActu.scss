@@ -1,0 +1,77 @@
+.head{
+    clear: both;
+    &__actu{
+        width: 89.375em; //1430px
+        margin: 0 auto;
+        &__title{
+            margin : 1em 0; //100px (100px)
+        }
+        &__blog{
+            margin-bottom: 12.5em; //200px
+            &__zone{
+                display: inline-block;
+                &__link{
+                    z-index: 1000;
+                    display: block;
+                    &__container{
+                        &__image{
+                            width: 29.375em; //470px
+                            height: 16.5625em; //265px
+                        }
+                        &__text{
+                            padding: 0.9375em 0; //15px
+                        }
+                    }
+                }
+            }
+            &__zone + &__zone{
+                margin-left: 14.375em; //230px
+            }
+        }
+        &__projet{
+            width: 29.375em; //470px
+            float: right;
+            margin: -7.8125em 7.8125em 100px 6.25em; //-125px 125px 100px 0
+
+            &__container{
+                &__title{
+                    margin-bottom: 0.5em; //50px (100px)
+                }
+                &__text{
+                    margin-bottom: 1.25em; //20px
+                }
+                &__link{
+                    float: right;
+                    &__button{
+                        padding: 0.192307em 0.769230em; //5px 20px (26px)
+                    }
+                }
+            }
+        }
+    }
+    &__arrow{
+        height: 12.5em; //200px
+        position: relative;
+        top: -250px;
+    }
+}
+.partenaires{
+    display: block;
+    clear: both;
+    margin-bottom: 3.125em; //50px
+    position: relative;
+    &__title{
+        padding: 0.714285em 0;  //50px
+        margin-bottom: 0.714285em;  //50px
+    }
+    &__logo{
+        vertical-align: bottom;
+        &__sponsor{
+            width: 10.625em; //170px
+            height: auto;
+        }
+        &__sponsor + &__sponsor{
+            margin-left: 1.875em; //30px
+        }
+    }
+}
