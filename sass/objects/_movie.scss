@@ -1,0 +1,122 @@
+/****OBJECTS****/
+/**MOVIE**/
+.movie{
+    width: 60.625em; //970px
+    margin: 0 auto;
+    &::after{
+        clear: both;
+        display: block;
+        content: "";
+    }
+    &__title{
+        margin: 1em 0; //100px (100px)
+    }
+    &__menu{
+        margin-bottom: 1.875em; //30px
+        &__list{
+            display: inline-block;
+            width: 8em; //200px (25px)
+            padding: 0.217391em 0; //5px (23px)
+        }
+    }
+    &__video{
+        width: 60.625em; //970px
+        height: 34.375em; //550px
+        margin-bottom: 1.25em; //20px
+    }
+    &__partage{
+        float: right;
+        padding: 0.151515em 0.606060em; //5px 20px
+    }
+    &__pictures{
+        margin-top: 5.8125em; //93px
+        &::after{
+            clear: both;
+            display: block;
+            content: "";
+        }
+        &__title{
+            margin-bottom: 1.25em; //50px (40px)
+        }
+        &__image{
+            width: 12.5em; //200px
+            height: 8.4375em; //135px
+        }
+        &__image + &__image{
+            margin-left: 1.875em; //30px
+        }
+        &__plus{
+            width: 12.5em; //200px
+            height: 8.4375em; //135px
+            float: right;
+            position: relative;
+            right: 73px;
+            margin-bottom: 3.125em; //50px
+        }
+        &__croix{
+            position: relative;
+            top: 50px;
+        }
+    }
+    &__commentaires{
+        width: 54.375em; //870px
+    }
+    &__mon-commentaire{
+        &__profil{
+            margin-right: 1.25em; //20px
+            width: 2.5em; //40px
+            height: 2.5em; //40px
+        }
+        &__form{
+            display: inline-block;
+            position: relative;
+            top: -12px;
+        }
+        &__champ{
+            width: 24.2em; //605px (25px);
+            padding: 0.14em 0; //3.5px 0 (25px)
+        }
+    }
+    &__publier{
+        margin-bottom: 3.125em; //50px
+        &__text{
+            width: 28em; //700px
+            margin: 1.2em 0 0 7.2em; //30px 0 0 180px
+        }
+    }
+    &__person{
+        margin: 1.125em 0 0 1.25em; //18px 0 0 20px
+        padding-left: 3.75em; //60px
+        &__profil{
+            width: 2.5em; //40px
+            height: 2.5em; //40px
+        }
+        &__author{
+            display: inline-block;
+            margin-left: 1em; //30px (30px)
+        }
+    }
+}
+.don{
+    padding-bottom: 3.125em; //50px
+    position: relative;
+    height: 16.25em; //260px
+    &__title{
+        padding-top: 0.625em; //50px (80px)
+    }
+    &__arrow-one{
+        position: absolute;
+        left: 600px;
+        top: 150px;
+    }
+    &__button{
+        width: 18.75em; //300px
+        margin: 5em auto; //80px
+        padding: 0.625em 0; //10px 0
+    }
+    &__arrow-two{
+        position: absolute;
+        right: 600px;
+        top: 150px;
+    }
+}

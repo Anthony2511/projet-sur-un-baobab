@@ -1,139 +1,72 @@
+/****COMPONENTS****/
+/**MOVIE**/
 .movie{
     font-family: 'roboto';
-    width: 970px;
-    margin: 0 auto;
-    &::after{
-        clear: both;
-        display: block;
-        content: "";
-    }
     &__title{
         font-family: 'pwl';
-        font-size: 100px;
+        font-size: 6.25em; //100px
         color: $colorTitle;
         text-align: center;
-        margin: 100px 0;
     }
     &__menu{
-        margin-bottom: 30px;
         &__link{
             text-decoration: none;
-            color: black;
+            color: $colorLinkMenuMovie ;
         }
         &__list{
-            display: inline-block;
-            font-size: 23px;
+            font-size: 1.4375em; //23px
             font-weight: 100;
-            border: 1px solid black;
-            border-radius: 4px;
-            width: 200px;
+            border: 0.0625em solid $borderBlack ; //1px
+            border-radius: 0.25em; //4px
             text-align: center;
-            padding: 5px 0;
             &:hover{
                 background-color: $backgroundColorLinkActiveMovie;
-                color: white;
-                border: 1px solid white;
+                color: $colorHoverLinkMovie;
+                border: 0.0625em solid $borderWhite; //1px
             }
             &--active{
                 background-color: $backgroundColorLinkActiveMovie;
-                color: white;
-                border: 1px solid white;
+                color: $colorHoverLinkMovie;
+                border: 1px solid $borderWhite;
             }
         }
-    }
-    &__video{
-        width: 970px;
-        height: 550px;
-        margin-bottom: 20px;
     }
     &__partage{
         text-decoration: none;
         background-color: $backgroundColorButtonProjet ;
-        color: white;
-        float: right;
-        border-radius: 5px;
-        padding: 5px 20px;
-        font-size: 33px;
+        color: $colorWhite;
+        border-radius: 0.3125em; //5px
+        font-size: 2.0625em; //33px
     }
     &__pictures{
-        margin-top: 93px;
-        &::after{
-            clear: both;
-            display: block;
-            content: "";
-        }
         &__title{
-            font-size: 40px;
+            font-size: 2.5em; //40px
             font-family: 'pwl';
             color: $colorTitle;
-            margin-bottom: 50px;
-        }
-        &__image{
-            width: 200px;
-            height: 135px;
-        }
-        &__image + &__image{
-            margin-left: 30px;
         }
         &__plus{
-            width: 200px;
-            height: 135px;
             background-color: $backgroundColorButtonProjet;
-            float: right;
             opacity: 0.5;
-            position: relative;
-            right: 73px;
-            margin-bottom: 50px;
         }
         &__croix{
             text-align: center;
-            position: relative;
-            top: 50px;
-
         }
-    }
-    &__commentaires{
-        width: 870px;
     }
     &__mon-commentaire{
-
-        &__profil{
-            margin-right: 20px;
-            width: 40px;
-            height: 40px;
-        }
-        &__form{
-            display: inline-block;
-            position: relative;
-            top: -12px;
-        }
         &__champ{
-            width: 605px;
-            font-size: 25px;
+            font-size: 1.5625em; //25px
             font-weight: lighter;
-            padding: 3.5px 0;
         }
     }
     &__publier{
-        margin-bottom: 50px;
         &__text{
-            font-size: 25px;
-            margin: 30px 0 0 180px;
-            width: 700px;
+            font-size: 1.5265em; //25px
         }
     }
     &__person{
-        border-left: 1px solid black;
-        margin: 18px 0 0 20px;
-        padding-left: 60px;
-        &__profil{
-            width: 40px;
-            height: 40px;
-        }
+        border-left: 0.0625em solid $borderBlack; //1px
         &__author{
-            display: inline-block;
-            margin-left: 30px;
-            font-size: 30px;
+            font-size: 1.875em; //30px
             color: $colorAuthor;
             font-weight: 100;
         }
@@ -141,40 +74,22 @@
 }
 .don{
     background-color: $backgroundColorDonMovie;
-    padding-bottom: 50px;
-    position: relative;
-    height: 260px;
-
     &__title{
-        padding-top: 50px;
         font-family: 'pwl';
-        font-size: 80px;
-        color: white;
+        font-size: 5em; //80px
+        color: $colorWhite;
         text-align: center;
-    }
-    &__arrow-one{
-        position: absolute;
-        left: 600px;
-        top: 150px;
     }
     &__button{
-        width: 300px;
-        margin: 80px auto;
-        background-color: white;
+        background-color: $colorWhite;
         text-align: center;
-        border-radius: 5px;
-        padding: 10px 0;
+        border-radius: 0.3125em; //5px
     }
     &__link{
-        font-size: 30px;
+        font-size: 1.875em; //30px
         text-decoration: none;
         font-weight: 100;
         font-family: 'roboto';
-        color: black;
-    }
-    &__arrow-two{
-        position: absolute;
-        right: 600px;
-        top: 150px;
+        color: $colorBlack;
     }
 }

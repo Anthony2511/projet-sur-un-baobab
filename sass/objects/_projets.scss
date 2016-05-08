@@ -1,0 +1,48 @@
+/****OBJECTS****/
+/**PROJETS**/
+.container{
+    width: 60.625em; //970px
+    margin: 0 auto;
+}
+.fil-ariane{
+    width: 60.625em; //970px
+    margin: 0.625em 0 3.125em 0; //10px 0 50px 0
+    position: relative;
+    left: -100px;
+}
+.projets{
+    &__title{
+        margin-bottom: 1em; //100px (100px)
+    }
+    &__films{
+    }
+    &__movie{
+        &__container{
+            margin-bottom: 6.25em; //100px
+            &--one{
+                height: 34.375em; //550px
+            }
+            &--two{
+                height: 34.375em; //550px
+            }
+        }
+        &__opacity{
+            height: 34.375em; //550px
+            position: relative;
+        }
+        &__title{
+            width: 6.33333em; //570px (90px)
+            margin: 0 auto;
+            position: absolute;
+            top: 150px;
+            left: 170px;
+            padding: 0.222222em; //20px (90px)
+        }
+        &__link{
+            position: absolute;
+            top: 400px;
+            left: 350px;
+            padding-bottom: 0.125em; //5px (40px)
+        }
+    }
+}
