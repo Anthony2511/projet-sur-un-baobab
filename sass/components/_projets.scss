@@ -25,18 +25,17 @@
     &__movie{
         text-decoration: none;
         &__container{
-            &--one{
-                background: url("../img/actu1.jpg") no-repeat center;
-                background-size: cover;
-            }
-            &--two{
-                background: url("../img/tongasoa.jpg") no-repeat center;
-                background-size: cover;
-            }
+        }
+        &__image{
+            width: 970px;
+            height: auto;
         }
         &__opacity{
             background-color: $colorBlack;
             opacity: 0.5;
+        }
+        &__content{
+            text-align: center;
         }
         &__title{
             text-align: center;
@@ -44,8 +43,6 @@
             color: $colorWhite;
             font-size: 5.625em; //90px
             border: 0.022222em solid $borderWhite; //2px (90px)
-            z-index: 1000;
-            opacity: 1;
         }
         &__link{
             text-decoration: none;
@@ -54,4 +51,34 @@
             border-bottom: 0.0625em solid $borderWhite; //1px
         }
     }
+}
+@media screen and (max-width: 1064px){
+    .container{
+        width: 94.625%; // 970 /1024
+        height: auto;
+    }
+    .projets{
+        &__title{
+
+        }
+        &__movie{
+            &__image{
+                max-width: 100%;
+                height: auto;
+            }
+            &__content{
+                width: 100%;
+                height: 100%;
+            }
+            &__container{
+            }
+            &__title{
+
+            }
+            &__link{
+
+            }
+        }
+    }
+
 }

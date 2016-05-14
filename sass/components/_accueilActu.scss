@@ -68,3 +68,12 @@
         background-color: $backgroundColorPartenaires;
     }
 }
+@media screen and (max-width: 1479px){
+    .head{
+        &__actu{
+            &__title{
+
+            }
+        }
+    }
+}

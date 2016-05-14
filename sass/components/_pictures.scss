@@ -1,0 +1,40 @@
+//****COMPONENTS****//
+//**PICTURES**//
+.pictures{
+    &__title{
+    font-size: 6.25em; //100px
+    font-family: 'pwl';
+    text-align: center;
+    color: $colorTitle;
+    }
+    &__bloc{
+        &__text{
+            font: 'roboto';
+            font-weight: 100;
+            font-size: 1.25em; //20px
+        }
+    }
+    &__pagination{
+        text-align: center;
+    }
+    &__link{
+        text-decoration: none;
+        font-family: 'roboto';
+        font-weight: lighter;
+        font-size: 1.875em; //30px
+        border: 0.0625em solid $colorFilAriane; //1px
+        color: $colorFilAriane;
+        border-radius: 0.3125em; //5px
+        &--active{
+            background-color: $backgroundColorButtonProjet;
+            color: $colorWhite;
+            border: 0.0625em solid $colorWhite; //1px
+        }
+    }
+    &__etc{
+        font-family: 'roboto';
+        font-weight: lighter;
+        font-size: 1.875em; //30px
+        color: $colorFilAriane ;
+    }
+}

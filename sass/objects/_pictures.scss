@@ -1,0 +1,32 @@
+//****OBJECTS****//
+//**PICTURES**//
+.pictures{
+    width: 60.625em; //970px
+    margin: auto;
+    &__title{
+    margin-bottom: 0.5em; //50px (100px)
+    }
+    &__bloc{
+        display: inline-block;
+        position: relative;
+        margin-bottom: 3.125em; //50px
+        &:nth-child(n+1){
+            margin-left: 4.6875em; //75px
+        }
+        &__image{
+            width: 23.125em; //370px
+            height: auto;
+        }
+        &__text{
+            position: absolute;
+            right: 0;
+        }
+    }
+    &__pagination{
+        margin : 3.125em 0; //50px
+        width: 60.625em; //970px
+    }
+    &__link{
+        padding: 0 0.333333em; //0 10px (30px)
+    }
+}

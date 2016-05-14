@@ -30,6 +30,7 @@
             }
         }
         &__link{
+            line-height: 1.5em;
             text-decoration: none;
             color: $colorFooter;
             font-weight: 100;
@@ -51,6 +52,22 @@
             text-decoration: none;
             color: white;
             font-size: 0.9375em; //15px
+        }
+    }
+}
+@media screen and (max-width: 1008px){
+    .footer{
+        &__section-one{
+
+            &__title{
+                font-size: 1.9375em; //31px
+            }
+            &__numero, &__nouvelles{
+                font-size: 1.1875em;
+            }
+        }
+        &__contact{
+            display: block;
         }
     }
 }

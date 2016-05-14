@@ -47,6 +47,9 @@
         &__plus{
             background-color: $backgroundColorButtonProjet;
             opacity: 0.5;
+            &:hover{
+                background-color: $backgroundColorHoverButtonProjet 
+            }
         }
         &__croix{
             text-align: center;
