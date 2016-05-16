@@ -7,7 +7,6 @@
     &--other{
         background: url("../img/background2.jpg") no-repeat center;
         background-size: cover;
-        height: 260px;
     }
     &__lang{
         text-align: center;
@@ -45,6 +44,9 @@
                 &--active{
                     border-bottom: 0.1875em solid $backgroundColorHoverMenu; //3px
                 }
+            }
+            &__logo{
+                text-decoration: none;
             }
         }
     }

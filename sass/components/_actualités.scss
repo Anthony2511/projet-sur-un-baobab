@@ -1,78 +1,41 @@
-.actus{
-    width: 68.75em; //1100px
-    margin: 0 auto;
+//****COMPONENTS****//
+//**ACTUALITES**//
 
+.actus{
     &__title{
         font-size: 6.25em; //100px
         font-family: 'pwl';
         text-align: center;
         color: $colorTitle;
-        margin-bottom: 1em; //100px (100px)
-    }
-    &__articles{
-
     }
     &__link{
         text-decoration: none;
-        &__container{
-            position: relative;
-            margin-bottom: 1.875em; //30px
-            width: 28.125em; //450px
-            height: 18.75em; //300px
-            display: inline-block;
-            margin: 0 3.125em 3.125em 0; //0 50px 50px 0
-        }
-        &__images{
-            width: 100%;
-            height: 100%;
-        }
         &__content{
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 10;
             text-align: center;
-            &::after{
-                clear: both;
-                display: block;
-                content: "";
-            }
         }
         &__title{
             word-wrap: break-word;
             font-family: 'pwl';
             color: $colorWhite;
             font-size: 2.5em; //40px
-            margin : 2.5em 0; //100px (40px)
-            width: 11.25em; //450px (40px)
-
         }
         &__date{
-            vertical-align: top;
             font-size: 1.25em; //20px
             font-weight: normal;
             color: $colorWhite;
-            margin-top: 0.3125em; //5px
-            float: right;
         }
         &__view{
             text-decoration: none;
             color: $colorWhite;
-            font-size: 25px;
-            border: 1px solid $colorWhite;
-            border-radius: 5px;
-            padding: 5px 10px;
+            font-size: 1.5625em; //25px
+            border: 0.0625em solid $colorWhite; //1px
+            border-radius: 0.3125em; //5px
             &:hover{
                 background-color: $colorWhite;
                 color: $colorBlack;
             }
         }
         &__opacity{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
             background-color: $colorBlack;
             opacity: 0.5;
         }

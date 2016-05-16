@@ -1,0 +1,26 @@
+//****COMPONENTS****//
+//**ARTICLE**//
+.article{
+    &__title{
+        font-size: 6.25em; //100px
+        font-family: 'pwl';
+        text-align: center;
+        color: $colorTitle;
+    }
+    &__date{
+        font-family: 'roboto';
+        font-weight: 100;
+        font-size: 1.875em; //30px
+    }
+    &__texte{
+        font-size: 1.875em; //30px
+        font-weight: 100;
+    }
+    &__partie-one{
+        &__title{
+            font-size: 2.666666em; //80px (30px)
+            font-family: 'pwl';
+            color: $colorTitle;
+        }
+    }
+}

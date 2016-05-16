@@ -3,6 +3,9 @@
 .topbar{
     height: 100vh;
     position: relative;
+    &--other{
+        height: 300px;
+    }
     &__lang{
         position: relative;
         right: 475px;

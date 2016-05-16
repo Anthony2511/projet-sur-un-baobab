@@ -66,6 +66,17 @@ h1 {
 main {
   clear: both; }
 
+.container__size {
+  width: 68.75em;
+  margin: 0 auto;
+  font-family: 'roboto'; }
+
+.fil-ariane__size {
+  width: 68.75em;
+  margin: 0.625em 0 3.125em 0;
+  position: relative;
+  left: -40px; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -118,6 +129,8 @@ table {
 .topbar {
   height: 100vh;
   position: relative; }
+  .topbar--other {
+    height: 300px; }
   .topbar__lang {
     position: relative;
     right: 475px;
@@ -416,6 +429,79 @@ table {
   .pictures__link {
     padding: 0 0.333333em; }
 
+.actus {
+  width: 68.75em;
+  margin: 0 auto; }
+  .actus__title {
+    margin-bottom: 1em; }
+  .actus__link__container {
+    position: relative;
+    margin-bottom: 1.875em;
+    width: 28.125em;
+    height: 18.75em;
+    display: inline-block;
+    margin: 0 3.125em 3.125em 0; }
+  .actus__link__images {
+    width: 100%;
+    height: 100%; }
+  .actus__link__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10; }
+    .actus__link__content::after {
+      clear: both;
+      display: block;
+      content: ""; }
+  .actus__link__title {
+    margin: 2.5em 0;
+    width: 11.25em; }
+  .actus__link__date {
+    vertical-align: top;
+    margin-top: 0.3125em;
+    float: right; }
+  .actus__link__view {
+    padding: 0.2em 0.4em; }
+  .actus__link__opacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.article::after {
+  clear: both;
+  display: block;
+  content: ""; }
+
+.article__title {
+  margin: 1em 0 0.5em; }
+
+.article__date {
+  float: right;
+  margin-bottom: 1em; }
+
+.article__image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 6.25em; }
+
+.article__partie-one::after {
+  clear: both;
+  display: block;
+  content: ""; }
+
+.article__partie-one__title {
+  margin-bottom: 1.25em; }
+
+.article__paragraphe {
+  vertical-align: top;
+  width: 16.666666666em;
+  display: inline-block;
+  margin-bottom: 3.333333em; }
+  .article__paragraphe--float {
+    float: right; }
+
 /****COMPONENTS****/
 /**TOPBAR**/
 .topbar {
@@ -423,8 +509,7 @@ table {
   background-size: cover; }
   .topbar--other {
     background: url("../img/background2.jpg") no-repeat center;
-    background-size: cover;
-    height: 260px; }
+    background-size: cover; }
   .topbar__lang {
     text-align: center; }
     .topbar__lang__detail {
@@ -452,6 +537,8 @@ table {
         border-bottom: 0.1875em solid #b2b2b2; }
       .topbar__nav__list__link--active {
         border-bottom: 0.1875em solid #b2b2b2; }
+    .topbar__nav__list__logo {
+      text-decoration: none; }
   .topbar__intro {
     text-align: center; }
     .topbar__intro__text {
@@ -902,7 +989,7 @@ table {
   border: 0.0625em solid #a8a8a8;
   color: #a8a8a8;
   border-radius: 0.3125em; }
-  .pictures__link--active {
+  .pictures__link--active, .pictures__link:hover {
     background-color: #a8a8a8;
     color: white;
     border: 0.0625em solid white; }
@@ -913,68 +1000,100 @@ table {
   font-size: 1.875em;
   color: #a8a8a8; }
 
-.actus {
-  width: 68.75em;
-  margin: 0 auto; }
-  .actus__title {
-    font-size: 6.25em;
+.actus__title {
+  font-size: 6.25em;
+  font-family: 'pwl';
+  text-align: center;
+  color: #6f2317; }
+
+.actus__link {
+  text-decoration: none; }
+  .actus__link__content {
+    text-align: center; }
+  .actus__link__title {
+    word-wrap: break-word;
     font-family: 'pwl';
-    text-align: center;
-    color: #6f2317;
-    margin-bottom: 1em; }
-  .actus__link {
-    text-decoration: none; }
-    .actus__link__container {
-      position: relative;
-      margin-bottom: 1.875em;
-      width: 28.125em;
-      height: 18.75em;
-      display: inline-block;
-      margin: 0 3.125em 3.125em 0; }
-    .actus__link__images {
-      width: 100%;
-      height: 100%; }
-    .actus__link__content {
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 10;
-      text-align: center; }
-      .actus__link__content::after {
-        clear: both;
-        display: block;
-        content: ""; }
-    .actus__link__title {
-      word-wrap: break-word;
-      font-family: 'pwl';
-      color: white;
-      font-size: 2.5em;
-      margin: 2.5em 0;
-      width: 11.25em; }
-    .actus__link__date {
-      vertical-align: top;
-      font-size: 1.25em;
-      font-weight: normal;
-      color: white;
-      margin-top: 0.3125em;
-      float: right; }
-    .actus__link__view {
-      text-decoration: none;
-      color: white;
-      font-size: 25px;
-      border: 1px solid white;
-      border-radius: 5px;
-      padding: 5px 10px; }
-      .actus__link__view:hover {
-        background-color: white;
-        color: black; }
-    .actus__link__opacity {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      opacity: 0.5; }
+    color: white;
+    font-size: 2.5em; }
+  .actus__link__date {
+    font-size: 1.25em;
+    font-weight: normal;
+    color: white; }
+  .actus__link__view {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5625em;
+    border: 0.0625em solid white;
+    border-radius: 0.3125em; }
+    .actus__link__view:hover {
+      background-color: white;
+      color: black; }
+  .actus__link__opacity {
+    background-color: black;
+    opacity: 0.5; }
+
+.article__title {
+  font-size: 6.25em;
+  font-family: 'pwl';
+  text-align: center;
+  color: #6f2317; }
+
+.article__date {
+  font-family: 'roboto';
+  font-weight: 100;
+  font-size: 1.875em; }
+
+.article__texte {
+  font-size: 1.875em;
+  font-weight: 100; }
+
+.article__partie-one__title {
+  font-size: 2.666666em;
+  font-family: 'pwl';
+  color: #6f2317; }
+
+.ateliers__title {
+  font-size: 6.25em;
+  font-family: 'pwl';
+  text-align: center;
+  color: #6f2317;
+  margin: 1em 0; }
+
+.ateliers__tuto {
+  border: 1px solid black;
+  padding: 30px;
+  margin-bottom: 100px;
+  position: relative; }
+
+.ateliers__content {
+  display: inline-block; }
+  .ateliers__content__image {
+    width: 400px;
+    height: auto;
+    margin-right: 30px; }
+  .ateliers__content__title {
+    font-family: 'pwl';
+    font-size: 40px;
+    position: absolute;
+    top: 30px;
+    right: 30px; }
+
+.ateliers__text {
+  width: 300px;
+  font-size: 25px;
+  font-weight: 100;
+  position: relative;
+  top: -100px; }
+
+.ateliers__link {
+  background-color: #6f2317;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 10px 30px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px; }
 
 /*# sourceMappingURL=styles.css.map */
