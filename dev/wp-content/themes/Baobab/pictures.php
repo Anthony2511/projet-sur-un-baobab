@@ -19,40 +19,40 @@
                     <nav class="topbar__nav">
                         <h1 aria-level="1">Navigation principale</h1>
                         <ul class="topbar__nav__list">
-                            <a href="index.html" class="topbar__nav__list__link">
+                            <a href="index.php" class="topbar__nav__list__link">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">Accueil</li>
                                     <img src="img/iconHome.png" class="topbar__nav__list__link__container__icon" alt="Icon Home" width="179" height="166"/>
                                 </div>
                             </a>
-                            <a href="projets.html" class="topbar__nav__list__link">
+                            <a href="projets.php" class="topbar__nav__list__link topbar__nav__list__link--active">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">Projets</li>
                                     <img src="img/iconProjets.png" class="topbar__nav__list__link__container__icon" alt="Icon Projets" width="166" height="156"/>
                                 </div>
                             </a>
-                            <a href="actualités.html" class="topbar__nav__list__link">
+                            <a href="actualités.php" class="topbar__nav__list__link">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">Actualités</li>
                                     <img src="img/iconActu.png" class="topbar__nav__list__link__container__icon" alt="Icon Actualités" width="167" height="167"/>
                                 </div>
                             </a>
-                            <a href="index.html" class="topbar__nav__list__logo">
+                            <a href="index.php" class="topbar__nav__list__logo">
                                 <img class="topbar__nav__list__logo__image" src="img/Logo.svg" alt="Logo" width="945" height="958"/>
                             </a>
-                            <a href="ateliers.html" class="topbar__nav__list__link topbar__nav__list__link--active">
+                            <a href="ateliers.php" class="topbar__nav__list__link">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">Ateliers</li>
                                     <img src="img/iconAteliers.png" class="topbar__nav__list__link__container__icon" alt="Icon Ateliers" width="167" height="167"/>
                                 </div>
                             </a>
-                            <a href="propos.html" class="topbar__nav__list__link">
+                            <a href="propos.php" class="topbar__nav__list__link">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">A propos</li>
                                     <img src="img/iconApropos.png" class="topbar__nav__list__link__container__icon" alt="Icon A propos" width="167" height="167"/>
                                 </div>
                             </a>
-                            <a href="contact.html" class="topbar__nav__list__link">
+                            <a href="contact.php" class="topbar__nav__list__link">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">Contact</li>
                                     <img src="img/iconContact.png" class="topbar__nav__list__link__container__icon" alt="Icon Contact" width="167" height="167" />
@@ -72,36 +72,55 @@
         <main class="container">
             <div class="fil-ariane">
                 <p class="fil-ariane__chemin">
-                    <a href="index.html" class="fil-ariane__link">Accueil</a> > <a href="ateliers.html" class="fil-ariane__link">Ateliers</a>
+                    <a href="index.html" class="fil-ariane__link">Accueil</a> > <a href="projets.html" class="fil-ariane__link">Projets</a> > <a href="movie.html" class="fil-ariane__link">Safidn'i Pela</a> > <a href="pictures.html" class="fil-ariane__link">Images</a>
                 </p>
             </div>
-            <div class="ateliers">
-                <h2 aria-level="2" class="ateliers__title">Anime-toi meme</h2>
-                <div class="ateliers__tutos">
-                    <div class="ateliers__tuto">
-                        <figure class="ateliers__content">
-                            <img src="img/photo-two.jpg" class="ateliers__content__image" alt="image du tuto 1" width="300" height="200"/>
-                        </figure>
-                        <div class="ateliers__content">
-                            <h3 aria-level="3" class="ateliers__content__title">Tuto 1 - Papiers découpés</h3>
-                            <p class="ateliers__text">
-                                lorem ipsum amet, consecteur adispiting elit. lorem ipsum amet conssecteur.
-                            </p>
-                            <a href="tuto.html" class="ateliers__link">Commencer</a>
-                        </div>
+            <div class="pictures">
+                <h2 aria-level="2" class="pictures__title">Photos</h2>
+                <div class="pictures__container">
+                    <div class="pictures__bloc">
+                        <img src="img/photo-one.jpg" class="pictures__bloc__image" alt="Décor du tournage" width="300" height="202"/>
+                        <p class="pictures__bloc__text">
+                            Décor du tournage
+                        </p>
                     </div>
-                    <div class="ateliers__tuto">
-                        <figure class="ateliers__content">
-                            <img src="img/photo-three.jpg" class="ateliers__content__image" alt="image du tuto 2" width="300" height="200"/>
-                        </figure>
-                        <div class="ateliers__content">
-                            <h3 aria-level="3" class="ateliers__content__title">Tuto 2 - Bruitages et dialogues</h3>
-                            <p class="ateliers__text">
-                                lorem ipsum amet, consecteur adispiting elit. lorem ipsum amet conssecteur.
-                            </p>
-                            <a href="tuto.html" class="ateliers__link">Commencer</a>
-                        </div>
+                    <div class="pictures__bloc">
+                        <img src="img/photo-three.jpg" class="pictures__bloc__image" alt="Enregistrement audio" width="300" height="200"/>
+                        <p class="pictures__bloc__text">
+                            Enregistrement audio
+                        </p>
                     </div>
+                    <div class="pictures__bloc">
+                        <img src="img/photo-two.jpg" class="pictures__bloc__image" alt="Personnage du court-métrage" width="300" height="200"/>
+                        <p class="pictures__bloc__text">
+                            Maquettes personnages
+                        </p>
+                    </div>
+                    <div class="pictures__bloc">
+                        <img src="img/photo-two.jpg" class="pictures__bloc__image" alt="Personnage du court-métrage" width="300" height="200"/>
+                        <p class="pictures__bloc__text">
+                            Maquettes personnages
+                        </p>
+                    </div>
+                    <div class="pictures__bloc">
+                        <img src="img/photo-one.jpg" class="pictures__bloc__image" alt="Décor du tournage" width="300" height="202"/>
+                        <p class="pictures__bloc__text">
+                            Décor du tournage
+                        </p>
+                    </div>
+                    <div class="pictures__bloc">
+                        <img src="img/photo-three.jpg" class="pictures__bloc__image" alt="Enregistrement audio" width="300" height="200"/>
+                        <p class="pictures__bloc__text">
+                            Enregistrement audio
+                        </p>
+                    </div>
+                </div>
+                <div class="pictures__pagination">
+                    <a href="#" class="pictures__link pictures__link--active">1</a>
+                    <a href="#" class="pictures__link">2</a>
+                    <span class="pictures__etc">...</span>
+                    <a href="#" class="pictures__link">3</a>
+                    <a href="#" class="pictures__link">></a>
                 </div>
             </div>
         </main>
@@ -119,25 +138,25 @@
                     </div>
                     <div class="footer__section-one__contact">
                         <h2 aria-level="2" class="footer__section-one__title">Dernières nouvelles</h2>
-                        <a href="article.html" class="footer__section-one__nouvelles">
+                        <a href="article.php" class="footer__section-one__nouvelles">
                             Sur un baobab, un an déja !
                         </a>
-                        <a href="article.html" class="footer__section-one__nouvelles">
+                        <a href="article.php" class="footer__section-one__nouvelles">
                             Projection de Safidn’i Pela
                         </a>
-                        <a href="article.html" class="footer__section-one__nouvelles">
+                        <a href="article.php" class="footer__section-one__nouvelles">
                             Sur un baobab, un an déja !
                         </a>
                     </div>
                     <div class="footer__section-one__contact">
                         <h2 aria-level="2" class="footer__section-one__title">Navigation</h2>
                         <ul class="footer__section-one__list">
-                            <li class="footer__section-one__detail"><a href="index.html" class="footer__section-one__link">Accueil</a></li>
-                            <li class="footer__section-one__detail"><a href="projets.html" class="footer__section-one__link">Projets</a></li>
-                            <li class="footer__section-one__detail"><a href="actualités.html" class="footer__section-one__link">Actualités</a></li>
-                            <li class="footer__section-one__detail"><a href="ateliers.html" class="footer__section-one__link">Ateliers</a></li>
-                            <li class="footer__section-one__detail"><a href="propos.html" class="footer__section-one__link">A Propos</a></li>
-                            <li class="footer__section-one__detail"><a href="contact.html" class="footer__section-one__link">Contact</a></li>
+                            <li class="footer__section-one__detail"><a href="index.php" class="footer__section-one__link">Accueil</a></li>
+                            <li class="footer__section-one__detail"><a href="projets.php" class="footer__section-one__link">Projets</a></li>
+                            <li class="footer__section-one__detail"><a href="actualités.php" class="footer__section-one__link">Actualités</a></li>
+                            <li class="footer__section-one__detail"><a href="ateliers.php" class="footer__section-one__link">Ateliers</a></li>
+                            <li class="footer__section-one__detail"><a href="propos.php" class="footer__section-one__link">A Propos</a></li>
+                            <li class="footer__section-one__detail"><a href="contact.php" class="footer__section-one__link">Contact</a></li>
                         </ul>
                     </div>
                 </div>

@@ -2,14 +2,14 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Baobab - Accueil</title>
+        <title>Baobab - Actualités | Sur un Baobab a un an !</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="site-container">
             <div class="site-pusher">
-                <header class="topbar">
+                <header class="topbar--other">
                     <div class="topbar__lang">
                         <a href="#" class="topbar__lang__detail topbar__lang__detail--active">Français</a>
                         <a href="#" class="topbar__lang__detail">Espagnol</a>
@@ -19,40 +19,40 @@
                     <nav class="topbar__nav">
                         <h1 aria-level="1">Navigation principale</h1>
                         <ul class="topbar__nav__list">
-                            <a href="index.html" class="topbar__nav__list__link topbar__nav__list__link--active">
+                            <a href="index.php" class="topbar__nav__list__link">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">Accueil</li>
                                     <img src="img/iconHome.png" class="topbar__nav__list__link__container__icon" alt="Icon Home" width="179" height="166"/>
                                 </div>
                             </a>
-                            <a href="projets.html" class="topbar__nav__list__link">
+                            <a href="projets.php" class="topbar__nav__list__link">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">Projets</li>
                                     <img src="img/iconProjets.png" class="topbar__nav__list__link__container__icon" alt="Icon Projets" width="166" height="156"/>
                                 </div>
                             </a>
-                            <a href="actualités.html" class="topbar__nav__list__link">
+                            <a href="actualités.php" class="topbar__nav__list__link topbar__nav__list__link--active">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">Actualités</li>
                                     <img src="img/iconActu.png" class="topbar__nav__list__link__container__icon" alt="Icon Actualités" width="167" height="167"/>
                                 </div>
                             </a>
-                            <a href="index.html" class="topbar__nav__list__logo">
+                            <a href="index.php" class="topbar__nav__list__logo">
                                 <img class="topbar__nav__list__logo__image" src="img/Logo.svg" alt="Logo" width="945" height="958"/>
                             </a>
-                            <a href="ateliers.html" class="topbar__nav__list__link">
+                            <a href="ateliers.php" class="topbar__nav__list__link">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">Ateliers</li>
                                     <img src="img/iconAteliers.png" class="topbar__nav__list__link__container__icon" alt="Icon Ateliers" width="167" height="167"/>
                                 </div>
                             </a>
-                            <a href="propos.html" class="topbar__nav__list__link">
+                            <a href="propos.php" class="topbar__nav__list__link">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">A propos</li>
                                     <img src="img/iconApropos.png" class="topbar__nav__list__link__container__icon" alt="Icon A propos" width="167" height="167"/>
                                 </div>
                             </a>
-                            <a href="contact.html" class="topbar__nav__list__link">
+                            <a href="contact.php" class="topbar__nav__list__link">
                                 <div class="topbar__nav__list__link__container">
                                     <li class="topbar__nav__list__link__container__detail">Contact</li>
                                     <img src="img/iconContact.png" class="topbar__nav__list__link__container__icon" alt="Icon Contact" width="167" height="167" />
@@ -60,16 +60,6 @@
                             </a>
                         </ul>
                     </nav>
-                        <div class="topbar__intro">
-                            <p class="topbar__intro__text">
-                                Nous voyageons sac au dos en proposant des ateliers de cinéma d’animation pour enfants, adolescents et/ou adultes.
-                            </p>
-                            <a href="don.html" class="topbar__intro__link">
-                                <span class="topbar__intro__link__button">Soutenez-nous</span>
-                            </a>
-                        </div>
-                        <div class="topbar__scroll">
-                    </div>
                 </header>
                 <div class="site-content">
                     <div class="site-content__container">
@@ -79,59 +69,74 @@
                 </div>
             </div>
         </div>
-        <main>
-            <div class="head">
-                <div class="head__actu">
-                    <h2 aria-level="2" class="head__actu__title">Dernières réalisations</h2>
-                    <div class="head__actu__blog">
-                        <div class="head__actu__blog__zone">
-                            <a href="movie.html" class="head__actu__blog__zone__link">
-                                <div class="head__actu__blog__zone__link__container">
-                                    <img src="img/actu1.jpg" class="head__actu__blog__zone__link__container__image" alt="Dernier court métrage" width="300" height="169"/>
-                                    <p class="head__actu__blog__zone__link__container__text">
-                                        Dernier court-métrage
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="head__actu__blog__zone">
-                            <a href="pictures.html" class="head__actu__blog__zone__link">
-                                <div class="head__actu__blog__zone__link__container">
-                                    <img src="img/actu2.jpg" class="head__actu__blog__zone__link__container__image" alt="Dernière photo" width="1500" height="1000" />
-                                    <p class="head__actu__blog__zone__link__container__text">
-                                        Dernière photo
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+        <main class="container__size">
+            <div class="fil-ariane__size">
+                <p class="fil-ariane__chemin">
+                    <a href="index.php" class="fil-ariane__link">Accueil</a> >
+                    <a href="actualités.php" class="fil-ariane__link">Actualités</a> >
+                    <a href="article.php" class="fil-ariane__link">Sur un Baobab a un an</a>
+                </p>
+            </div>
+            <div class="article">
+                <h2 aria-level="2" class="article__title"> Sur un Baobab a un an !</h2>
+                <span class="article__date">Le 15 février 2016 à 15h</span>
+                <img src="img/article.jpg" class="article__image" alt="Sur un Baobab a un an" width="1000" height="667"/>
+                <div class="article__texte">
+                    <div class="article__partie-one">
+                        <p class="article__paragraphe">
+                            Il y a juste un an, François et moi partions seuls pour Madagascar
+                            avec pour unique certitude l’envie commune de réaliser un projet où
+                            se rejoignent nos passions pour l’éducation et le cinéma d’animation.
+                            Vouloir faire des dessin animés avec des enfants à l’autre bout du monde
+                            semblait être une idée un peu folle surtout en voyageant sac-à-dos, en
+                            taxi-brousse, à pied ou en stop. Mais cela ne nous a pas démotivé bien
+                            au contraire. Au fil de nos rencontres et des échanges, cette aventure nous
+                            a permis de découvrir de nombreuses facettes de Madagascar.
+                        </p>
+                        <p class="article__paragraphe article__paragraphe--float">
+                            Même si elles sont souvent positives, nous avons été confronté à des réalités
+                            plus dures comme le la corruption omniprésente ou l’extrême pauvreté de la plupart
+                            des grandes villes. Cela nous a renforcé dans notre volonté de lier notre projet
+                            au soutien d’une cause sociale locale. Au delà de la rencontre avec des jeunes
+                            malgaches, le projet nous a surtout permis de découvrir et de partager leur quotidien.
+                            Enfin, ce fut l’occasion de rencontrer plusieurs ONG locales et internationales auxquelles
+                            nous proposions de réaliser un atelier qui s’inscrivait au programme de leurs activités.
+                        </p>
+                        <h3 aria-level="3" class="article__partie-one__title">La suite ...</h3>
+                        <p class="article__paragraphe">
+                            Après plusieurs mois sur place et la réalisation de deux ateliers nous voilà de retour
+                            encore plus motivés pour de nouveaux projets. Au programme de 2016, nous avons d’abord
+                            la préparation d’un nouvel atelier depuis la Belgique qui se fera probablement de nouveau
+                            à Madagascar. Nous continuons également de diffuser un maximum les films réalisés par
+                            les enfants de Tuléar en 2015 sur le tourisme responsable et la grossesse précoce au delà de Madagascar.
+                        </p>
+                        <p class="article__paragraphe article__paragraphe--float">
+                            Nous cherchons et contactons des festivals de courts-métrages ou même des associations prêtes
+                            à diffuser les films. Enfin, nous préparons également une petite exposition qui sera l’occasion
+                            de partager et de présenter quelques images de ce qu’il y a autour des projets réalisés à Madagascar
+                            (déroulement de l’atelier, interviews de participants, photos, etc…).
+                        </p>
                     </div>
-                    <div class="head__actu__projet">
-                        <div class="head__actu__projet__container">
-                            <h2 aria-level="2" class="head__actu__projet__container__title">Notre projet</h2>
-                            <p class="head__actu__projet__container__text">
-                                Nous voyageons en proposant un atelier itinérant de cinéma d’animation
-                                qui s’inscrit dans le soutien d’une cause sociale. Pour cela, nous
-                                accompagnons un groupe de jeunes enfants, adolescents et/ou adultes
-                                pendant plusieurs semaines dans la réalisation collective d’un
-                                cout-métrage d’animation à partir d’un thème, d’un conte ou
-                                d’une histoire, choisie ou écrite ensemble.
-                            </p>
-                            <a href="propos.html" class="head__actu__projet__container__link">
-                                <span class="head__actu__projet__container__link__button">En savoir plus</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="head__arrow">
                 </div>
             </div>
-            <div class="partenaires">
-                <h2 class="partenaires__title">Nos partenaires</h2>
-                <div class="partenaires__logo">
-                    <img src="img/logoIrea.png" class="partenaires__logo__sponsor"alt="Logo Ireast" width="1162" height="1127"/>
-                    <img src="img/logoSncf.png" class="partenaires__logo__sponsor"alt="Logo SNCF" width="2356" height="1248"/>
-                    <img src="img/logoHeine.png" class="partenaires__logo__sponsor"alt="Logo Heine" width="1000" height="853"/>
-                    <img src="img/logoWilson.png" class="partenaires__logo__sponsor"alt="Logo Wilson" width="2272" height="1704"/>
+            <div class="movie__commentaires">
+                <div class="movie__mon-commentaire">
+                    <img src="img/photoProfil.png" class="movie__mon-commentaire__profil " alt="Photo de profil" width="40" height="50"/>
+                    <form class="movie__mon-commentaire__form" action="index.html" method="post">
+                        <input type="text" class="movie__mon-commentaire__champ" placeholder="Votre commentaire" name="name" value="">
+                    </form>
+                </div>
+                <div class="movie__publier">
+                    <div class="movie__person">
+                        <img src="img/photoProfil.png" class="movie__person__profil" alt="Photo de profil" width="40" height="50"/>
+                        <p class="movie__person__author">
+                            Julien Heyndels, 21 mars 2015 à 17h31
+                        </p>
+                    </div>
+                    <p class="movie__publier__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed ut dignissim nisl. Interdum
+                    </p>
                 </div>
             </div>
         </main>
@@ -149,25 +154,25 @@
                     </div>
                     <div class="footer__section-one__contact">
                         <h2 aria-level="2" class="footer__section-one__title">Dernières nouvelles</h2>
-                        <a href="article.html" class="footer__section-one__nouvelles">
+                        <a href="article.php" class="footer__section-one__nouvelles">
                             Sur un baobab, un an déja !
                         </a>
-                        <a href="article.html" class="footer__section-one__nouvelles">
+                        <a href="article.php" class="footer__section-one__nouvelles">
                             Projection de Safidn’i Pela
                         </a>
-                        <a href="article.html" class="footer__section-one__nouvelles">
+                        <a href="article.php" class="footer__section-one__nouvelles">
                             Sur un baobab, un an déja !
                         </a>
                     </div>
                     <div class="footer__section-one__contact">
                         <h2 aria-level="2" class="footer__section-one__title">Navigation</h2>
                         <ul class="footer__section-one__list">
-                            <li class="footer__section-one__detail"><a href="index.html" class="footer__section-one__link">Accueil</a></li>
-                            <li class="footer__section-one__detail"><a href="projets.html" class="footer__section-one__link">Projets</a></li>
-                            <li class="footer__section-one__detail"><a href="actualités.html" class="footer__section-one__link">Actualités</a></li>
-                            <li class="footer__section-one__detail"><a href="ateliers.html" class="footer__section-one__link">Ateliers</a></li>
-                            <li class="footer__section-one__detail"><a href="propos.html" class="footer__section-one__link">A Propos</a></li>
-                            <li class="footer__section-one__detail"><a href="contact.html" class="footer__section-one__link">Contact</a></li>
+                            <li class="footer__section-one__detail"><a href="index.php" class="footer__section-one__link">Accueil</a></li>
+                            <li class="footer__section-one__detail"><a href="projets.php" class="footer__section-one__link">Projets</a></li>
+                            <li class="footer__section-one__detail"><a href="actualités.php" class="footer__section-one__link">Actualités</a></li>
+                            <li class="footer__section-one__detail"><a href="ateliers.php" class="footer__section-one__link">Ateliers</a></li>
+                            <li class="footer__section-one__detail"><a href="propos.php" class="footer__section-one__link">A Propos</a></li>
+                            <li class="footer__section-one__detail"><a href="contact.php" class="footer__section-one__link">Contact</a></li>
                         </ul>
                     </div>
                 </div>
