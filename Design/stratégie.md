@@ -62,3 +62,40 @@
  s'en servir comme support
 
  espace tuto (accessible aux enfants, ...)
+ 
+ Inspirations :
+ 
+ http://mode87.com/
+
+-contraste avec l'image de fond et le texte -icones
+
+http://dunked.com/
+
+-structure de la page -l'image de fond bien intégré au site
+
+https://creativemarket.com/
+
+-les titres et sous titres des sections -disposition des cartes
+
+https://www.squarespace.com/
+
+effet de survol sur les cartes
+http://www.getballpark.com/
+
+-le menu qui se fond avec l'image
+
+http://www.basicagency.com/
+
+-l'effet de survol au hover sur les cartes
+
+https://wearemotto.com/
+
+-présentation des réseaux sociaux
+
+http://builtbybuffalo.com/
+
+-logo du site au incorporé dans le menu
+
+http://www.blastprocessor.co.uk/
+
+-présentation des personnes
