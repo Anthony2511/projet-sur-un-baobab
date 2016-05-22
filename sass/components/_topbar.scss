@@ -36,7 +36,14 @@
                         color: $colorLinkMenu;
                         font-family: 'roboto';
                         font-weight: 300;
+                        &--home:before{
+                                font-family: 'icomoon';
+                                content: "\e922";
+                                display: block;
+
+                        }
                     }
+
                 }
                 &:hover{
                     border-bottom: 0.1875em  solid $backgroundColorHoverMenu; //3px
@@ -75,7 +82,7 @@
         }
     }
     &__scroll{
-        background: url("../img/scroll.svg") no-repeat center top;
+
     }
 }
 
