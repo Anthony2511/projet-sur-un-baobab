@@ -49,7 +49,7 @@ get_header();
     <div class="head__arrow"></div>
 </div>
 <div class="partenaires">
-    <h2 class="partenaires__title">Nos partenaires</h2>
+    <h2 class="partenaires__title">Nos partenaire</h2>
     <div class="partenaires__logo">
         <img src="../img/logoIrea.png" class="partenaires__logo__sponsor"alt="Logo Ireast" width="1162" height="1127"/>
         <img src="../img/logoSncf.png" class="partenaires__logo__sponsor"alt="Logo SNCF" width="2356" height="1248"/>
