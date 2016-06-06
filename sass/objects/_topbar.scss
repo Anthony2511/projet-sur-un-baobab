@@ -14,6 +14,12 @@
             margin-left: 0.625em; //10px
         }
     }
+    &__scroll{
+        position: absolute;
+        left: 50%;
+
+    }
+
     &__nav{
         margin-top: -0.625em; //10px
         &__list{
@@ -24,22 +30,12 @@
                     &__detail{
                         margin-bottom: 0.625em; //10px
                     }
-                    &__icon{
-                        width: 2.5em; //40px
-                        height: 2.5em; //40px
-                    }
                 }
             }
             &__link + &__link{
                 margin-left: 3.125em;  //50px
             }
-            &__logo{
-                &__image{
-                    width: 14.375em; //230px
-                    height: 14.25em; //228px
-                    margin: 0 5.3125em; // 0 85px
-                }
-            }
+
         }
     }
     &__intro{
@@ -55,7 +51,5 @@
             }
         }
     }
-    &__scroll{
 
-    }
 }

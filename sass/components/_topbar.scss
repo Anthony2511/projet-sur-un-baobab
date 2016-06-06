@@ -2,6 +2,7 @@
 /**TOPBAR**/
 .topbar{
     background : url("../img/background1.jpg") no-repeat center;
+
     // opacity: 0.5;
     background-size: cover;
     &--other{
@@ -36,14 +37,50 @@
                         color: $colorLinkMenu;
                         font-family: 'roboto';
                         font-weight: 300;
-                        &--home:before{
+                        &--home{
+                            &::before{
                                 font-family: 'icomoon';
                                 content: "\e922";
                                 display: block;
-
+                                font-size: 15px;
+                            }
+                        }
+                        &--projets{
+                            &::before{
+                                font-family: 'icomoon';
+                                content: "\e923";
+                                display: block;
+                            }
+                        }
+                        &--actu{
+                            &::before{
+                                font-family: 'icomoon';
+                                content: "\e921";
+                                display: block;
+                            }
+                        }
+                        &--ateliers{
+                            &::before{
+                                font-family: 'icomoon';
+                                content: "\e91e";
+                                display: block;
+                            }
+                        }
+                        &--propos{
+                            &::before{
+                                font-family: 'icomoon';
+                                content: "\e91f";
+                                display: block;
+                            }
+                        }
+                        &--contact{
+                            &::before{
+                                font-family: 'icomoon';
+                                content: "\e920";
+                                display: block;
+                            }
                         }
                     }
-
                 }
                 &:hover{
                     border-bottom: 0.1875em  solid $backgroundColorHoverMenu; //3px
@@ -51,9 +88,6 @@
                 &--active{
                     border-bottom: 0.1875em solid $backgroundColorHoverMenu; //3px
                 }
-            }
-            &__logo{
-                text-decoration: none;
             }
         }
     }
@@ -80,9 +114,6 @@
                 }
             }
         }
-    }
-    &__scroll{
-
     }
 }
 

@@ -3,6 +3,7 @@
  * Define post_types & taxonomies
  */
 add_theme_support( 'post-thumbnails' );
+
 register_post_type( 'project', [
             'label' => __('Court-métrages','b'),
             'labels' => [
@@ -15,6 +16,18 @@ register_post_type( 'project', [
             'menu_icon' => 'dashicons-editor-video',
             'supports' => ['title','editor','thumbnail'],
             'has_archive' => true
+      ] );
+      register_post_type( 'ateliers', [
+          'label' => __('Ateliers','b'),
+          'labels' => [
+              'singular_name' => __('Ateliers','b'),
+              'add_new' => __('Ajouter un nouvel atelier','b')
+          ],
+          'description' => __('La liste de tous les ateliers du site','b'),
+          'public' => true,
+          'menu_position' => 6,
+          'menu_icon' => 'dashicons-smiley',
+          'supports' => ['title','thumbnail']
       ] );
 register_taxonomy( 'project-type', 'project', [
             'label' => __('Types de projets','b'),

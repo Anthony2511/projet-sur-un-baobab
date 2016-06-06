@@ -1,25 +1,21 @@
 /****OBJECTS****/
 /**PROJETS**/
-.container{
-    width: 60.625em; //970px
-    margin: 0 auto;
-}
-.fil-ariane{
-    width: 60.625em; //970px
-    margin: 0.625em 0 3.125em 0; //10px 0 50px 0
-    position: relative;
-    left: -100px;
-}
+
 .projets{
     &__title{
         margin-bottom: 1em; //100px (100px)
     }
     &__films{
+        width: 970px;
     }
     &__movie{
         display: block;
         width: 100%;
         height: 100%;
+        &__image{
+            width: 970px;
+            height: auto;
+        }
         &__container{
             position: relative;
             margin-bottom: 6.25em; //100px

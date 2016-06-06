@@ -1,18 +1,6 @@
 /****COMPONENTS***/
 /**PROJETS**/
-.container{
-    font-family: 'roboto';
-}
-.fil-ariane{
-    &__chemin{
-        font-size: 1.5625em; //25px
-        font-weight: lighter;
-    }
-    &__link{
-        text-decoration: none;
-        color: $colorFilAriane;
-    }
-}
+
 .projets{
     &__title{
         font-size: 6.25em; //100px
@@ -25,10 +13,6 @@
     &__movie{
         text-decoration: none;
         &__container{
-        }
-        &__image{
-            width: 970px;
-            height: auto;
         }
         &__opacity{
             background-color: $colorBlack;

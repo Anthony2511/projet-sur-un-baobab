@@ -74,7 +74,7 @@ main {
   clear: both; }
 
 .container__size {
-  width: 68.75em;
+  width: 60.625em;
   margin: 0 auto;
   font-family: 'roboto'; }
 
@@ -144,6 +144,9 @@ table {
     top: 20px; }
     .topbar__lang__detail + .topbar__lang__detail {
       margin-left: 0.625em; }
+  .topbar__scroll {
+    position: absolute;
+    left: 50%; }
   .topbar__nav {
     margin-top: -0.625em; }
     .topbar__nav__list__link {
@@ -152,15 +155,8 @@ table {
         display: inline-block; }
         .topbar__nav__list__link__container__detail {
           margin-bottom: 0.625em; }
-        .topbar__nav__list__link__container__icon {
-          width: 2.5em;
-          height: 2.5em; }
     .topbar__nav__list__link + .topbar__nav__list__link {
       margin-left: 3.125em; }
-    .topbar__nav__list__logo__image {
-      width: 14.375em;
-      height: 14.25em;
-      margin: 0 5.3125em; }
   .topbar__intro {
     width: 51.875em;
     margin: 9.375em auto; }
@@ -277,23 +273,19 @@ table {
 
 /****OBJECTS****/
 /**PROJETS**/
-.container {
-  width: 60.625em;
-  margin: 0 auto; }
-
-.fil-ariane {
-  width: 60.625em;
-  margin: 0.625em 0 3.125em 0;
-  position: relative;
-  left: -100px; }
-
 .projets__title {
   margin-bottom: 1em; }
+
+.projets__films {
+  width: 970px; }
 
 .projets__movie {
   display: block;
   width: 100%;
   height: 100%; }
+  .projets__movie__image {
+    width: 970px;
+    height: auto; }
   .projets__movie__container {
     position: relative;
     margin-bottom: 6.25em; }
@@ -538,16 +530,35 @@ table {
           color: #e0e0e0;
           font-family: 'roboto';
           font-weight: 300; }
-          .topbar__nav__list__link__container__detail--home:before {
+          .topbar__nav__list__link__container__detail--home::before {
             font-family: 'icomoon';
             content: "\e922";
+            display: block;
+            font-size: 15px; }
+          .topbar__nav__list__link__container__detail--projets::before {
+            font-family: 'icomoon';
+            content: "\e923";
+            display: block; }
+          .topbar__nav__list__link__container__detail--actu::before {
+            font-family: 'icomoon';
+            content: "\e921";
+            display: block; }
+          .topbar__nav__list__link__container__detail--ateliers::before {
+            font-family: 'icomoon';
+            content: "\e91e";
+            display: block; }
+          .topbar__nav__list__link__container__detail--propos::before {
+            font-family: 'icomoon';
+            content: "\e91f";
+            display: block; }
+          .topbar__nav__list__link__container__detail--contact::before {
+            font-family: 'icomoon';
+            content: "\e920";
             display: block; }
       .topbar__nav__list__link:hover {
         border-bottom: 0.1875em solid #b2b2b2; }
       .topbar__nav__list__link--active {
         border-bottom: 0.1875em solid #b2b2b2; }
-    .topbar__nav__list__logo {
-      text-decoration: none; }
   .topbar__intro {
     text-align: center; }
     .topbar__intro__text {
@@ -851,17 +862,6 @@ table {
 
 /****COMPONENTS***/
 /**PROJETS**/
-.container {
-  font-family: 'roboto'; }
-
-.fil-ariane__chemin {
-  font-size: 1.5625em;
-  font-weight: lighter; }
-
-.fil-ariane__link {
-  text-decoration: none;
-  color: #a8a8a8; }
-
 .projets__title {
   font-size: 6.25em;
   font-family: 'pwl';
@@ -870,9 +870,6 @@ table {
 
 .projets__movie {
   text-decoration: none; }
-  .projets__movie__image {
-    width: 970px;
-    height: auto; }
   .projets__movie__opacity {
     background-color: black;
     opacity: 0.5; }
