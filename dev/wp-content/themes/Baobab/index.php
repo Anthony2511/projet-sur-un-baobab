@@ -12,7 +12,7 @@ endif;
 
 if(is_page()){
     query_posts([
-        'posts_per_page' => 1,
+        'posts_per_page' => 2,
         'orderby' => 'date',
         'order' => 'ASC',
         'post_type' => 'project'
@@ -29,18 +29,6 @@ if(is_page()){
                     <a href="<?php the_permalink(); ?>" class="head__actu__blog__zone__link">
                         <div class="head__actu__blog__zone__link__container">
                             <img src="<?php the_field('metrage_image'); ?>" class="head__actu__blog__zone__link__container__image" alt="Dernier court métrage" width="300" height="169"/>
-                            <p class="head__actu__blog__zone__link__container__text">
-                                <?php the_title();?>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            <?php endwhile; endif; ?>
-            <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
-                <div class="head__actu__blog__zone">
-                    <a href="<?php the_permalink();?>" class="head__actu__blog__zone__link">
-                        <div class="head__actu__blog__zone__link__container">
-                            <img src="../img/actu2.jpg" class="head__actu__blog__zone__link__container__image" alt="Dernière photo" width="1500" height="1000" />
                             <p class="head__actu__blog__zone__link__container__text">
                                 <?php the_title();?>
                             </p>
