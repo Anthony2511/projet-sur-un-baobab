@@ -41,6 +41,8 @@
         }
         &__view{
             padding: 0.2em 0.4em; //5px 10px (25px)
+            position: relative;
+            top: 50%;
         }
         &__opacity{
             position: absolute;

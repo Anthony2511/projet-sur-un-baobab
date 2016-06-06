@@ -458,7 +458,9 @@ table {
     margin-top: 0.3125em;
     float: right; }
   .actus__link__view {
-    padding: 0.2em 0.4em; }
+    padding: 0.2em 0.4em;
+    position: relative;
+    top: 50%; }
   .actus__link__opacity {
     position: absolute;
     top: 0;
@@ -862,6 +864,17 @@ table {
 
 /****COMPONENTS***/
 /**PROJETS**/
+.container {
+  font-family: 'roboto'; }
+
+.fil-ariane__chemin {
+  font-size: 1.5625em;
+  font-weight: lighter; }
+
+.fil-ariane__link {
+  text-decoration: none;
+  color: #a8a8a8; }
+
 .projets__title {
   font-size: 6.25em;
   font-family: 'pwl';
@@ -1018,7 +1031,7 @@ table {
     word-wrap: break-word;
     font-family: 'pwl';
     color: white;
-    font-size: 2.5em; }
+    font-size: 2em; }
   .actus__link__date {
     font-size: 1.25em;
     font-weight: normal;
