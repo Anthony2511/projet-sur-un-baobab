@@ -13,8 +13,8 @@ if(is_page()){
 get_header('home');
 
 ?>
-<main class="container">
-<div class="fil-ariane">
+<main class="container__size">
+<div class="fil-ariane__size">
     <p class="fil-ariane__chemin">
         <a href="<?php echo get_home_url(); ?>" class="fil-ariane__link">Accueil</a> >
         <a href="<?php echo get_the_permalink();?>" class="fil-ariane__link">Actualités</a>

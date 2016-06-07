@@ -15,8 +15,11 @@
                         <a href="#" class="topbar__lang__detail">Espagnol</a>
                         <a href="#" class="topbar__lang__detail">Anglais</a>
                     </div>
+                    <figure class="topbar__figure-image">
+                        <img class="topbar__image" src="<?php the_field('home_logo');?>" alt="logo du site"/>
+                    </figure>
                     <a href="#" class="topbar__icon" id="topbar__icon"></a>
-                    <nav class="topbar__nav">
+                    <nav class="topbar__nav--bottom">
                         <a href="<?php echo get_home_url(); ?>" class="topbar__icon" id="topbar__icon"></a>
                         <h1 aria-level="1"><?php _e('Navigation principale','b');?></h1>
                         <ul class="topbar__nav__list">

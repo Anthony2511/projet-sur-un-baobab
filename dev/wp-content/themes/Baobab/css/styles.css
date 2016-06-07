@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Baobab
  *
- * /sass/styles.scss - Main stylesheet
+ * /sass/style.scss - Main stylesheet
  *
  * coded by Anthony2511
  * started at 24/04/2016
@@ -13,6 +13,13 @@
  * coded by Anthony2511
  * started at 02/03/2016
  */
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?uz4f3");
+  src: url("fonts/icomoon.eot?uz4f3#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?uz4f3") format("truetype"), url("fonts/icomoon.woff?uz4f3") format("woff"), url("fonts/icomoon.svg?uz4f3#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 @font-face {
   font-family: 'pwl';
   src: url("../fonts/pwlefthand-webfont.eot");
@@ -67,7 +74,7 @@ main {
   clear: both; }
 
 .container__size {
-  width: 68.75em;
+  width: 60.625em;
   margin: 0 auto;
   font-family: 'roboto'; }
 
@@ -76,6 +83,9 @@ main {
   margin: 0.625em 0 3.125em 0;
   position: relative;
   left: -40px; }
+
+#wpadminbar {
+  display: none; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -131,12 +141,27 @@ table {
   position: relative; }
   .topbar--other {
     height: 300px; }
+  .topbar__figure-image {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 50px; }
   .topbar__lang {
     position: relative;
     right: 475px;
     top: 20px; }
     .topbar__lang__detail + .topbar__lang__detail {
       margin-left: 0.625em; }
+  .topbar__scroll {
+    position: absolute;
+    left: 45%;
+    width: 160px; }
+  .topbar__scroll-text {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    color: white;
+    font-family: 'pwl';
+    font-size: 40px; }
   .topbar__nav {
     margin-top: -0.625em; }
     .topbar__nav__list__link {
@@ -145,15 +170,10 @@ table {
         display: inline-block; }
         .topbar__nav__list__link__container__detail {
           margin-bottom: 0.625em; }
-        .topbar__nav__list__link__container__icon {
-          width: 2.5em;
-          height: 2.5em; }
     .topbar__nav__list__link + .topbar__nav__list__link {
       margin-left: 3.125em; }
-    .topbar__nav__list__logo__image {
-      width: 14.375em;
-      height: 14.25em;
-      margin: 0 5.3125em; }
+    .topbar__nav--bottom {
+      margin-top: 150px; }
   .topbar__intro {
     width: 51.875em;
     margin: 9.375em auto; }
@@ -162,8 +182,6 @@ table {
     .topbar__intro__link__button {
       padding: 0.5em 0.6666666em;
       display: inline-block; }
-  .topbar__scroll {
-    height: 9.375em; }
 
 /****OBJECTS****/
 /**FOOTER**/
@@ -272,23 +290,19 @@ table {
 
 /****OBJECTS****/
 /**PROJETS**/
-.container {
-  width: 60.625em;
-  margin: 0 auto; }
-
-.fil-ariane {
-  width: 60.625em;
-  margin: 0.625em 0 3.125em 0;
-  position: relative;
-  left: -100px; }
-
 .projets__title {
   margin-bottom: 1em; }
+
+.projets__films {
+  width: 970px; }
 
 .projets__movie {
   display: block;
   width: 100%;
   height: 100%; }
+  .projets__movie__image {
+    width: 970px;
+    height: auto; }
   .projets__movie__container {
     position: relative;
     margin-bottom: 6.25em; }
@@ -324,7 +338,11 @@ table {
   .movie__title {
     margin: 1em 0; }
   .movie__menu {
-    margin-bottom: 1.875em; }
+    margin: 6.25em 0 1.875em; }
+    .movie__menu__link {
+      width: 100%;
+      height: 100%;
+      display: block; }
     .movie__menu__list {
       display: inline-block;
       width: 8em;
@@ -454,14 +472,16 @@ table {
       display: block;
       content: ""; }
   .actus__link__title {
-    margin: 2.5em 0;
+    margin: 2em 0;
     width: 11.25em; }
   .actus__link__date {
     vertical-align: top;
     margin-top: 0.3125em;
     float: right; }
   .actus__link__view {
-    padding: 0.2em 0.4em; }
+    padding: 0.2em 0.4em;
+    position: relative;
+    top: 50%; }
   .actus__link__opacity {
     position: absolute;
     top: 0;
@@ -476,10 +496,6 @@ table {
 
 .article__title {
   margin: 1em 0 0.5em; }
-
-.article__date {
-  float: right;
-  margin-bottom: 1em; }
 
 .article__image {
   width: 100%;
@@ -515,7 +531,7 @@ table {
     .topbar__lang__detail {
       text-decoration: none;
       font-family: 'roboto';
-      font-weight: 300;
+      font-weight: 200;
       font-size: 1.250em;
       color: #a19c9d; }
       .topbar__lang__detail--active {
@@ -533,12 +549,25 @@ table {
           color: #e0e0e0;
           font-family: 'roboto';
           font-weight: 300; }
+          .topbar__nav__list__link__container__detail::after {
+            content: "\e922";
+            display: block;
+            font-family: "icomoon";
+            font-size: 1em; }
+          .topbar__nav__list__link__container__detail-projets::after {
+            content: "\e923"; }
+          .topbar__nav__list__link__container__detail-actu::after {
+            content: "\e921"; }
+          .topbar__nav__list__link__container__detail-ateliers::after {
+            content: "\e91e"; }
+          .topbar__nav__list__link__container__detail-propos::after {
+            content: "\e91f"; }
+          .topbar__nav__list__link__container__detail-contact::after {
+            content: "\e920"; }
       .topbar__nav__list__link:hover {
         border-bottom: 0.1875em solid #b2b2b2; }
       .topbar__nav__list__link--active {
         border-bottom: 0.1875em solid #b2b2b2; }
-    .topbar__nav__list__logo {
-      text-decoration: none; }
   .topbar__intro {
     text-align: center; }
     .topbar__intro__text {
@@ -558,8 +587,6 @@ table {
         border-radius: 0.333333em; }
         .topbar__intro__link__button:hover {
           opacity: 0.7; }
-  .topbar__scroll {
-    background: url("../img/scroll.svg") no-repeat center top; }
 
 @media screen and (max-width: 1209px) {
   .topbar {
@@ -863,9 +890,6 @@ table {
 
 .projets__movie {
   text-decoration: none; }
-  .projets__movie__image {
-    width: 970px;
-    height: auto; }
   .projets__movie__opacity {
     background-color: black;
     opacity: 0.5; }
@@ -898,6 +922,24 @@ table {
 /**MOVIE**/
 .movie {
   font-family: 'roboto'; }
+  .movie__section-title {
+    font-family: 'pwl';
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #6f2317; }
+  .movie__section-text {
+    font-size: 20px;
+    font-weight: 100;
+    max-width: 80%;
+    line-height: 30px; }
+  .movie__section-text-width {
+    font-size: 20px;
+    font-weight: 100;
+    max-width: 30%;
+    line-height: 30px; }
+  .movie__picture-image {
+    max-width: 40%; }
   .movie__title {
     font-family: 'pwl';
     font-size: 6.25em;
@@ -906,6 +948,10 @@ table {
   .movie__menu__link {
     text-decoration: none;
     color: black; }
+    .movie__menu__link--active {
+      color: white; }
+    .movie__menu__link:hover {
+      color: white; }
   .movie__menu__list {
     font-size: 1.4375em;
     font-weight: 100;
@@ -914,11 +960,9 @@ table {
     text-align: center; }
     .movie__menu__list:hover {
       background-color: #6f2317;
-      color: white;
       border: 0.0625em solid white; }
     .movie__menu__list--active {
       background-color: #6f2317;
-      color: white;
       border: 1px solid white; }
   .movie__partage {
     text-decoration: none;
@@ -1014,7 +1058,7 @@ table {
     word-wrap: break-word;
     font-family: 'pwl';
     color: white;
-    font-size: 2.5em; }
+    font-size: 2em; }
   .actus__link__date {
     font-size: 1.25em;
     font-weight: normal;
@@ -1095,5 +1139,74 @@ table {
   position: absolute;
   bottom: 30px;
   right: 30px; }
+
+.about__title {
+  font-size: 6.25em;
+  font-family: 'pwl';
+  text-align: center;
+  color: #6f2317;
+  margin: 1em 0 0.5em; }
+
+.about__sous-title {
+  font-size: 3.75em;
+  font-family: 'pwl';
+  text-align: left;
+  color: #6f2317;
+  margin-top: 1.666666em; }
+
+.about__image {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  left: 40%;
+  margin-top: 50px; }
+
+.about__texte {
+  font-size: 1.875em;
+  font-weight: 100; }
+
+.about__partie-one::after {
+  clear: both;
+  display: block;
+  content: ""; }
+
+.about__partie-one__title {
+  margin-bottom: 1.666666em;
+  font-size: 2em;
+  font-family: 'pwl';
+  color: #6f2317;
+  width: 300px;
+  margin: 50px auto; }
+
+.about__photos {
+  text-align: center;
+  margin-top: 50px; }
+
+.about__info {
+  display: inline-block;
+  width: 300px; }
+
+.about__info-name {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #727272; }
+
+.about__info-mail {
+  color: #3690c1;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-decoration: underline; }
+
+.about__info + .about__info {
+  margin-left: 300px; }
+
+.about__paragraphe {
+  text-align: left;
+  vertical-align: top;
+  width: 10em;
+  display: inline-block;
+  margin: 3.333333em 0; }
+  .about__paragraphe--float {
+    float: right; }
 
 /*# sourceMappingURL=styles.css.map */

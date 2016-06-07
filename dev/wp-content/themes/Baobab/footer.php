@@ -1,3 +1,13 @@
+<?php
+if(is_page()){
+    query_posts([
+        'posts_per_page' => 3,
+        'orderby' => 'date',
+        'order' => 'ASC',
+        'post_type' => 'post'
+    ]);
+}
+?>
 </main>
 <footer class="footer">
     <div class="footer__opacity">
@@ -13,15 +23,11 @@
             </div>
             <div class="footer__section-one__contact">
                 <h2 aria-level="2" class="footer__section-one__title">Dernières nouvelles</h2>
-                <a href="article.php" class="footer__section-one__nouvelles">
-                    Sur un baobab, un an déja !
-                </a>
-                <a href="article.php" class="footer__section-one__nouvelles">
-                    Projection de Safidn’i Pela
-                </a>
-                <a href="article.php" class="footer__section-one__nouvelles">
-                    Sur un baobab, un an déja !
-                </a>
+                <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
+                    <a href="<?php the_permalink();?>" class="footer__section-one__nouvelles">
+                        <?php the_title();?>
+                    </a>
+                <?php endwhile; endif; ?>
             </div>
             <div class="footer__section-one__contact">
                 <h2 aria-level="2" class="footer__section-one__title">Navigation</h2>
@@ -30,7 +36,7 @@
                     <li class="footer__section-one__detail"><a href="<?php echo get_permalink(108); ?>" class="footer__section-one__link">Projets</a></li>
                     <li class="footer__section-one__detail"><a href="<?php echo get_permalink(84); ?>" class="footer__section-one__link">Actualités</a></li>
                     <li class="footer__section-one__detail"><a href="<?php echo get_permalink(117); ?>" class="footer__section-one__link">Ateliers</a></li>
-                    <li class="footer__section-one__detail"><a href="propos.php" class="footer__section-one__link">A Propos</a></li>
+                    <li class="footer__section-one__detail"><a href="<?php echo get_permalink(146); ?>" class="footer__section-one__link">A Propos</a></li>
                     <li class="footer__section-one__detail"><a href="contact.php" class="footer__section-one__link">Contact</a></li>
                 </ul>
             </div>
@@ -63,6 +69,7 @@
     <?php wp_footer();?>
 </footer>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"/></script>
-<script type="text/javascript" src="javascript.js"/></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() .'/scripts/javascript.js';?>"/></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() .'/scripts/menu-metrage.js';?>"/></script>
 </body>
 </html>

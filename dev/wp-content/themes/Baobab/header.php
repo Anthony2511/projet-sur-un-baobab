@@ -9,7 +9,7 @@
     <body>
         <div class="site-container">
             <div class="site-pusher">
-                    <header class="topbar">
+                <header class="topbar">
                     <div class="topbar__lang">
                         <a href="#" class="topbar__lang__detail topbar__lang__detail--active">Français</a>
                         <a href="#" class="topbar__lang__detail">Espagnol</a>
@@ -25,7 +25,7 @@
                             <?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
                                 <a href="<?php echo $navItem->url;?>" class="topbar__nav__list__link">
                                     <div class="topbar__nav__list__link__container">
-                                       <li class="topbar__nav__list__link__container__detail --<?php echo $navItem->icon;?>"><?php echo $navItem->label;?></li>
+                                       <li class="topbar__nav__list__link__container__detail topbar__nav__list__link__container__detail--<?php echo $navItem->icon;?>"><?php echo $navItem->label;?></li>
                                    </div>
                                 </a>
                             <?php endforeach; ?>
@@ -39,8 +39,10 @@
                                 <span class="topbar__intro__link__button"><?php the_field('home_text-button-don') ?></span>
                             </a>
                         </div>
-
                             <img src="<?php the_field('home_scroll-image');?>" class="topbar__scroll" alt="Icone de scroll" />
+                            <p class="topbar__scroll-text">
+                                Faire défiler
+                            </p>
 
                 </header>
                 <div class="site-content">

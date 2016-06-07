@@ -14,7 +14,7 @@
         &__detail{
             text-decoration: none;
             font-family: 'roboto';
-            font-weight: 300;
+            font-weight: 200;
             font-size: 1.250em; //20px
             color: $colorLang;
             &--active{
@@ -37,49 +37,27 @@
                         color: $colorLinkMenu;
                         font-family: 'roboto';
                         font-weight: 300;
-                        &--home{
-                            &::before{
-                                font-family: 'icomoon';
-                                content: "\e922";
-                                display: block;
-                                font-size: 15px;
-                            }
-                        }
-                        &--projets{
-                            &::before{
-                                font-family: 'icomoon';
+                           &::after{
+                             content:"\e922";
+                             display: block;
+                             font-family: $icon;
+                             font-size: 1em;
+                           }
+                            &-projets::after{
                                 content: "\e923";
-                                display: block;
                             }
-                        }
-                        &--actu{
-                            &::before{
-                                font-family: 'icomoon';
+                            &-actu::after{
                                 content: "\e921";
-                                display: block;
                             }
-                        }
-                        &--ateliers{
-                            &::before{
-                                font-family: 'icomoon';
+                            &-ateliers::after{
                                 content: "\e91e";
-                                display: block;
                             }
-                        }
-                        &--propos{
-                            &::before{
-                                font-family: 'icomoon';
+                            &-propos::after{
                                 content: "\e91f";
-                                display: block;
                             }
-                        }
-                        &--contact{
-                            &::before{
-                                font-family: 'icomoon';
+                            &-contact::after{
                                 content: "\e920";
-                                display: block;
                             }
-                        }
                     }
                 }
                 &:hover{

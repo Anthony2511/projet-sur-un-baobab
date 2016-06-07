@@ -1,10 +1,16 @@
 /****OBJECTS****/
 /**TOPBAR**/
+
 .topbar{
     height: 100vh;
     position: relative;
     &--other{
         height: 300px;
+    }
+    &__figure-image{
+        width: 150px;
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
     &__lang{
         position: relative;
@@ -16,8 +22,16 @@
     }
     &__scroll{
         position: absolute;
+        left: 45%;
+        width: 160px;
+    }
+    &__scroll-text{
+        position: absolute;
         left: 50%;
-
+        bottom: 5%;
+        color: $colorWhite;
+        font-family: 'pwl';
+        font-size: 40px;
     }
 
     &__nav{
@@ -36,6 +50,9 @@
                 margin-left: 3.125em;  //50px
             }
 
+        }
+        &--bottom{
+            margin-top: 150px;
         }
     }
     &__intro{

@@ -6,22 +6,95 @@ get_header('home');
 
 ?>
 <div class="movie">
-    <div class="fil-ariane">
+    <div class="fil-ariane__size">
         <p class="fil-ariane__chemin">
             <a href="<?php echo get_home_url(); ?>" class="fil-ariane__link">Accueil</a> >
             <a href="<?php echo get_permalink(108); ?>" class="fil-ariane__link">Projets</a> >
-            <a href="<?php echo get_permalink(); ?>" class="fil-ariane__link">Safidn'i Pela</a>
+            <a href="<?php echo get_permalink(); ?>" class="fil-ariane__link"><?php the_title();?></a>
         </p>
     </div>
     <h2 aria-level="2" class="movie__title"><?php the_title();?></h2>
-    <ul class="movie__menu">
-        <a href="#" class="movie__menu__link"><li class="movie__menu__list movie__menu__list--active">Voir le film</li></a>
-        <a href="#" class="movie__menu__link"><li class="movie__menu__list">Le projet</li></a>
-        <a href="#" class="movie__menu__link"><li class="movie__menu__list">Making-of</li></a>
-        <a href="#" class="movie__menu__link"><li class="movie__menu__list">Fiche technique</li></a>
-    </ul>
     <iframe class="movie__video"width="560" height="315" src="https://www.youtube.com/embed/92IwfppA5SQ" frameborder="0" allowfullscreen></iframe>
     <a href="#" class="movie__partage">Partager</a>
+    <div class="movie__container">
+        <div class="movie__metrage">
+            <ul class="movie__menu">
+                <li class="movie__menu__list movie__menu__list--active">
+                    <a href="#section-projet" data-tab-target="tab-one" class="movie__menu__link movie__menu__link--active"><?php _e('Le projet','b');?></a>
+                </li>
+                <li class="movie__menu__list">
+                    <a href="#section-fiche" data-tab-target="tab-two" class="movie__menu__link movie__menu__link"><?php _e('Making of','b');?></a>
+                </li>
+                <li class="movie__menu__list">
+                    <a href="#section-making" data-tab-target="tab-three" class="movie__menu__link movie__menu__link"><?php _e('Fiche technique','b');?></a>
+                </li>
+                <li class="movie__menu__list">
+                    <a href="#section-diffuser" data-tab-target="tab-four" class="movie__menu__link movie__menu__link"><?php _e('Diffuser','b');?></a>
+                </li>
+            </ul>
+        </div>
+        <div class="movie__content">
+            <section class="movie__section movie__section--active" id="tab-one">
+                <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_projet_title-one');?></h3>
+                <p class="movie__section-text">
+                    <?php the_field('metrage_paragraphe-one');?>
+                </p>
+                <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_projet_title-two');?></h3>
+                <p class="movie__section-text">
+                    <?php the_field('metrage_paragraphe-two');?>
+                </p>
+            </section>
+            <section class="movie__section" id="tab-two">
+                <div class="movie__section-one">
+                    <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_making_title-one');?></h3>
+                    <p class="movie__section-text-width">
+                        <?php the_field('metrage_making_paragraphe-one');?>
+                    </p>
+                    <figure class="movie__section-picture">
+                        <img class="movie__picture-image"src="<?php the_field('metrage_making_image-one');?>" alt="" />
+                    </figure>
+                    <p class="movie__section-legend"><?php the_field('metrage_making_legend_image-one');?></p>
+                </div>
+                <div class="movie__section-one">
+                    <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_making_title-two');?></h3>
+                        <p class="movie__section-text-width">
+                            <?php the_field('metrage_making_paragraphe-two');?>
+                        </p>
+                        <figure class="movie__section-picture">
+                            <img class="movie__picture-image" src="<?php the_field('metrage_making_image-two');?>" alt="" />
+                        </figure>
+                    <p class="movie__section-legend"><?php the_field('metrage_making_legend_image-two');?></p>
+                </div>
+                <div class="movie__section-one">
+                    <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_making_title-three');?></h3>
+                        <p class="movie__section-text-width">
+                            <?php the_field('metrage_making_paragraphe-three');?>
+                        </p>
+                        <figure class="movie__section-picture">
+                            <img class="movie__picture-image" src="<?php the_field('metrage_making_image-three');?>" alt="" />
+                        </figure>
+                    <p class="movie__section-legend"><?php the_field('metrage_making_legend_image-four');?></p>
+                </div>
+                <div class="movie__section-one">
+                    <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_making_title-four');?></h3>
+                        <p class="movie__section-text-width">
+                            <?php the_field('metrage_making_paragraphe-four');?>
+                        </p>
+                        <figure class="movie__section-picture">
+                            <img class="movie__picture-image" src="<?php the_field('metrage_making_image-four');?>" alt="" />
+                        </figure>
+                    <p class="movie__section-legend"><?php the_field('metrage_making_legend_image-four');?></p>
+                </div>
+            </section>
+            <section class="movie__section" id="tab-three">
+
+            </section>
+            <section class="movie__section" id="tab-four">
+
+            </section>
+        </div>
+    </div>
+
     <div class="movie__pictures">
         <h3 aria-level="3" class="movie__pictures__title">Photos de tournage</h3>
         <img src="img/photo-one.jpg" class="movie__pictures__image" alt="Décor du tournage" width="300" height="202"/>
@@ -68,70 +141,5 @@ get_header('home');
         <img src="img/flecheDon2.png" alt="" width="60" height="100"/>
     </figure>
 </div>
-</main>
-<footer class="footer">
-<div class="footer__opacity">
-    <div class="footer__section-one">
-        <div class="footer__section-one__contact">
-            <h2 aria-level="2" class="footer__section-one__title">Nous contacter</h2>
-            <p class="footer__section-one__numero">
-                WhatsApp : +32495348966
-            </p>
-            <p class="footer__section-one__numero">
-                Téléphone : +32495348966
-            </p>
-        </div>
-        <div class="footer__section-one__contact">
-            <h2 aria-level="2" class="footer__section-one__title">Dernières nouvelles</h2>
-            <a href="article.php" class="footer__section-one__nouvelles">
-                Sur un baobab, un an déja !
-            </a>
-            <a href="article.php" class="footer__section-one__nouvelles">
-                Projection de Safidn’i Pela
-            </a>
-            <a href="article.php" class="footer__section-one__nouvelles">
-                Sur un baobab, un an déja !
-            </a>
-        </div>
-        <div class="footer__section-one__contact">
-            <h2 aria-level="2" class="footer__section-one__title">Navigation</h2>
-            <ul class="footer__section-one__list">
-                <li class="footer__section-one__detail"><a href="index.php" class="footer__section-one__link">Accueil</a></li>
-                <li class="footer__section-one__detail"><a href="projets.php" class="footer__section-one__link">Projets</a></li>
-                <li class="footer__section-one__detail"><a href="actualités.php" class="footer__section-one__link">Actualités</a></li>
-                <li class="footer__section-one__detail"><a href="ateliers.php" class="footer__section-one__link">Ateliers</a></li>
-                <li class="footer__section-one__detail"><a href="propos.php" class="footer__section-one__link">A Propos</a></li>
-                <li class="footer__section-one__detail"><a href="contact.php" class="footer__section-one__link">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer__section-two">
-        <div class="footer__section-two__copyright">
-            <p class="footer__section-two__date">
-                &copy; 2016 | Design by Baobab
-            </p>
-        </div>
-        <div class="footer__section-two__social">
-            <a href="#" class="footer__section-two__link">
-                <img src="img/Youtube.png" class="footer__section-two__logo"alt="Youtube" width="167" height="167"/>
-            </a>
-            <a href="#" class="footer__section-two__link">
-                <img src="img/Twitter.png" class="footer__section-two__logo"alt="Twitter" width="167" height="167"/>
-            </a>
-            <a href="#" class="footer__section-two__link">
-                <img src="img/Facebook.png" class="footer__section-two__logo"alt="Facebook" width="167" height="167"/>
-            </a>
-            <a href="#" class="footer__section-two__link">
-                <img src="img/Instagram.png" class="footer__section-two__logo"alt="Instagram" width="167" height="167"/>
-            </a>
-        </div>
-        <div class="footer__section-two__back">
-            <a href="#" class="footer__section-two__high">Revenir en haut</a>
-        </div>
-    </div>
-</div>
-</footer>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"/></script>
-<script type="text/javascript" src="javascript.js"/></script>
-</body>
-</html>
+<?php
+    get_footer();

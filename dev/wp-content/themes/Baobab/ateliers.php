@@ -7,7 +7,7 @@ get_header('home');
 
 ?>
         <main class="container__size">
-            <div class="fil-ariane">
+            <div class="fil-ariane__size">
                 <p class="fil-ariane__chemin">
                     <a href="<?php echo get_home_url(); ?>" class="fil-ariane__link">Accueil</a> >
                     <a href="<?php echo get_permalink();?>" class="fil-ariane__link">Ateliers</a>

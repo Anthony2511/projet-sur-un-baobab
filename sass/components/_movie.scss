@@ -2,6 +2,34 @@
 /**MOVIE**/
 .movie{
     font-family: 'roboto';
+    &__section-title{
+        font-family: 'pwl';
+        font-size: 30px;
+        font-weight: bold;
+        margin: 30px 0;
+        color: $colorTitle;
+    }
+    &__section-one{
+
+
+    }
+    &__section-text{
+        font-size: 20px;
+        font-weight: 100;
+        max-width: 80%;
+        line-height: 30px;
+    }
+    &__section-text-width{
+        font-size: 20px;
+        font-weight: 100;
+        max-width: 30%;
+        line-height: 30px;
+    }
+    &__picture-image{
+        max-width: 40%;
+    }
+
+
     &__title{
         font-family: 'pwl';
         font-size: 6.25em; //100px
@@ -11,7 +39,13 @@
     &__menu{
         &__link{
             text-decoration: none;
-            color: $colorLinkMenuMovie ;
+            color: $colorBlack;
+            &--active{
+                color: $colorHoverLinkMovie;
+            }
+            &:hover{
+                color: $colorHoverLinkMovie;
+            }
         }
         &__list{
             font-size: 1.4375em; //23px
@@ -21,12 +55,12 @@
             text-align: center;
             &:hover{
                 background-color: $backgroundColorLinkActiveMovie;
-                color: $colorHoverLinkMovie;
+
                 border: 0.0625em solid $borderWhite; //1px
             }
             &--active{
                 background-color: $backgroundColorLinkActiveMovie;
-                color: $colorHoverLinkMovie;
+
                 border: 1px solid $borderWhite;
             }
         }
@@ -48,7 +82,7 @@
             background-color: $backgroundColorButtonProjet;
             opacity: 0.5;
             &:hover{
-                background-color: $backgroundColorHoverButtonProjet 
+                background-color: $backgroundColorHoverButtonProjet
             }
         }
         &__croix{

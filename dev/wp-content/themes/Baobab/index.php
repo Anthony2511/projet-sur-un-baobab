@@ -39,12 +39,12 @@ if(is_page()){
         </div>
         <div class="head__actu__projet">
             <div class="head__actu__projet__container">
-                <h2 aria-level="2" class="head__actu__projet__container__title"><?php the_field('home_projet');?></h2>
+                <h2 aria-level="2" class="head__actu__projet__container__title"><?php the_field('home_title-projet');?></h2>
                 <p class="head__actu__projet__container__text">
                     <?php the_field('home_text-projet'); ?>
                 </p>
                 <a href="<?php the_field('home_cible-button'); ?>" class="head__actu__projet__container__link">
-                    <span class="head__actu__projet__container__link__button"><?php the_field('home_text-button'); ?></span>
+                    <span class="head__actu__projet__container__link__button"><?php _e('En savoir plus','b');?></span>
                 </a>
             </div>
         </div>
@@ -52,7 +52,7 @@ if(is_page()){
     <div class="head__arrow"></div>
 </div>
 <div class="partenaires">
-    <h2 class="partenaires__title"><?php the_field('home_title-partenaires'); ?></h2>
+    <h2 class="partenaires__title"><?php the_field('home_title-partenaires');?></h2>
     <div class="partenaires__logo">
         <img src="<?php the_field('about_logo'); ?>" class="partenaires__logo__sponsor"alt="Logo Ireast" width="1162" height="1127"/>
         <img src="<?php the_field('about_logo'); ?>" class="partenaires__logo__sponsor"alt="Logo SNCF" width="2356" height="1248"/>
