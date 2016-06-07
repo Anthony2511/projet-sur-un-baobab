@@ -9,6 +9,7 @@
     <body>
         <div class="site-container">
             <div class="site-pusher">
+                <h1 aria-level="1" class="hidden">Baoab</h1>
                 <header class="topbar">
                     <div class="topbar__lang">
                         <a href="#" class="topbar__lang__detail topbar__lang__detail--active">Français</a>
@@ -20,7 +21,7 @@
                     </figure>
                     <nav class="topbar__nav">
                         <a href="<?php echo get_home_url(); ?>" class="topbar__icon" id="topbar__icon"></a>
-                        <h1 aria-level="1"><?php _e('Navigation principale','b');?></h1>
+                        <h2 aria-level="2" class="hidden"><?php _e('Navigation principale','b');?></h2>
                         <ul class="topbar__nav__list">
                             <?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
                                 <a href="<?php echo $navItem->url;?>" class="topbar__nav__list__link">

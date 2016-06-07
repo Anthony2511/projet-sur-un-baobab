@@ -1,0 +1,54 @@
+/****OBJECTS****/
+/**ABOUT**/
+.about{
+    &__title{
+        margin: 1em 0 0.5em; // 100px 50px (100px)
+    }
+    &__sous-title{
+        margin-top: 1.666666em; // 100px (60px)
+    }
+    &__image{
+        width: 150px;
+        height: 100%;
+        position: relative;
+        left: 40%;
+        margin-top: 50px;
+    }
+    &__partie-one{
+        &::after{
+            clear: both;
+            display: block;
+            content: "";
+        }
+        &__title{
+            margin-bottom: 1.666666em; // 50px (30px)
+            width: 300px;
+            margin: 50px auto;
+        }
+    }
+    &__photos{
+        margin-top: 50px;
+    }
+    &__info{
+        display: inline-block;
+        width: 300px;
+    }
+    &__info-name{
+        margin-bottom: 30px;
+    }
+    &__info-mail{
+        margin-bottom: 30px;
+    }
+    &__info + &__info{
+        margin-left: 300px;
+    }
+    &__paragraphe{
+        vertical-align: top;
+        width: 10em; //300px (30px)
+        display: inline-block;
+        margin: 3.333333em 0; // 100px (30px)
+        &--float{
+            float: right;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+/****COMPONENTS****/
+/**CONTACT**/
+
+.contact{
+    &__title{
+        font-size: 6.25em; //100px
+        font-family: 'pwl';
+        text-align: center;
+        color: $colorTitle;
+    }
+    &__numero{
+        text-align: center;
+        margin-top: 100px;
+    }
+    &__type{
+        display: inline-block;
+    }
+    &__type + &__type{
+        margin-left: 200px;
+    }
+    &__name{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    &__tel{
+        font-size: 25px;
+        color : $colorMail;
+    }
+    &__form{
+        text-align: center;
+    }
+    &__form-detail{
+        max-width: 250px;
+        margin: 50px 0 30px;
+        font-size: 25px;
+        padding :10px;
+    }
+    &__form-message{
+        width: 95%;
+    }
+    &__form-detail + &__form-detail{
+        margin-left: 50px;
+    }
+}

@@ -1,18 +1,8 @@
-<?php
-if(is_page()){
-    query_posts([
-        'posts_per_page' => 3,
-        'orderby' => 'date',
-        'order' => 'ASC',
-        'post_type' => 'post'
-    ]);
-}
-?>
 </main>
 <footer class="footer">
     <div class="footer__opacity">
         <div class="footer__section-one">
-            <div class="footer__section-one__contact">
+            <section class="footer__section-one__contact">
                 <h2 aria-level="2" class="footer__section-one__title">Nous contacter</h2>
                 <p class="footer__section-one__numero">
                     WhatsApp : +32495348966
@@ -20,16 +10,19 @@ if(is_page()){
                 <p class="footer__section-one__numero">
                     Téléphone : +32495348966
                 </p>
-            </div>
-            <div class="footer__section-one__contact">
+            </section>
+            <section class="footer__section-one__contact">
                 <h2 aria-level="2" class="footer__section-one__title">Dernières nouvelles</h2>
-                <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
+                    <?php
+                        $posts = new WP_Query( ['posts_per_page' => 3, 'post_type' => 'post'] );
+                        if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post();?>
                     <a href="<?php the_permalink();?>" class="footer__section-one__nouvelles">
                         <?php the_title();?>
                     </a>
+                    <?php wp_reset_postdata(); ?>
                 <?php endwhile; endif; ?>
-            </div>
-            <div class="footer__section-one__contact">
+            </section>
+            <section class="footer__section-one__contact">
                 <h2 aria-level="2" class="footer__section-one__title">Navigation</h2>
                 <ul class="footer__section-one__list">
                     <li class="footer__section-one__detail"><a href="<?php echo get_home_url(); ?>" class="footer__section-one__link">Accueil</a></li>
@@ -37,9 +30,9 @@ if(is_page()){
                     <li class="footer__section-one__detail"><a href="<?php echo get_permalink(84); ?>" class="footer__section-one__link">Actualités</a></li>
                     <li class="footer__section-one__detail"><a href="<?php echo get_permalink(117); ?>" class="footer__section-one__link">Ateliers</a></li>
                     <li class="footer__section-one__detail"><a href="<?php echo get_permalink(146); ?>" class="footer__section-one__link">A Propos</a></li>
-                    <li class="footer__section-one__detail"><a href="contact.php" class="footer__section-one__link">Contact</a></li>
+                    <li class="footer__section-one__detail"><a href="<?php echo get_permalink(169); ?>" class="footer__section-one__link">Contact</a></li>
                 </ul>
-            </div>
+            </section>
         </div>
         <div class="footer__section-two">
             <div class="footer__section-two__copyright">
