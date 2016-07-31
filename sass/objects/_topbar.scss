@@ -34,27 +34,7 @@
         font-size: 40px;
     }
 
-    &__nav{
-        margin-top: -0.625em; //10px
-        &__list{
-            &__link{
-                padding-bottom: 0.625em; //10px
-                &__container{
-                    display: inline-block;
-                    &__detail{
-                        margin-bottom: 0.625em; //10px
-                    }
-                }
-            }
-            &__link + &__link{
-                margin-left: 3.125em;  //50px
-            }
-
-        }
-        &--bottom{
-            margin-top: 150px;
-        }
-    }
+    
     &__intro{
         width: 51.875em; //830px
         margin: 9.375em auto; //150px

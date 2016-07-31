@@ -15,6 +15,8 @@
                 &__link{
                     z-index: 1000;
                     display: block;
+                    width: 100%;
+                    height: 100%;
                     &__container{
                         &__image{
                             width: 29.375em; //470px
@@ -30,31 +32,38 @@
                 margin-left: 14.375em; //230px
             }
         }
-        &__projet{
-            width: 29.375em; //470px
-            float: right;
-            margin: -7.8125em 7.8125em 100px 6.25em; //-125px 125px 100px 0
-
-            &__container{
-                &__title{
-                    margin-bottom: 0.5em; //50px (100px)
-                }
-                &__text{
-                    margin-bottom: 1.25em; //20px
-                }
-                &__link{
-                    float: right;
-                    &__button{
-                        padding: 0.192307em 0.769230em; //5px 20px (26px)
-                    }
-                }
-            }
-        }
     }
     &__arrow{
         height: 12.5em; //200px
         position: relative;
         top: -250px;
+    }
+}
+.projet{
+    margin: -7.8125em 0 0 0; //-125px 0 100px 0
+    padding-bottom: 6.25em; //100px
+    &__container{
+        width: 89.375em; //1430px
+        margin: 0 auto;
+        &__title{
+            padding : 0.5em 0; //50px (100px)
+        }
+        &__text{
+            padding: 0 12.5em 1.25em; // 0 20px 200px
+            margin-bottom: 3.125em; //50px
+        }
+        &__link{
+            margin-left: 34.375em; // 550px
+            &__button{
+                padding: 0.384615em 1.538461em; //10px 40px (26px)
+                &:hover{
+                    background-color: $colorTitle;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+        }
     }
 }
 .partenaires{

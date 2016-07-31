@@ -37,19 +37,18 @@ if(is_page()){
                 </div>
             <?php endwhile; endif; ?>
         </div>
-        <section class="head__actu__projet">
-            <div class="head__actu__projet__container">
-                <h3 aria-level="3" class="head__actu__projet__container__title"><?php _e('Notre projet','b');?></h3>
-                <p class="head__actu__projet__container__text">
-                    Nous voyageons en proposant un atelier itinérant de cinéma d’animation qui s’inscrit dans le soutien d’une cause sociale. Pour cela, nous accompagnons un groupe de jeunes enfants, adolescents et/ou adultes pendant plusieurs semaines dans la réalisation collective d’un court-métrage d’animation à partir d’un thème, d’un conte ou d’une histoire, choisie ou écrite ensemble.
-                </p>
-                <a href="<?php the_field('home_cible-button'); ?>" class="head__actu__projet__container__link">
-                    <span class="head__actu__projet__container__link__button"><?php _e('En savoir plus','b');?></span>
-                </a>
-            </div>
-        </section>
     </section>
-    <div class="head__arrow"></div>
+</div>
+<div class="projet">
+	<section class="projet__container">
+		<h3 aria-level="3" class="projet__container__title"><?php the_field('home_projet-title');?></h3>
+		<p class="projet__container__text">
+			Nous voyageons en proposant un atelier itinérant de cinéma d’animation qui s’inscrit dans le soutien d’une cause sociale. Pour cela, nous accompagnons un groupe de jeunes enfants, adolescents et/ou adultes pendant plusieurs semaines dans la réalisation collective d’un court-métrage d’animation à partir d’un thème, d’un conte ou d’une histoire, choisie ou écrite ensemble.
+		</p>
+		<a href="<?php the_permalink(146);?>" class="projet__container__link">
+			<span class="projet__container__link__button" title="Vers la page A propos"><?php _e('En savoir plus','b');?></span>
+		</a>
+	</section>
 </div>
 <section class="partenaires">
     <h2 class="partenaires__title"><?php _e('Nos partenaires','b');?></h2>

@@ -15,8 +15,8 @@
  */
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?uz4f3");
-  src: url("fonts/icomoon.eot?uz4f3#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?uz4f3") format("truetype"), url("fonts/icomoon.woff?uz4f3") format("woff"), url("fonts/icomoon.svg?uz4f3#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?uz4f3");
+  src: url("../fonts/icomoon.eot?uz4f3#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?uz4f3") format("truetype"), url("../fonts/icomoon.woff?uz4f3") format("woff"), url("../fonts/icomoon.svg?uz4f3#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -162,18 +162,6 @@ table {
     color: white;
     font-family: 'pwl';
     font-size: 40px; }
-  .topbar__nav {
-    margin-top: -0.625em; }
-    .topbar__nav__list__link {
-      padding-bottom: 0.625em; }
-      .topbar__nav__list__link__container {
-        display: inline-block; }
-        .topbar__nav__list__link__container__detail {
-          margin-bottom: 0.625em; }
-    .topbar__nav__list__link + .topbar__nav__list__link {
-      margin-left: 3.125em; }
-    .topbar__nav--bottom {
-      margin-top: 150px; }
   .topbar__intro {
     width: 51.875em;
     margin: 9.375em auto; }
@@ -247,7 +235,9 @@ table {
         display: inline-block; }
         .head__actu__blog__zone__link {
           z-index: 1000;
-          display: block; }
+          display: block;
+          width: 100%;
+          height: 100%; }
           .head__actu__blog__zone__link__container__image {
             width: 29.375em;
             height: 16.5625em; }
@@ -255,22 +245,30 @@ table {
             padding: 0.9375em 0; }
       .head__actu__blog__zone + .head__actu__blog__zone {
         margin-left: 14.375em; }
-    .head__actu__projet {
-      width: 29.375em;
-      float: right;
-      margin: -7.8125em 7.8125em 100px 6.25em; }
-      .head__actu__projet__container__title {
-        margin-bottom: 0.5em; }
-      .head__actu__projet__container__text {
-        margin-bottom: 1.25em; }
-      .head__actu__projet__container__link {
-        float: right; }
-        .head__actu__projet__container__link__button {
-          padding: 0.192307em 0.769230em; }
   .head__arrow {
     height: 12.5em;
     position: relative;
     top: -250px; }
+
+.projet {
+  margin: -7.8125em 0 0 0;
+  padding-bottom: 6.25em; }
+  .projet__container {
+    width: 89.375em;
+    margin: 0 auto; }
+    .projet__container__title {
+      padding: 0.5em 0; }
+    .projet__container__text {
+      padding: 0 12.5em 1.25em;
+      margin-bottom: 3.125em; }
+    .projet__container__link {
+      margin-left: 34.375em; }
+      .projet__container__link__button {
+        padding: 0.384615em 1.538461em; }
+        .projet__container__link__button:hover {
+          background-color: #e3a558;
+          width: 100%;
+          height: 100%; }
 
 .partenaires {
   display: block;
@@ -587,36 +585,61 @@ table {
         color: white; }
       .topbar__lang__detail:hover {
         color: white; }
-  .topbar__nav__list {
+  .topbar__list {
     text-align: center; }
-    .topbar__nav__list__link {
-      text-decoration: none; }
-      .topbar__nav__list__link__container {
-        text-align: center; }
-        .topbar__nav__list__link__container__detail {
-          font-size: 1.875em;
-          color: #e0e0e0;
-          font-family: 'roboto';
-          font-weight: 300; }
-          .topbar__nav__list__link__container__detail::after {
-            content: "\e922";
-            display: block;
-            font-family: "icomoon";
-            font-size: 1em; }
-          .topbar__nav__list__link__container__detail-projets::after {
-            content: "\e923"; }
-          .topbar__nav__list__link__container__detail-actu::after {
-            content: "\e921"; }
-          .topbar__nav__list__link__container__detail-ateliers::after {
-            content: "\e91e"; }
-          .topbar__nav__list__link__container__detail-propos::after {
-            content: "\e91f"; }
-          .topbar__nav__list__link__container__detail-contact::after {
-            content: "\e920"; }
-      .topbar__nav__list__link:hover {
+    .topbar__list__detail {
+      display: inline-block;
+      padding-bottom: 0.625em;
+      border-bottom: 0.1875em solid rgba(255, 255, 255, 0); }
+      .topbar__list__detail:hover {
         border-bottom: 0.1875em solid #b2b2b2; }
-      .topbar__nav__list__link--active {
-        border-bottom: 0.1875em solid #b2b2b2; }
+    .topbar__list__detail + .topbar__list__detail {
+      margin-left: 3.125em; }
+    .topbar__list__link {
+      text-decoration: none;
+      font-size: 1.875em;
+      color: #e0e0e0;
+      font-family: 'roboto';
+      font-weight: 300;
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .topbar__list__link--home::after {
+        content: "\e922";
+        display: block;
+        font-family: "icomoon";
+        font-size: 1em;
+        margin-top: 0.3125em; }
+      .topbar__list__link--projets::after {
+        content: "\e923";
+        display: block;
+        font-family: "icomoon";
+        font-size: 1em;
+        margin-top: 0.3125em; }
+      .topbar__list__link--actu::after {
+        content: "\e921";
+        display: block;
+        font-family: "icomoon";
+        font-size: 1em;
+        margin-top: 0.3125em; }
+      .topbar__list__link--ateliers::after {
+        content: "\e91e";
+        display: block;
+        font-family: "icomoon";
+        font-size: 1em;
+        margin-top: 0.3125em; }
+      .topbar__list__link--propos::after {
+        content: "\e91f";
+        display: block;
+        font-family: "icomoon";
+        font-size: 1em;
+        margin-top: 0.3125em; }
+      .topbar__list__link--contact::after {
+        content: "\e920";
+        display: block;
+        font-family: "icomoon";
+        font-size: 1em;
+        margin-top: 0.3125em; }
   .topbar__intro {
     text-align: center; }
     .topbar__intro__text {
@@ -817,44 +840,49 @@ table {
   font-weight: normal;
   font-size: 6.25em;
   text-align: center;
-  color: #6f2317; }
+  color: #e3a558; }
 
 .head__actu__blog {
   text-align: center; }
   .head__actu__blog__zone__link {
     text-decoration: none; }
     .head__actu__blog__zone__link__container {
-      border: 0.0625em solid black; }
+      border-radius: 10px;
+      background-color: #e8a274; }
       .head__actu__blog__zone__link__container__text {
         font-family: 'roboto';
         font-weight: 300;
         font-size: 1.875em;
         text-align: center;
-        color: black; }
-
-.head__actu__projet__container__title {
-  font-family: 'pwl';
-  font-weight: normal;
-  font-size: 6.25em;
-  color: #6f2317; }
-
-.head__actu__projet__container__text {
-  font-family: 'roboto';
-  font-weight: 300;
-  font-size: 1.625em; }
-
-.head__actu__projet__container__link {
-  text-decoration: none; }
-  .head__actu__projet__container__link__button {
-    background-color: #a8a8a8;
-    color: white;
-    font-size: 1.625em;
-    font-family: 'roboto';
-    font-weight: regular;
-    border-radius: 0.625em; }
+        color: white; }
 
 .head__arrow {
   background: url("../img/flèche.svg") no-repeat center; }
+
+.projet {
+  background: url("../img/accueil-projet.jpg") no-repeat center;
+  background-size: cover; }
+  .projet__container__title {
+    font-family: 'pwl';
+    font-weight: normal;
+    font-size: 6.25em;
+    color: #e3a558;
+    text-align: center; }
+  .projet__container__text {
+    font-family: 'roboto';
+    font-weight: 300;
+    font-size: 1.625em;
+    color: white;
+    line-height: 1.25em; }
+  .projet__container__link {
+    text-decoration: none;
+    margin-left: 600px; }
+    .projet__container__link__button {
+      color: white;
+      font-size: 1.625em;
+      font-family: 'roboto';
+      font-weight: regular;
+      border: 1px solid white; }
 
 .partenaires {
   text-align: center; }
@@ -863,7 +891,7 @@ table {
     font-weight: normal;
     color: white;
     font-size: 4.375em;
-    background-color: #b5877b; }
+    background-color: #e8a274; }
 
 /****COMPONENTS***/
 /**FOOTER**/
@@ -936,7 +964,7 @@ table {
   font-size: 6.25em;
   font-family: 'pwl';
   text-align: center;
-  color: #6f2317; }
+  color: #e3a558; }
 
 .projets__movie {
   text-decoration: none; }
@@ -977,7 +1005,7 @@ table {
     font-size: 30px;
     font-weight: bold;
     margin: 30px 0;
-    color: #6f2317; }
+    color: #e3a558; }
   .movie__section-text {
     font-size: 20px;
     font-weight: 100;
@@ -993,7 +1021,7 @@ table {
   .movie__title {
     font-family: 'pwl';
     font-size: 6.25em;
-    color: #6f2317;
+    color: #e3a558;
     text-align: center; }
   .movie__menu__link {
     text-decoration: none;
@@ -1023,7 +1051,7 @@ table {
   .movie__pictures__title {
     font-size: 2.5em;
     font-family: 'pwl';
-    color: #6f2317; }
+    color: #e3a558; }
   .movie__pictures__plus {
     background-color: #a8a8a8;
     opacity: 0.5; }
@@ -1065,7 +1093,7 @@ table {
   font-size: 6.25em;
   font-family: 'pwl';
   text-align: center;
-  color: #6f2317; }
+  color: #e3a558; }
 
 .pictures__bloc__text {
   font: 'roboto';
@@ -1098,7 +1126,7 @@ table {
   font-size: 6.25em;
   font-family: 'pwl';
   text-align: center;
-  color: #6f2317; }
+  color: #e3a558; }
 
 .actus__link {
   text-decoration: none; }
@@ -1130,7 +1158,7 @@ table {
   font-size: 6.25em;
   font-family: 'pwl';
   text-align: center;
-  color: #6f2317; }
+  color: #e3a558; }
 
 .article__date {
   font-family: 'roboto';
@@ -1144,13 +1172,13 @@ table {
 .article__partie-one__title {
   font-size: 2.666666em;
   font-family: 'pwl';
-  color: #6f2317; }
+  color: #e3a558; }
 
 .ateliers__title {
   font-size: 6.25em;
   font-family: 'pwl';
   text-align: center;
-  color: #6f2317;
+  color: #e3a558;
   margin: 1em 0; }
 
 .ateliers__tuto {
@@ -1196,13 +1224,13 @@ table {
   font-size: 6.25em;
   font-family: 'pwl';
   text-align: center;
-  color: #6f2317; }
+  color: #e3a558; }
 
 .about__sous-title {
   font-size: 3.75em;
   font-family: 'pwl';
   text-align: left;
-  color: #6f2317; }
+  color: #e3a558; }
 
 .about__texte {
   font-size: 1.875em;
@@ -1211,7 +1239,7 @@ table {
 .about__partie-one__title {
   font-size: 2em;
   font-family: 'pwl';
-  color: #6f2317; }
+  color: #e3a558; }
 
 .about__photos {
   text-align: center; }
@@ -1235,7 +1263,7 @@ table {
   font-size: 6.25em;
   font-family: 'pwl';
   text-align: center;
-  color: #6f2317; }
+  color: #e3a558; }
 
 .contact__numero {
   text-align: center;

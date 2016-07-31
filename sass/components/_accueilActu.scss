@@ -13,42 +13,17 @@
             text-align: center;
             &__zone{
                 &__link{
-                    text-decoration: none;;
+                    text-decoration: none;
                     &__container{
-                        border: 0.0625em solid black; //1px
+                        border-radius: 10px;
+                        background-color: $backgroundColorPartenaires;
                         &__text{
                             font-family: 'roboto';
                             font-weight: 300;
                             font-size: 1.875em; //30px
                             text-align: center;
-                            color: $colorTitleActu;
+                            color: $colorTextIntro;
                         }
-                    }
-                }
-            }
-        }
-        &__projet{
-            &__container{
-                &__title{
-                    font-family: 'pwl';
-                    font-weight: normal;
-                    font-size: 6.25em; //100px
-                    color: $colorTitle;
-                }
-                &__text{
-                    font-family: 'roboto';
-                    font-weight: 300;
-                    font-size: 1.625em; //25px
-                }
-                &__link{
-                    text-decoration: none;
-                    &__button{
-                        background-color: $backgroundColorButtonProjet;
-                        color: $colorTextIntro;
-                        font-size: 1.625em; //25px
-                        font-family: 'roboto';
-                        font-weight: regular;
-                        border-radius: 0.625em; //10px
                     }
                 }
             }
@@ -56,6 +31,37 @@
     }
     &__arrow{
         background: url("../img/flèche.svg") no-repeat center;
+    }
+}
+.projet{
+    background: url("../img/accueil-projet.jpg") no-repeat center;
+    background-size:cover;
+    &__container{
+        &__title{
+            font-family: 'pwl';
+            font-weight: normal;
+            font-size: 6.25em; //100px
+            color: $colorTitle;
+            text-align: center;
+        }
+        &__text{
+            font-family: 'roboto';
+            font-weight: 300;
+            font-size: 1.625em; //25px
+            color: $colorTextIntro;
+            line-height: 1.25em;
+        }
+        &__link{
+            text-decoration: none;
+            margin-left: 600px;
+            &__button{
+                color: $colorTextIntro;
+                font-size: 1.625em; //25px
+                font-family: 'roboto';
+                font-weight: regular;
+                border: 1px solid $colorTextIntro;
+            }
+        }
     }
 }
 .partenaires{

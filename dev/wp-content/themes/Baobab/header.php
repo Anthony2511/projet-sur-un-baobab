@@ -9,7 +9,7 @@
     <body>
         <div class="site-container">
             <div class="site-pusher">
-                <h1 aria-level="1" class="hidden">Baoab</h1>
+                <h1 aria-level="1" class="hidden">Baobab</h1>
                 <header class="topbar">
                     <div class="topbar__lang">
                         <a href="#" class="topbar__lang__detail topbar__lang__detail--active">Français</a>
@@ -22,13 +22,11 @@
                     <nav class="topbar__nav">
                         <a href="<?php echo get_home_url(); ?>" class="topbar__icon" id="topbar__icon"></a>
                         <h2 aria-level="2" class="hidden"><?php _e('Navigation principale','b');?></h2>
-                        <ul class="topbar__nav__list">
+                        <ul class="topbar__list">
                             <?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
-                                <a href="<?php echo $navItem->url;?>" class="topbar__nav__list__link">
-                                    <div class="topbar__nav__list__link__container">
-                                       <li class="topbar__nav__list__link__container__detail topbar__nav__list__link__container__detail--<?php echo $navItem->icon;?>"><?php echo $navItem->label;?></li>
-                                   </div>
-                                </a>
+                                <li class="topbar__list__detail">
+                                    <a href="<?php echo $navItem->url;?>" class="topbar__list__link topbar__list__link--<?php echo $navItem->icon;?>"><?php echo $navItem->label;?></a>
+                               </li>
                             <?php endforeach; ?>
                         </ul>
                     </nav>
