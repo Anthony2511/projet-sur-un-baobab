@@ -7,6 +7,8 @@
     &--other{
         height: 300px;
     }
+    &__image{
+    }
     &__figure-image{
         width: 150px;
         margin: 0 auto;
@@ -23,6 +25,7 @@
     &__scroll{
         position: absolute;
         left: 45%;
+        top: 80%;
         width: 160px;
     }
     &__scroll-text{
@@ -34,7 +37,7 @@
         font-size: 40px;
     }
 
-    
+
     &__intro{
         width: 51.875em; //830px
         margin: 9.375em auto; //150px

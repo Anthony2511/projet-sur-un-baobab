@@ -25,7 +25,7 @@
                         <ul class="topbar__list">
                             <?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
                                 <li class="topbar__list__detail">
-                                    <a href="<?php echo $navItem->url;?>" class="topbar__list__link topbar__list__link--<?php echo $navItem->icon;?>"><?php echo $navItem->label;?></a>
+                                    <a href="<?php echo $navItem->url;?>" title="Vers la page <?php echo $navItem->label;?>" class="topbar__list__link topbar__list__link--<?php echo $navItem->icon;?>"><?php echo $navItem->label;?></a>
                                </li>
                             <?php endforeach; ?>
                         </ul>
@@ -34,7 +34,7 @@
                             <p class="topbar__intro__text">
                                 <?php the_field('home_text-don'); ?>
                             </p>
-                            <a href="<?php the_field('home_cible-button-don') ?>" class="topbar__intro__link">
+                            <a href="<?php the_field('home_cible-button-don') ?>" title="Vers la page Don" class="topbar__intro__link">
                                 <span class="topbar__intro__link__button"><?php the_field('home_text-button-don') ?></span>
                             </a>
                         </div>

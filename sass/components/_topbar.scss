@@ -6,8 +6,7 @@
     // opacity: 0.5;
     background-size: cover;
     &--other{
-        background: url("../img/background2.jpg") no-repeat center;
-        background-size: cover;
+        background-color: $backgroundColorPartenaires;
     }
     &__lang{
         text-align: center;
@@ -135,39 +134,25 @@
                 font-size: 1.0625em; //17px
             }
         }
-        &__nav{
-            &__list{
-                margin-top: 1.25em; //20px
-                &__link{
-                    &__container{
-                        &__detail{
-                            font-size: 1.6875em; //27px
-                        }
-                        &__icon{
-                            width: 2.1875em; //35px
-                            height: 2.1875em; //35px
-                        }
-                    }
-                }
-                &__link + &__link{
-                    margin-left: 2.5em; //40px
-                }
-                &__logo{
-                    &__image{
-                        width: 12.5em; //200px
-                        height: 12.375em; //198px
-                        margin: 0 4.6875em; // 0 75px
-                    }
-                }
+        &__list{
+            margin-top: 1.25em; //20px
+            &__link{
+                font-size: 1.6875em; //27px
+            }
+            &__detail{
+
+            }
+            &__link + &__link{
+                margin-left: 2.5em; //40px
             }
         }
         &__intro{
             &__text{
                 font-size: 1.6875em; //27px
                 margin-bottom: 0.9375em; //15px
+                padding: 0 1.875em; //30px
             }
             &__link{
-
                 &__button{
                     font-size: 1.6875em; //27px
                 }
@@ -175,15 +160,20 @@
         }
         &__scroll{
             height: 7.5em; //120px
+            width: auto;
             position: relative;
-            top: 50px;
+            top: 80%;
+        }
+        &__scroll-text{
+            position: absolute;
+            left: 50%;
+            font-size: 2.1875em; // 35px
         }
     }
 }
 @media screen and (max-width: 1064px){
     .topbar{
         max-width: 100%;
-	    height: auto;
         &__lang{
             right: 360px;
             &__detail{
@@ -191,36 +181,24 @@
             }
         }
         &__nav{
+        }
+        &__list{
+                margin-top: 2.5em; //40px
+            &__link{
+                font-size: 1.5em; //24px
+            }
+            &__detail{
 
-            &__list{
-                    margin-top: 2.5em; //40px
-                &__link{
-                    &__container{
-                        &__detail{
-                            font-size: 1.5em; //24px
-                        }
-                        &__icon{
-                            width: 1.875em; //30px
-                            height: 1.875em; //30px
-                        }
-                    }
-                }
-                &__link + &__link{
-                    margin-left: 1.875em; //30px
-                }
-                &__logo{
-                    &__image{
-                        width: 10.625em; //170px
-                        height: 10.5em; //168px
-                        margin: 0 4.0625em; // 0 65px
-                    }
-                }
+            }
+            &__link + &__link{
+                margin-left: 1.875em; //30px
             }
         }
         &__intro{
             &__text{
                 font-size: 1.5em; //24px
-                margin-bottom: 0.625em; //10px
+                margin-bottom: 1.25em; //20px
+                padding: 0 4.375em; //70px
             }
             &__link{
                 &__button{
@@ -230,8 +208,14 @@
         }
         &__scroll{
             height: 5.625em; //90px
-            position: relative;
-            top: -50px;
+            width: auto;
+            position: absolute;
+            top: 85%;
+        }
+        &__scroll-text{
+            position: absolute;
+            left: 50%;
+            font-size: 1.875em; // 30px
         }
     }
 }
@@ -245,34 +229,23 @@
             }
         }
         &__nav{
-            &__list{
-                &__link{
-                    &__container{
-                        &__detail{
-                            font-size: 1.3125em; //21px
-                        }
-                        &__icon{
-                            width: 1.5625em; //25px
-                            height: 1.5625em; //25px
-                        }
-                    }
-                }
-                &__link + &__link{
-                    margin-left: 1.25em; //20px
-                }
-                &__logo{
-                    &__image{
-                        width: 8.75em; //140px
-                        height: 8.625em; //138px
-                        margin: 0 3.4375em; // 0 55px
-                    }
-                }
+        }
+        &__list{
+            &__link{
+                font-size: 1.3125em; //21px
+            }
+            &__detail{
+
+            }
+            &__link + &__link{
+                margin-left: 1.25em; //20px
             }
         }
         &__intro{
             width: auto;
             &__text{
                 font-size: 1.3125em; //21px
+                padding: 0 7.142em; //150px
             }
             &__link{
                 &__button{
@@ -283,99 +256,33 @@
     }
 }
 @media screen and (max-width: 775px){
-    /** Menu Hamburger **/
-    .site-container, .site-pusher{
-        height: 100%;
-    }
-    .site-container{
-        overflow: hidden;
-    }
-    .site-pusher{
-        transition-duration: 0.5s;
-    }
-    .site-content{
-        position: absolute;
-        top: 66px; /* La hauteur du header */
-        right: 0;
-        left: 0;
-        bottom: 0;
-        padding-top: 0;
-    }
-    .with--sidebar .site-pusher {
-        transform: translateX(-18.75em); // -300px
-    }
-    .with--sidebar .site-cache {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: $backgroundColorHamburgerActive;
-     }
-    /** Menu Hamburger **/
     &__lang{
         right: 305px;
         margin-left: 20px;
     }
     .topbar{
-        position: static;
         &--other{
             height: 22.2em; //330px
         }
-        &__icon{
-            position: relative;
-            display: block;
-            float: right;
-            width: 3.125em; // 50px
-            height: 4.125em; // 66px
-            cursor: pointer;
-            &::after{
-                content: '';
-                position: absolute;
-                display: block;
-                width: 1.25em;
-                height: 0;
-                left: 15px;
-                box-shadow: 0 0.625em 0 0.09375em $backgroundColorMenuHamburger, 0 1em 0 0.09375em $backgroundColorMenuHamburger, 0 1.375em 0 0.09375em $backgroundColorMenuHamburger; //10px 16px 22px
-            }
-        }
         &__nav{
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background-color: $backgroundColorMenuCache;
-            width: 18.75em; //300px
-            transform: translateX(18.75em); //300px
-            &__list{
-                margin-top: 1.25em; //20px
-                &__link{
-                    height: 2.5em; //40px
-                    text-align: center;
-                    line-height: 1.25em; //20px
-                    direction: rtl;
-                    &__container{
-                        display: block;
-                        border-bottom: 0.09375em solid white; //1px
-                        &__detail{
-                            display: inline-block;
-                        }
-                        &__icon{
-                            margin-right: 1.25em; //20px
-                        }
-                    }
-                }
-                &__logo{
-                    display: none;
-                }
+        }
+        &__list{
+            margin-top: 1.25em; //20px
+            &__link{
+                height: 2.5em; //40px
+                text-align: center;
+                line-height: 1.25em; //20px
+                direction: rtl;
+            }
+            &__detail{
+
             }
         }
         &__intro{
-            width: auto;
-            position: relative;
-            top: 80px;
             &__text{
                 font-size: 1.125em; //18px
+                padding: 0 150px;
+                min-width: 300px;
             }
             &__link{
                 &__button{
@@ -385,8 +292,12 @@
         }
         &__scroll{
             height: 3.75em; //60px
-            position: relative;
-            top: -20px;
+            width: auto;
+            position: absolute;
+            top: 87.5%;
+        }
+        &__scroll-text{
+            font-size: 25px;
         }
     }
 }

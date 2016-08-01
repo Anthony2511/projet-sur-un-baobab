@@ -19,17 +19,14 @@
                     <figure class="topbar__figure-image">
                         <img class="topbar__image" src="<?php the_field('home_logo');?>" alt="logo du site"/>
                     </figure>
-                    <a href="#" class="topbar__icon" id="topbar__icon"></a>
                     <nav class="topbar__nav--bottom">
                         <a href="<?php echo get_home_url(); ?>" class="topbar__icon" id="topbar__icon"></a>
                         <h2 aria-level="2" class="hidden"><?php _e('Navigation principale','b');?></h2>
-                        <ul class="topbar__nav__list">
+                        <ul class="topbar__list">
                             <?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
-                                <a href="<?php echo $navItem->url;?>" class="topbar__nav__list__link">
-                                    <div class="topbar__nav__list__link__container">
-                                       <li class="topbar__nav__list__link__container__detail --<?php echo $navItem->icon;?>"><?php echo $navItem->label;?></li>
-                                   </div>
-                                </a>
+                                <li class="topbar__list__detail">
+                                    <a href="<?php echo $navItem->url;?>" title="Vers la page <?php echo $navItem->label;?>" class="topbar__list__link topbar__list__link--<?php echo $navItem->icon;?>"><?php echo $navItem->label;?></a>
+                               </li>
                             <?php endforeach; ?>
                         </ul>
                     </nav>
