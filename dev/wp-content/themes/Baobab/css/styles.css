@@ -140,7 +140,7 @@ table {
   height: 100vh;
   position: relative; }
   .topbar--other {
-    height: 300px; }
+    height: 40vh; }
   .topbar__figure-image {
     width: 150px;
     margin: 0 auto;
@@ -226,10 +226,11 @@ table {
 .head {
   clear: both; }
   .head__actu {
-    width: 89.375em;
+    max-width: 89.375em;
     margin: 0 auto; }
     .head__actu__title {
-      margin: 1em 0; }
+      margin: 1em 0;
+      max-width: 100%; }
     .head__actu__blog {
       margin-bottom: 12.5em; }
       .head__actu__blog__zone {
@@ -240,12 +241,12 @@ table {
           width: 100%;
           height: 100%; }
           .head__actu__blog__zone__link__container__image {
-            width: 29.375em;
-            height: 16.5625em; }
+            max-width: 100%;
+            height: auto; }
           .head__actu__blog__zone__link__container__text {
-            padding: 0.9375em 0; }
+            padding: 0.5em 0; }
       .head__actu__blog__zone + .head__actu__blog__zone {
-        margin-left: 14.375em; }
+        margin-left: 12.5em; }
   .head__arrow {
     height: 12.5em;
     position: relative;
@@ -255,15 +256,18 @@ table {
   margin: -7.8125em 0 0 0;
   padding-bottom: 6.25em; }
   .projet__container {
-    width: 89.375em;
-    margin: 0 auto; }
+    max-width: 89.375em;
+    margin: 0 auto;
+    position: relative; }
     .projet__container__title {
       padding: 0.5em 0; }
     .projet__container__text {
-      padding: 0 12.5em 1.25em;
+      max-width: 800px;
+      margin: 0 auto;
       margin-bottom: 3.125em; }
     .projet__container__link {
-      margin-left: 34.375em; }
+      position: absolute;
+      right: 42.5%; }
       .projet__container__link__button {
         padding: 0.384615em 1.538461em; }
         .projet__container__link__button:hover {
@@ -293,7 +297,7 @@ table {
   margin-bottom: 1em; }
 
 .projets__films {
-  width: 970px; }
+  max-width: 970px; }
 
 .projets__movie {
   display: block;
@@ -572,7 +576,9 @@ table {
   background: url("../img/background1.jpg") no-repeat center;
   background-size: cover; }
   .topbar--other {
-    background-color: #e8a274; }
+    background: url("../img/background1.jpg") no-repeat center;
+    background-size: cover;
+    padding-bottom: 3.125em; }
   .topbar__lang {
     text-align: center; }
     .topbar__lang__detail {
@@ -808,8 +814,7 @@ table {
     color: white;
     line-height: 1.25em; }
   .projet__container__link {
-    text-decoration: none;
-    margin-left: 600px; }
+    text-decoration: none; }
     .projet__container__link__button {
       color: white;
       font-size: 1.625em;
@@ -825,6 +830,70 @@ table {
     color: white;
     font-size: 4.375em;
     background-color: #e8a274; }
+
+@media screen and (max-width: 1209px) {
+  .head__actu__title {
+    font-size: 5em; }
+  .head__actu__blog {
+    margin: 0 50px 200px; }
+    .head__actu__blog__zone {
+      max-width: 100%;
+      height: auto;
+      display: inline-block; }
+    .head__actu__blog__zone + .head__actu__blog__zone {
+      margin-left: 50px; }
+  .projet__container__title {
+    font-size: 5em; }
+  .partenaires__title {
+    font-size: 5em; } }
+
+@media screen and (max-width: 1120px) {
+  .head__actu__blog__zone + .head__actu__blog__zone {
+    margin-left: 0;
+    margin-top: 50px; } }
+
+@media screen and (max-width: 900px) {
+  .projet__container__text {
+    font-size: 1.375em;
+    margin: 0 2.272727em 2.272727em; }
+  .projet__container__link__button {
+    font-size: 1.375em;
+    padding: 0.227272em 0.909090em; } }
+
+@media screen and (max-width: 700px) {
+  .head__actu__title {
+    font-size: 3.75em; }
+  .head__actu__blog__zone__link__container__text {
+    padding: 0.4em 0;
+    font-size: 1.5625em; }
+  .projet__container__text {
+    font-size: 1.125em; }
+  .projet__container__title {
+    font-size: 3.75em; }
+  .projet__container__link {
+    position: absolute;
+    right: 35%; }
+  .partenaires__title {
+    font-size: 3.75em; } }
+
+@media screen and (max-width: 510px) {
+  .head__actu__title {
+    font-size: 2.5em; }
+  .projet__container__title {
+    font-size: 2.5em; }
+  .projet__container__link {
+    position: absolute;
+    right: 30%; }
+  .partenaires__title {
+    font-size: 2.5em; } }
+
+@media screen and (max-width: 351px) {
+  .head__actu__blog__zone__link__container__text {
+    padding: 0.25em 0;
+    font-size: 1.5625em; }
+  .projet__container__link {
+    position: absolute;
+    right: 20%; } }
 
 /****COMPONENTS***/
 /**FOOTER**/

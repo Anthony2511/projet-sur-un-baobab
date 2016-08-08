@@ -6,7 +6,9 @@
     // opacity: 0.5;
     background-size: cover;
     &--other{
-        background-color: $backgroundColorPartenaires;
+        background : url("../img/background1.jpg") no-repeat center;
+        background-size: cover;
+        padding-bottom: 3.125em; // 50px
     }
     &__lang{
         text-align: center;

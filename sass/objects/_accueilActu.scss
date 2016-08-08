@@ -3,10 +3,11 @@
 .head{
     clear: both;
     &__actu{
-        width: 89.375em; //1430px
+        max-width: 89.375em; //1430px
         margin: 0 auto;
         &__title{
             margin : 1em 0; //100px (100px)
+            max-width: 100%;
         }
         &__blog{
             margin-bottom: 12.5em; //200px
@@ -19,17 +20,17 @@
                     height: 100%;
                     &__container{
                         &__image{
-                            width: 29.375em; //470px
-                            height: 16.5625em; //265px
+                            max-width: 100%;
+                            height: auto;
                         }
                         &__text{
-                            padding: 0.9375em 0; //15px
+                            padding: 0.5em 0; //15px (30px)
                         }
                     }
                 }
             }
             &__zone + &__zone{
-                margin-left: 14.375em; //230px
+                margin-left: 12.5em; //200px
             }
         }
     }
@@ -43,17 +44,20 @@
     margin: -7.8125em 0 0 0; //-125px 0 100px 0
     padding-bottom: 6.25em; //100px
     &__container{
-        width: 89.375em; //1430px
+        max-width: 89.375em; //1430px
         margin: 0 auto;
+        position: relative;
         &__title{
             padding : 0.5em 0; //50px (100px)
         }
         &__text{
-            padding: 0 12.5em 1.25em; // 0 20px 200px
+            max-width: 800px;
+            margin: 0 auto;
             margin-bottom: 3.125em; //50px
         }
         &__link{
-            margin-left: 34.375em; // 550px
+            position: absolute;
+            right: 42.5%;
             &__button{
                 padding: 0.384615em 1.538461em; //10px 40px (26px)
                 &:hover{

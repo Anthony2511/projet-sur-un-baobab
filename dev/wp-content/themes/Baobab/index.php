@@ -28,7 +28,7 @@ if(is_page()){
                 <div class="head__actu__blog__zone">
                     <a href="<?php the_permalink(); ?>" title="Vers le court-métrage <?php the_title();?>" class="head__actu__blog__zone__link">
                         <div class="head__actu__blog__zone__link__container">
-                            <img src="<?php the_field('metrage_image'); ?>" class="head__actu__blog__zone__link__container__image" alt="Dernier court métrage" width="300" height="169"/>
+                            <img src="<?php the_field('metrage_image'); ?>" class="head__actu__blog__zone__link__container__image" alt="Dernier court métrage" width="470" height="265"/>
                             <p class="head__actu__blog__zone__link__container__text">
                                 <?php the_title();?>
                             </p>

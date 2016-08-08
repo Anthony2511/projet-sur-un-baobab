@@ -10,14 +10,14 @@
         <div class="site-container">
             <div class="site-pusher">
                 <h1 aria-level="1" class="hidden">Baobab</h1>
-                <header class="topbar--other">
+                <header class="topbar topbar--other">
                     <div class="topbar__lang">
                         <a href="#" class="topbar__lang__detail topbar__lang__detail--active">Français</a>
                         <a href="#" class="topbar__lang__detail">Espagnol</a>
                         <a href="#" class="topbar__lang__detail">Anglais</a>
                     </div>
                     <figure class="topbar__figure-image">
-                        <img class="topbar__image" src="<?php the_field('home_logo');?>" alt="logo du site"/>
+                        <img class="topbar__image" src="<?php echo get_template_directory_uri() . '/../../uploads/2016/04/logo-150x150-1.png';?>" alt="logo  site"/>
                     </figure>
                     <nav class="topbar__nav--bottom">
                         <a href="<?php echo get_home_url(); ?>" class="topbar__icon" id="topbar__icon"></a>
