@@ -11,27 +11,10 @@
     &__title{
         margin: 1em 0; //100px (100px)
     }
-    &__menu{
-        margin: 6.25em 0 1.875em; // 100px 0 30px
-        &__link{
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-        &__list{
-            display: inline-block;
-            width: 8em; //200px (25px)
-            padding: 0.217391em 0; //5px (23px)
-        }
-    }
     &__video{
         width: 60.625em; //970px
         height: 34.375em; //550px
         margin-bottom: 1.25em; //20px
-    }
-    &__partage{
-        float: right;
-        padding: 0.151515em 0.606060em; //5px 20px
     }
     &__pictures{
         margin-top: 5.8125em; //93px

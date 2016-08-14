@@ -8,8 +8,10 @@ get_header('home');
 <main class="container__size">
             <div class="fil-ariane__size">
                 <p class="fil-ariane__chemin">
-                    <a href="<?php echo get_home_url(); ?>" class="fil-ariane__link">Accueil</a> >
-                    <a href="<?php the_permalink(84);?>" class="fil-ariane__link">Actualités</a> >
+                    <a href="<?php echo get_home_url(); ?>" class="fil-ariane__link"><?php _e('Accueil','b');?></a>
+                    <span class="fil-ariane__separator">/</span>
+                    <a href="<?php the_permalink(84);?>" class="fil-ariane__link"><?php _e('Actualités','b');?></a>
+                    <span class="fil-ariane__separator">/</span>
                     <a href="<?php get_permalink();?>" class="fil-ariane__link"><?php the_title();?></a>
                 </p>
             </div>

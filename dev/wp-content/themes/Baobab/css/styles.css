@@ -78,12 +78,6 @@ main {
   margin: 0 auto;
   font-family: 'roboto'; }
 
-.fil-ariane__size {
-  width: 68.75em;
-  margin: 0.625em 0 3.125em 0;
-  position: relative;
-  left: -40px; }
-
 #wpadminbar {
   display: none; }
 
@@ -140,7 +134,7 @@ table {
   height: 100vh;
   position: relative; }
   .topbar--other {
-    height: 40vh; }
+    max-height: 40vh; }
   .topbar__figure-image {
     width: 150px;
     margin: 0 auto;
@@ -304,7 +298,7 @@ table {
   width: 100%;
   height: 100%; }
   .projets__movie__image {
-    width: 970px;
+    max-width: 100%;
     height: auto; }
   .projets__movie__container {
     position: relative;
@@ -340,23 +334,10 @@ table {
     content: ""; }
   .movie__title {
     margin: 1em 0; }
-  .movie__menu {
-    margin: 6.25em 0 1.875em; }
-    .movie__menu__link {
-      width: 100%;
-      height: 100%;
-      display: block; }
-    .movie__menu__list {
-      display: inline-block;
-      width: 8em;
-      padding: 0.217391em 0; }
   .movie__video {
     width: 60.625em;
     height: 34.375em;
     margin-bottom: 1.25em; }
-  .movie__partage {
-    float: right;
-    padding: 0.151515em 0.606060em; }
   .movie__pictures {
     margin-top: 5.8125em; }
     .movie__pictures::after {
@@ -954,13 +935,23 @@ table {
 .container {
   font-family: 'roboto'; }
 
+.fil-ariane__size {
+  max-width: 1100px;
+  margin: 1.875em 0 3.125em 0;
+  position: relative;
+  left: -100px; }
+
 .fil-ariane__chemin {
   font-size: 1.5625em;
-  font-weight: lighter; }
+  font-weight: bold;
+  font-family: 'pwl'; }
+
+.fil-ariane__separator {
+  color: #a8a8a8; }
 
 .fil-ariane__link {
   text-decoration: none;
-  color: #a8a8a8; }
+  color: #f2673f; }
 
 .projets__title {
   font-size: 6.25em;
@@ -987,21 +978,51 @@ table {
     font-size: 2.5em;
     border-bottom: 0.0625em solid white; }
 
+@media screen and (max-width: 1209px) {
+  .fil-ariane__size {
+    position: relative;
+    left: -27px; } }
+
 @media screen and (max-width: 1064px) {
-  .container {
-    width: 94.625%;
-    height: auto; }
-  .projets__movie__image {
-    max-width: 100%;
-    height: auto; }
-  .projets__movie__content {
-    width: 100%;
-    height: 100%; } }
+  .fil-ariane__chemin {
+    font-size: 1.25em; }
+  .fil-ariane__size {
+    position: relative;
+    left: 47px; } }
 
 /****COMPONENTS****/
 /**MOVIE**/
 .movie {
   font-family: 'roboto'; }
+  .movie__content {
+    margin: 0 100px; }
+  .movie__fiche {
+    font-weight: lighter;
+    font-size: 20px;
+    color: #727272;
+    background-color: #f2f2f2; }
+  .movie__caption {
+    display: none; }
+  .movie__row {
+    margin: 20px 0; }
+    .movie__row:nth-child(2n+1) {
+      background-color: #e0e0e0; }
+    .movie__row__head {
+      padding: 10px 30px 10px 10px;
+      text-align: left;
+      font-weight: 500; }
+    .movie__row__infos {
+      font-size: 18px; }
+  .movie__title-section {
+    font-family: 'pwl';
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #f2673f;
+    color: white;
+    margin: 50px 0;
+    padding: 10px 0 10px 20px;
+    text-align: center;
+    transform: skewX(-10deg); }
   .movie__section-title {
     font-family: 'pwl';
     font-size: 30px;
@@ -1011,12 +1032,10 @@ table {
   .movie__section-text {
     font-size: 20px;
     font-weight: 100;
-    max-width: 80%;
     line-height: 30px; }
   .movie__section-text-width {
     font-size: 20px;
     font-weight: 100;
-    max-width: 30%;
     line-height: 30px; }
   .movie__picture-image {
     max-width: 40%; }
@@ -1025,31 +1044,6 @@ table {
     font-size: 6.25em;
     color: #e3a558;
     text-align: center; }
-  .movie__menu__link {
-    text-decoration: none;
-    color: black; }
-    .movie__menu__link--active {
-      color: white; }
-    .movie__menu__link:hover {
-      color: white; }
-  .movie__menu__list {
-    font-size: 1.4375em;
-    font-weight: 100;
-    border: 0.0625em solid black;
-    border-radius: 0.25em;
-    text-align: center; }
-    .movie__menu__list:hover {
-      background-color: #6f2317;
-      border: 0.0625em solid white; }
-    .movie__menu__list--active {
-      background-color: #6f2317;
-      border: 1px solid white; }
-  .movie__partage {
-    text-decoration: none;
-    background-color: #a8a8a8;
-    color: white;
-    border-radius: 0.3125em;
-    font-size: 2.0625em; }
   .movie__pictures__title {
     font-size: 2.5em;
     font-family: 'pwl';
@@ -1110,8 +1104,8 @@ table {
   font-family: 'roboto';
   font-weight: lighter;
   font-size: 1.875em;
-  border: 0.0625em solid #a8a8a8;
-  color: #a8a8a8;
+  border: 0.0625em solid #f2673f;
+  color: #f2673f;
   border-radius: 0.3125em; }
   .pictures__link--active, .pictures__link:hover {
     background-color: #a8a8a8;
@@ -1122,7 +1116,7 @@ table {
   font-family: 'roboto';
   font-weight: lighter;
   font-size: 1.875em;
-  color: #a8a8a8; }
+  color: #f2673f; }
 
 .actus__title {
   font-size: 6.25em;

@@ -62,7 +62,8 @@
     <?php wp_footer();?>
 </footer>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"/></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() .'/scripts/javascript.js';?>"/></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() .'/scripts/menu-metrage.js';?>"/></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() .'/scripts/jquery-2.2.1.min.js';?>"/></script>
+
 </body>
 </html>

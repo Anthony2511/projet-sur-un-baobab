@@ -8,33 +8,91 @@ get_header('home');
 <div class="movie">
     <div class="fil-ariane__size">
         <p class="fil-ariane__chemin">
-            <a href="<?php echo get_home_url(); ?>" class="fil-ariane__link">Accueil</a> >
-            <a href="<?php echo get_permalink(108); ?>" class="fil-ariane__link">Projets</a> >
+            <a href="<?php echo get_home_url(); ?>" class="fil-ariane__link"><?php _e('Accueil','b');?></a>
+            <span class="fil-ariane__separator">/</span>
+            <a href="<?php echo get_permalink(108); ?>" class="fil-ariane__link"><?php _e('Projets','b');?></a>
+            <span class="fil-ariane__separator">/</span>
             <a href="<?php echo get_permalink(); ?>" class="fil-ariane__link"><?php the_title();?></a>
         </p>
     </div>
     <h2 aria-level="2" class="movie__title"><?php the_title();?></h2>
     <iframe class="movie__video"width="560" height="315" src="https://www.youtube.com/embed/92IwfppA5SQ" frameborder="0" allowfullscreen></iframe>
-    <a href="#" class="movie__partage">Partager</a>
     <div class="movie__container">
-        <div class="movie__metrage">
-            <ul class="movie__menu">
-                <li class="movie__menu__list movie__menu__list--active">
-                    <a href="#section-projet" data-tab-target="tab-one" class="movie__menu__link movie__menu__link--active"><?php _e('Le projet','b');?></a>
-                </li>
-                <li class="movie__menu__list">
-                    <a href="#section-fiche" data-tab-target="tab-two" class="movie__menu__link movie__menu__link"><?php _e('Making of','b');?></a>
-                </li>
-                <li class="movie__menu__list">
-                    <a href="#section-making" data-tab-target="tab-three" class="movie__menu__link movie__menu__link"><?php _e('Fiche technique','b');?></a>
-                </li>
-                <li class="movie__menu__list">
-                    <a href="#section-diffuser" data-tab-target="tab-four" class="movie__menu__link movie__menu__link"><?php _e('Diffuser','b');?></a>
-                </li>
-            </ul>
-        </div>
         <div class="movie__content">
-            <section class="movie__section movie__section--active" id="tab-one">
+            <section class="movie__section">
+                <h2 aria-level="2" class="movie__title-section">Fiche technique</h2>
+                <table class="movie__fiche movie__fiche--width">
+                    <caption class="movie__caption"><?php _e('Informations','b');?></caption>
+                    <tbody>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Titre français','b');?></th>
+                            <td class="movie__row__infos">Le choix de Pela</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Durée','b');?></th>
+                            <td class="movie__row__infos">6 min 27 sec</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Pays','b');?></th>
+                            <td class="movie__row__infos">Madagascar</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Date','b');?></th>
+                            <td class="movie__row__infos">24 Mai 2016</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Technique','b');?></th>
+                            <td class="movie__row__infos">2D, papier-découpé, image par image, déchets recyclés</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Thème','b');?></th>
+                            <td class="movie__row__infos">Tourisme</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Participants','b');?></th>
+                            <td class="movie__row__infos">19 enfants et adolescents</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Direction et coordination','b');?></th>
+                            <td class="movie__row__infos">Elena CABEDO GARCIA et François CHENOT</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Assistants','b');?></th>
+                            <td class="movie__row__infos">Henrmine ANDRY, Virginie Olivia ANDRIAMPENOSOA Razandry M. LAFINIARIVO</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Musique','b');?></th>
+                            <td class="movie__row__infos">MIKEBO</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Histoire originale','b');?></th>
+                            <td class="movie__row__infos">Emma LIDON et Josué AHIAVAO</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Montage son','b');?></th>
+                            <td class="movie__row__infos">Elena Cabedo Garcia</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Montage son','b');?></th>
+                            <td class="movie__row__infos">François Chenot</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Production','b');?></th>
+                            <td class="movie__row__infos">Sur un Baobab</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Langues','b');?></th>
+                            <td class="movie__row__infos">Français et Malgache</td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Sous titre disponibles','b');?></th>
+                            <td class="movie__row__infos">Fr / Es / An</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="movie__section">
+                <h2 aria-level="2" class="movie__title-section">Le projet</h2>
                 <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_projet_title-one');?></h3>
                 <p class="movie__section-text">
                     <?php the_field('metrage_paragraphe-one');?>
@@ -44,10 +102,11 @@ get_header('home');
                     <?php the_field('metrage_paragraphe-two');?>
                 </p>
             </section>
-            <section class="movie__section" id="tab-two">
+            <section class="movie__section">
                 <div class="movie__section-one">
+                    <h2 aria-level="2" class="movie__title-section">Making of</h2>
                     <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_making_title-one');?></h3>
-                    <p class="movie__section-text-width">
+                    <p class="movie__section-text">
                         <?php the_field('metrage_making_paragraphe-one');?>
                     </p>
                     <figure class="movie__section-picture">
@@ -57,7 +116,7 @@ get_header('home');
                 </div>
                 <div class="movie__section-one">
                     <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_making_title-two');?></h3>
-                        <p class="movie__section-text-width">
+                        <p class="movie__section-text">
                             <?php the_field('metrage_making_paragraphe-two');?>
                         </p>
                         <figure class="movie__section-picture">
@@ -67,7 +126,7 @@ get_header('home');
                 </div>
                 <div class="movie__section-one">
                     <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_making_title-three');?></h3>
-                        <p class="movie__section-text-width">
+                        <p class="movie__section-text">
                             <?php the_field('metrage_making_paragraphe-three');?>
                         </p>
                         <figure class="movie__section-picture">
@@ -77,7 +136,7 @@ get_header('home');
                 </div>
                 <div class="movie__section-one">
                     <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_making_title-four');?></h3>
-                        <p class="movie__section-text-width">
+                        <p class="movie__section-text">
                             <?php the_field('metrage_making_paragraphe-four');?>
                         </p>
                         <figure class="movie__section-picture">
@@ -85,9 +144,6 @@ get_header('home');
                         </figure>
                     <p class="movie__section-legend"><?php the_field('metrage_making_legend_image-four');?></p>
                 </div>
-            </section>
-            <section class="movie__section" id="tab-three">
-
             </section>
             <section class="movie__section" id="tab-four">
 

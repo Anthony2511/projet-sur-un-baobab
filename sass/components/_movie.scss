@@ -2,6 +2,43 @@
 /**MOVIE**/
 .movie{
     font-family: 'roboto';
+    &__content{
+        margin: 0 100px;
+    }
+    &__fiche{
+        font-weight: lighter;
+        font-size: 20px;
+        color: $colorAuthor;
+        background-color: $colorGreyTwo;
+    }
+    &__caption{
+        display: none;
+    }
+    &__row{
+        margin: 20px 0;
+        &:nth-child(2n+1){
+            background-color: $colorGrey;
+        }
+        &__head{
+            padding: 10px 30px 10px 10px;
+            text-align: left;
+            font-weight: 500;
+        }
+        &__infos{
+            font-size: 18px;
+        }
+    }
+    &__title-section{
+        font-family: 'pwl';
+        font-size: 40px;
+        font-weight: bold;
+        background-color: $colorFilAriane;
+        color: $colorWhite;
+        margin: 50px 0;
+        padding: 10px 0 10px 20px;
+        text-align: center;
+        transform: skewX(-10deg);
+    }
     &__section-title{
         font-family: 'pwl';
         font-size: 30px;
@@ -9,20 +46,15 @@
         margin: 30px 0;
         color: $colorTitle;
     }
-    &__section-one{
-
-
-    }
     &__section-text{
         font-size: 20px;
         font-weight: 100;
-        max-width: 80%;
         line-height: 30px;
     }
     &__section-text-width{
         font-size: 20px;
         font-weight: 100;
-        max-width: 30%;
+
         line-height: 30px;
     }
     &__picture-image{
@@ -35,42 +67,6 @@
         font-size: 6.25em; //100px
         color: $colorTitle;
         text-align: center;
-    }
-    &__menu{
-        &__link{
-            text-decoration: none;
-            color: $colorBlack;
-            &--active{
-                color: $colorHoverLinkMovie;
-            }
-            &:hover{
-                color: $colorHoverLinkMovie;
-            }
-        }
-        &__list{
-            font-size: 1.4375em; //23px
-            font-weight: 100;
-            border: 0.0625em solid $borderBlack ; //1px
-            border-radius: 0.25em; //4px
-            text-align: center;
-            &:hover{
-                background-color: $backgroundColorLinkActiveMovie;
-
-                border: 0.0625em solid $borderWhite; //1px
-            }
-            &--active{
-                background-color: $backgroundColorLinkActiveMovie;
-
-                border: 1px solid $borderWhite;
-            }
-        }
-    }
-    &__partage{
-        text-decoration: none;
-        background-color: $backgroundColorButtonProjet ;
-        color: $colorWhite;
-        border-radius: 0.3125em; //5px
-        font-size: 2.0625em; //33px
     }
     &__pictures{
         &__title{
