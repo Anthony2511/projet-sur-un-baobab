@@ -20,149 +20,132 @@ get_header('home');
     <div class="movie__container">
         <div class="movie__content">
             <section class="movie__section">
-                <h2 aria-level="2" class="movie__title-section">Fiche technique</h2>
+                <h3 aria-level="3" class="movie__title-section"><?php the_field('metrage_title-one');?></h3>
                 <table class="movie__fiche movie__fiche--width">
                     <caption class="movie__caption"><?php _e('Informations','b');?></caption>
                     <tbody>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Titre français','b');?></th>
-                            <td class="movie__row__infos">Le choix de Pela</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-title');?></td>
                         </tr>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Durée','b');?></th>
-                            <td class="movie__row__infos">6 min 27 sec</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-duree');?></td>
                         </tr>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Pays','b');?></th>
-                            <td class="movie__row__infos">Madagascar</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-pays');?></td>
                         </tr>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Date','b');?></th>
-                            <td class="movie__row__infos">24 Mai 2016</td>
-                        </tr>
-                        <tr class="movie__row">
-                            <th class="movie__row__head"><?php _e('Technique','b');?></th>
-                            <td class="movie__row__infos">2D, papier-découpé, image par image, déchets recyclés</td>
-                        </tr>
-                        <tr class="movie__row">
-                            <th class="movie__row__head"><?php _e('Thème','b');?></th>
-                            <td class="movie__row__infos">Tourisme</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-date');?></td>
                         </tr>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Participants','b');?></th>
-                            <td class="movie__row__infos">19 enfants et adolescents</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-participants');?></td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Technique','b');?></th>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-technique');?></td>
+                        </tr>
+                        <tr class="movie__row">
+                            <th class="movie__row__head"><?php _e('Thème','b');?></th>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-theme');?></td>
                         </tr>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Direction et coordination','b');?></th>
-                            <td class="movie__row__infos">Elena CABEDO GARCIA et François CHENOT</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-direction');?></td>
                         </tr>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Assistants','b');?></th>
-                            <td class="movie__row__infos">Henrmine ANDRY, Virginie Olivia ANDRIAMPENOSOA Razandry M. LAFINIARIVO</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-assistant');?></td>
                         </tr>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Musique','b');?></th>
-                            <td class="movie__row__infos">MIKEBO</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-musique');?></td>
                         </tr>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Histoire originale','b');?></th>
-                            <td class="movie__row__infos">Emma LIDON et Josué AHIAVAO</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-histoire');?></td>
                         </tr>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Montage son','b');?></th>
-                            <td class="movie__row__infos">Elena Cabedo Garcia</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-son');?></td>
                         </tr>
                         <tr class="movie__row">
-                            <th class="movie__row__head"><?php _e('Montage son','b');?></th>
-                            <td class="movie__row__infos">François Chenot</td>
+                            <th class="movie__row__head"><?php _e('Montage image','b');?></th>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-image');?></td>
                         </tr>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Production','b');?></th>
-                            <td class="movie__row__infos">Sur un Baobab</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-production');?></td>
                         </tr>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Langues','b');?></th>
-                            <td class="movie__row__infos">Français et Malgache</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-langues');?></td>
                         </tr>
                         <tr class="movie__row">
                             <th class="movie__row__head"><?php _e('Sous titre disponibles','b');?></th>
-                            <td class="movie__row__infos">Fr / Es / An</td>
+                            <td class="movie__row__infos"><?php the_field('metrage_fiche-sous-titres');?></td>
                         </tr>
                     </tbody>
                 </table>
             </section>
             <section class="movie__section">
-                <h2 aria-level="2" class="movie__title-section">Le projet</h2>
-                <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_projet_title-one');?></h3>
+                <h3 aria-level="3" class="movie__title-section"><?php the_field('metrage_title-two');?></h3>
+                <h4 aria-level="4" class="movie__section-title"><?php the_field('metrage_projet_title-one');?></h4>
                 <p class="movie__section-text">
                     <?php the_field('metrage_paragraphe-one');?>
                 </p>
-                <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_projet_title-two');?></h3>
+                <h4 aria-level="4" class="movie__section-title"><?php the_field('metrage_projet_title-two');?></h4>
                 <p class="movie__section-text">
                     <?php the_field('metrage_paragraphe-two');?>
                 </p>
             </section>
-            <section class="movie__section">
-                <div class="movie__section-one">
-                    <h2 aria-level="2" class="movie__title-section">Making of</h2>
-                    <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_making_title-one');?></h3>
-                    <p class="movie__section-text">
+            <div class="movie__section">
+                <section class="movie__section-one">
+                    <h3 aria-level="3" class="movie__title-section"><?php the_field('metrage_title-three');?></h3>
+                    <h4 aria-level="4" class="movie__section-title"><?php the_field('metrage_making_title-one');?></h4>
+                    <p class="movie__section-textWidth">
                         <?php the_field('metrage_making_paragraphe-one');?>
                     </p>
                     <figure class="movie__section-picture">
                         <img class="movie__picture-image"src="<?php the_field('metrage_making_image-one');?>" alt="" />
                     </figure>
                     <p class="movie__section-legend"><?php the_field('metrage_making_legend_image-one');?></p>
-                </div>
-                <div class="movie__section-one">
-                    <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_making_title-two');?></h3>
-                        <p class="movie__section-text">
+                </section>
+                <section class="movie__section-one">
+                    <h4 aria-level="4" class="movie__section-title"><?php the_field('metrage_making_title-two');?></h4>
+                        <p class="movie__section-textWidth">
                             <?php the_field('metrage_making_paragraphe-two');?>
                         </p>
                         <figure class="movie__section-picture">
                             <img class="movie__picture-image" src="<?php the_field('metrage_making_image-two');?>" alt="" />
                         </figure>
                     <p class="movie__section-legend"><?php the_field('metrage_making_legend_image-two');?></p>
-                </div>
-                <div class="movie__section-one">
-                    <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_making_title-three');?></h3>
-                        <p class="movie__section-text">
+                </section>
+                <section class="movie__section-one">
+                    <h4 aria-level="4" class="movie__section-title"><?php the_field('metrage_making-title-three');?></h4>
+                        <p class="movie__section-textWidth">
                             <?php the_field('metrage_making_paragraphe-three');?>
                         </p>
                         <figure class="movie__section-picture">
                             <img class="movie__picture-image" src="<?php the_field('metrage_making_image-three');?>" alt="" />
                         </figure>
                     <p class="movie__section-legend"><?php the_field('metrage_making_legend_image-four');?></p>
-                </div>
-                <div class="movie__section-one">
-                    <h3 aria-level="3" class="movie__section-title"><?php the_field('metrage_making_title-four');?></h3>
-                        <p class="movie__section-text">
+                </section>
+                <section class="movie__section-one">
+                    <h4 aria-level="4" class="movie__section-title"><?php the_field('metrage_making_title-four');?></h4>
+                        <p class="movie__section-textWidth">
                             <?php the_field('metrage_making_paragraphe-four');?>
                         </p>
                         <figure class="movie__section-picture">
                             <img class="movie__picture-image" src="<?php the_field('metrage_making_image-four');?>" alt="" />
                         </figure>
                     <p class="movie__section-legend"><?php the_field('metrage_making_legend_image-four');?></p>
-                </div>
-            </section>
-            <section class="movie__section" id="tab-four">
-
-            </section>
-        </div>
-    </div>
-
-    <div class="movie__pictures">
-        <h3 aria-level="3" class="movie__pictures__title">Photos de tournage</h3>
-        <img src="img/photo-one.jpg" class="movie__pictures__image" alt="Décor du tournage" width="300" height="202"/>
-        <img src="img/photo-two.jpg" class="movie__pictures__image" alt="Ramsay, personnage du court-métrag" width="300" height="200"/>
-        <img src="img/photo-three.jpg" class="movie__pictures__image" alt="Décor du tournage" width="300" height="200"/>
-        <a href="pictures.php">
-            <div class="movie__pictures__plus">
-                <div class="movie__pictures__croix">
-                    <img src="img/plus.png" alt="voir plus" width="30" height="30" />
-                </div>
+                </section>
             </div>
-        </a>
+        </div>
     </div>
     <div class="movie__commentaires">
         <div class="movie__mon-commentaire">
@@ -185,8 +168,8 @@ get_header('home');
         </div>
     </div>
 </div>
-<div class="don">
-    <h3 aria-level="3" class="don__title">Soutenez-nous dans notre projet</h3>
+<section class="don">
+    <h2 aria-level="2" class="don__title">Soutenez-nous dans notre projet</h2>
     <figure class="don__arrow-one">
         <img src="img/flecheDon.png" alt="" width="60" height="100" />
     </figure>
@@ -196,6 +179,6 @@ get_header('home');
     <figure class="don__arrow-two">
         <img src="img/flecheDon2.png" alt="" width="60" height="100"/>
     </figure>
-</div>
+</section>
 <?php
     get_footer();

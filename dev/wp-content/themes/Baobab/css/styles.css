@@ -1012,7 +1012,8 @@ table {
       text-align: left;
       font-weight: 500; }
     .movie__row__infos {
-      font-size: 18px; }
+      font-size: 18px;
+      padding: 10px 0; }
   .movie__title-section {
     font-family: 'pwl';
     font-size: 40px;
@@ -1025,7 +1026,7 @@ table {
     transform: skewX(-10deg); }
   .movie__section-title {
     font-family: 'pwl';
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     margin: 30px 0;
     color: #e3a558; }
@@ -1033,12 +1034,18 @@ table {
     font-size: 20px;
     font-weight: 100;
     line-height: 30px; }
-  .movie__section-text-width {
+  .movie__section-textWidth {
     font-size: 20px;
     font-weight: 100;
-    line-height: 30px; }
+    line-height: 30px;
+    margin-bottom: 30px; }
   .movie__picture-image {
-    max-width: 40%; }
+    max-width: 70%; }
+  .movie__section-legend {
+    font-weight: 500;
+    font-size: 20px;
+    color: #727272;
+    margin-top: 10px; }
   .movie__title {
     font-family: 'pwl';
     font-size: 6.25em;
