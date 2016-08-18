@@ -31,13 +31,26 @@
             border: 0.0625em solid $colorWhite; //1px
             border-radius: 0.3125em; //5px
             &:hover{
-                background-color: $colorWhite;
-                color: $colorBlack;
+                background-color: $colorTitle;
             }
         }
         &__opacity{
             background-color: $colorBlack;
             opacity: 0.5;
+        }
+    }
+}
+
+@media screen and (max-width: 1209px){
+    .actu{
+        &__link{
+            &__container{
+                margin: 0 100px;
+            }
+        }
+        &__images{
+            max-width: 100%;
+            height: auto;
         }
     }
 }

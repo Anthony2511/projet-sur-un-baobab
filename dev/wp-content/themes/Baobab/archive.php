@@ -21,17 +21,16 @@ get_header('home');
         <a href="<?php echo get_the_permalink();?>" class="fil-ariane__link"><?php _e('Actualités','b');?></a>
     </p>
 </div>
-<div class="actus">
-    <h2 aria-level="2" class="actus__title">Actualités</h2>
+<section class="actus">
+    <h2 aria-level="2" class="actus__title"><?php the_title();?></h2>
     <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
         <a href="<?php the_permalink();?>" class="actus__link">
             <div class="actus__link__container">
-                <img src="<?php the_field('article_image');?>" alt="Projection de Safidn'i Pela" class="actus__link__images" width="624" height="416"/>
-                <div class="actus__link__content">
-                    <span class="actus__link__date"><?php the_date();?></span>
+                <img src="<?php the_field('article_image');?>" alt="Projection de Safidn'i Pela" class="actus__link__images" width="450" height="300"/>
+                <section class="actus__link__content">
                     <h3 aria-level="3" class="actus__link__title"><?php the_title();?></h3>
                     <a href="<?php the_permalink();?>" class="actus__link__view"><?php _e('Voir l\'article','b');?></a>
-                </div>
+                </section>
                 <div class="actus__link__opacity"></div>
             </div>
         </a>
@@ -43,6 +42,6 @@ get_header('home');
         <a href="#" class="pictures__link">3</a>
         <a href="#" class="pictures__link">></a>
     </div>
-</div>
+</section>
 <?php
     get_footer();

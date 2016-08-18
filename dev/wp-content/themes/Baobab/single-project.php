@@ -93,7 +93,9 @@ get_header('home');
             </section>
             <section class="movie__section">
                 <h3 aria-level="3" class="movie__title-section"><?php the_field('metrage_title-two');?></h3>
-                <h4 aria-level="4" class="movie__section-title"><?php the_field('metrage_projet_title-one');?></h4>
+                <section>
+                    <h4 aria-level="4" class="movie__section-title"><?php the_field('metrage_projet_title-one');?></h4>
+                </section>
                 <p class="movie__section-text">
                     <?php the_field('metrage_paragraphe-one');?>
                 </p>
@@ -105,7 +107,9 @@ get_header('home');
             <div class="movie__section">
                 <section class="movie__section-one">
                     <h3 aria-level="3" class="movie__title-section"><?php the_field('metrage_title-three');?></h3>
-                    <h4 aria-level="4" class="movie__section-title"><?php the_field('metrage_making_title-one');?></h4>
+                    <section>
+                        <h4 aria-level="4" class="movie__section-title"><?php the_field('metrage_making_title-one');?></h4>
+                    </section>
                     <p class="movie__section-textWidth">
                         <?php the_field('metrage_making_paragraphe-one');?>
                     </p>

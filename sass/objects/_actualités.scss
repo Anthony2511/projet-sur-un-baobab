@@ -10,7 +10,7 @@
         &__container{
             position: relative;
             margin-bottom: 1.875em; //30px
-            width: 28.125em; //450px
+            max-width: 28.125em; //450px
             height: 18.75em; //300px
             display: inline-block;
             margin: 0 3.125em 3.125em 0; //0 50px 50px 0
@@ -22,27 +22,18 @@
         &__content{
             position: absolute;
             top: 0;
-            right: 0;
+            right: 10%;
             z-index: 10;
-            &::after{
-                clear: both;
-                display: block;
-                content: "";
-            }
         }
         &__title{
             margin : 2em 0; //100px (40px)
-            width: 11.25em; //450px (40px)
-        }
-        &__date{
-            vertical-align: top;
-            margin-top: 0.3125em; //5px
-            float: right;
+            max-width: 11.25em; //450px (40px)
         }
         &__view{
             padding: 0.2em 0.4em; //5px 10px (25px)
             position: relative;
             top: 50%;
+
         }
         &__opacity{
             position: absolute;

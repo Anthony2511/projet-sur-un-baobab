@@ -26,7 +26,7 @@
         color: $colorFilAriane;
         border-radius: 0.3125em; //5px
         &--active, &:hover{
-            background-color: $backgroundColorButtonProjet;
+            background-color: $colorFilAriane;
             color: $colorWhite;
             border: 0.0625em solid $colorWhite; //1px
         }
