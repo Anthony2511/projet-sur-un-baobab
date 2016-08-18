@@ -16,7 +16,9 @@ get_header('home');
         </p>
     </div>
     <h2 aria-level="2" class="movie__title"><?php the_title();?></h2>
-    <iframe class="movie__video"width="560" height="315" src="https://www.youtube.com/embed/92IwfppA5SQ" frameborder="0" allowfullscreen></iframe>
+    <div class="movie__video video-container">
+        <?php the_field('metrage_link-video');?>
+    </div>
     <div class="movie__container">
         <div class="movie__content">
             <section class="movie__section">

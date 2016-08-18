@@ -1,7 +1,24 @@
 /****OBJECTS****/
 /**MOVIE**/
+
+.video-container{
+    position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
 .movie{
-    width: 60.625em; //970px
+    max-width: 60.625em; //970px
     margin: 0 auto;
     &::after{
         clear: both;
@@ -12,10 +29,14 @@
         margin: 1em 0; //100px (100px)
     }
     &__video{
-        width: 60.625em; //970px
-        height: 34.375em; //550px
-        margin-bottom: 1.25em; //20px
+        display: block;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        margin: 0 50px;
     }
+
     &__pictures{
         margin-top: 5.8125em; //93px
         &::after{
@@ -27,23 +48,11 @@
             margin-bottom: 1.25em; //50px (40px)
         }
         &__image{
-            width: 12.5em; //200px
+            max-width: 12.5em; //200px
             height: 8.4375em; //135px
         }
         &__image + &__image{
             margin-left: 1.875em; //30px
-        }
-        &__plus{
-            width: 12.5em; //200px
-            height: 8.4375em; //135px
-            float: right;
-            position: relative;
-            right: 73px;
-            margin-bottom: 3.125em; //50px
-        }
-        &__croix{
-            position: relative;
-            top: 50px;
         }
     }
     &__commentaires{

@@ -280,7 +280,7 @@ table {
   .partenaires__logo {
     vertical-align: bottom; }
     .partenaires__logo__sponsor {
-      width: 10.625em;
+      max-width: 18.75em;
       height: auto; }
     .partenaires__logo__sponsor + .partenaires__logo__sponsor {
       margin-left: 1.875em; }
@@ -325,8 +325,24 @@ table {
 
 /****OBJECTS****/
 /**MOVIE**/
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0; }
+
 .movie {
-  width: 60.625em;
+  max-width: 60.625em;
   margin: 0 auto; }
   .movie::after {
     clear: both;
@@ -335,9 +351,12 @@ table {
   .movie__title {
     margin: 1em 0; }
   .movie__video {
-    width: 60.625em;
-    height: 34.375em;
-    margin-bottom: 1.25em; }
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0 50px; }
   .movie__pictures {
     margin-top: 5.8125em; }
     .movie__pictures::after {
@@ -347,20 +366,10 @@ table {
     .movie__pictures__title {
       margin-bottom: 1.25em; }
     .movie__pictures__image {
-      width: 12.5em;
+      max-width: 12.5em;
       height: 8.4375em; }
     .movie__pictures__image + .movie__pictures__image {
       margin-left: 1.875em; }
-    .movie__pictures__plus {
-      width: 12.5em;
-      height: 8.4375em;
-      float: right;
-      position: relative;
-      right: 73px;
-      margin-bottom: 3.125em; }
-    .movie__pictures__croix {
-      position: relative;
-      top: 50px; }
   .movie__commentaires {
     width: 54.375em; }
   .movie__mon-commentaire__profil {
@@ -1233,13 +1242,6 @@ table {
   .actus__link__opacity {
     background-color: black;
     opacity: 0.5; }
-
-@media screen and (max-width: 1209px) {
-  .actu__link__container {
-    margin: 0 100px; }
-  .actu__images {
-    max-width: 100%;
-    height: auto; } }
 
 .article__title {
   font-size: 6.25em;

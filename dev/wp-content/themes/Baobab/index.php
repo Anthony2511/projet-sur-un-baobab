@@ -53,10 +53,10 @@ if(is_page()){
 <section class="partenaires">
     <h2 class="partenaires__title"><?php _e('Nos partenaires', 'b');?></h2>
     <div class="partenaires__logo">
-        <img src="<?php the_field('home_logo-partenaires'); ?>" class="partenaires__logo__sponsor"alt="Logo Ireast" width="1162" height="1127"/>
-        <img src="<?php the_field('home_logo-partenaires'); ?>" class="partenaires__logo__sponsor"alt="Logo SNCF" width="2356" height="1248"/>
-        <img src="<?php the_field('home_logo-partenaires'); ?>" class="partenaires__logo__sponsor"alt="Logo Heine" width="1000" height="853"/>
-        <img src="<?php the_field('home_logo-partenaires'); ?>" class="partenaires__logo__sponsor"alt="Logo Wilson" width="2272" height="1704"/>
+        <img src="<?php echo get_template_directory_uri() . '/../../uploads/2016/04/ong2.jpg';?>" class="partenaires__logo__sponsor" alt="Logo ONG Avenir" width="600" height="240"/>
+        <img src="<?php echo get_template_directory_uri() . '/../../uploads/2016/04/ong2.jpg';?>" class="partenaires__logo__sponsor" alt="Logo ONG Avenir" width="600" height="240"/>
+        <img src="<?php echo get_template_directory_uri() . '/../../uploads/2016/04/ong2.jpg';?>"  class="partenaires__logo__sponsor"alt="Logo ONG Avenir" width="600" height="240"/>
+        <img src="<?php echo get_template_directory_uri() . '/../../uploads/2016/04/ong2.jpg';?>"  class="partenaires__logo__sponsor"alt="Logo ONG Avenir" width="600" height="240"/>
     </div>
 </section>
 <?php

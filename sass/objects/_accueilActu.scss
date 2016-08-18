@@ -82,7 +82,7 @@
     &__logo{
         vertical-align: bottom;
         &__sponsor{
-            width: 10.625em; //170px
+            max-width: 18.75em; // 300px
             height: auto;
         }
         &__sponsor + &__sponsor{
