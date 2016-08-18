@@ -74,7 +74,7 @@ main {
   clear: both; }
 
 .container__size {
-  width: 60.625em;
+  max-width: 60.625em;
   margin: 0 auto;
   font-family: 'roboto'; }
 
@@ -169,7 +169,7 @@ table {
 /****OBJECTS****/
 /**FOOTER**/
 .footer__section-one {
-  width: 68.625em;
+  max-width: 68.625em;
   margin: 0 auto;
   padding: 2.5em 0; }
   .footer__section-one__contact {
@@ -189,7 +189,7 @@ table {
     margin-top: 1.25em; }
 
 .footer__section-two {
-  width: 58.125em;
+  max-width: 58.125em;
   margin: 0 auto;
   border-top: 0.0625em solid white;
   padding-top: 1.25em; }
@@ -305,8 +305,8 @@ table {
     margin-bottom: 6.25em; }
   .projets__movie__content {
     position: absolute;
-    top: 9.375em;
-    right: 11.875em;
+    top: 30%;
+    right: 18.25%;
     z-index: 10; }
   .projets__movie__opacity {
     position: absolute;
@@ -390,6 +390,7 @@ table {
       margin-left: 1em; }
 
 .don {
+  margin-top: 50px;
   padding-bottom: 3.125em;
   position: relative;
   height: 16.25em; }
@@ -397,7 +398,7 @@ table {
     padding-top: 0.625em; }
   .don__arrow-one {
     position: absolute;
-    left: 600px;
+    left: 30%;
     top: 150px; }
   .don__button {
     width: 18.75em;
@@ -405,7 +406,7 @@ table {
     padding: 0.625em 0; }
   .don__arrow-two {
     position: absolute;
-    right: 600px;
+    right: 30%;
     top: 150px; }
 
 .pictures {
@@ -981,7 +982,20 @@ table {
 @media screen and (max-width: 1209px) {
   .fil-ariane__size {
     position: relative;
-    left: -27px; } }
+    left: -27px;
+    max-width: 100%; }
+  .projets {
+    margin: 0 50px; }
+    .projets__title {
+      font-size: 5em; }
+    .projets__movie__content {
+      position: absolute;
+      top: 30%;
+      right: 22%; }
+    .projets__movie__title {
+      font-size: 4.375em; }
+    .projets__movie__link {
+      font-size: 1.875em; } }
 
 @media screen and (max-width: 1064px) {
   .fil-ariane__chemin {
@@ -989,6 +1003,75 @@ table {
   .fil-ariane__size {
     position: relative;
     left: 47px; } }
+
+@media screen and (max-width: 975px) {
+  .projets__movie__content {
+    position: absolute;
+    top: 30%;
+    right: 18%; } }
+
+@media screen and (max-width: 850px) {
+  .projets__title {
+    font-size: 3.75em; }
+  .projets__movie__content {
+    position: absolute;
+    top: 30%;
+    right: 25%; }
+  .projets__movie__title {
+    font-size: 3.125em; }
+  .projets__movie__link {
+    font-size: 1.25em; } }
+
+@media screen and (max-width: 700px) {
+  .projets__movie__content {
+    position: absolute;
+    top: 30%;
+    right: 20%; }
+  .projets__movie__title {
+    font-size: 2.8125em; }
+  .projets__movie__link {
+    font-size: 0.9375em; } }
+
+@media screen and (max-width: 600px) {
+  .projets__movie__content {
+    position: absolute;
+    top: 30%;
+    right: 20%; }
+  .projets__movie__title {
+    font-size: 2.5em; } }
+
+@media screen and (max-width: 510px) {
+  .projets__title {
+    font-size: 2.5em; }
+  .projets__movie__content {
+    position: absolute;
+    top: 25%;
+    right: 15%; }
+  .projets__movie__title {
+    font-size: 2.1875em; } }
+
+@media screen and (max-width: 450px) {
+  .projets__movie__content {
+    position: absolute;
+    top: 20%;
+    right: 15%; }
+  .projets__movie__title {
+    font-size: 1.875em;
+    padding: 0.142857em; }
+  .projets__movie__link {
+    font-size: 0.625em; } }
+
+@media screen and (max-width: 390px) {
+  .projets__title {
+    font-size: 1.875em; }
+  .projets__movie__content {
+    position: absolute;
+    top: 15%;
+    right: 10%; }
+  .projets__movie__title {
+    margin-bottom: 0.833333em; }
+  .projets__movie__link {
+    font-size: 0.625em; } }
 
 /****COMPONENTS****/
 /**MOVIE**/
@@ -1075,7 +1158,7 @@ table {
       font-weight: 100; }
 
 .don {
-  background-color: #b5877b; }
+  background-color: #e8a274; }
   .don__title {
     font-family: 'pwl';
     font-size: 5em;
@@ -1086,11 +1169,14 @@ table {
     text-align: center;
     border-radius: 0.3125em; }
   .don__link {
-    font-size: 1.875em;
+    font-size: 1.5625em;
+    display: block;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: 500;
     font-family: 'roboto';
-    color: black; }
+    color: #727272; }
 
 .pictures__title {
   font-size: 6.25em;

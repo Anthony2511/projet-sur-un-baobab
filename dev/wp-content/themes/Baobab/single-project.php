@@ -147,37 +147,17 @@ get_header('home');
             </div>
         </div>
     </div>
-    <div class="movie__commentaires">
-        <div class="movie__mon-commentaire">
-            <img src="img/photoProfil.png" class="movie__mon-commentaire__profil " alt="Photo de profil" width="40" height="50"/>
-            <form class="movie__mon-commentaire__form" action="index.html" method="post">
-                <input type="text" class="movie__mon-commentaire__champ" placeholder="Votre commentaire" name="name" value="">
-            </form>
-        </div>
-        <div class="movie__publier">
-            <div class="movie__person">
-                <img src="img/photoProfil.png" class="movie__person__profil" alt="Photo de profil" width="40" height="50"/>
-                <p class="movie__person__author">
-                    Julien Heyndels, 21 mars 2015 à 17h31
-                </p>
-            </div>
-            <p class="movie__publier__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed ut dignissim nisl. Interdum
-            </p>
-        </div>
-    </div>
 </div>
 <section class="don">
-    <h2 aria-level="2" class="don__title">Soutenez-nous dans notre projet</h2>
+    <h2 aria-level="2" class="don__title"><?php the_field('don_title');?></h2>
     <figure class="don__arrow-one">
-        <img src="img/flecheDon.png" alt="" width="60" height="100" />
+        <img src="<?php the_field('don_arrow-left');?>" alt="" width="60" height="100" />
     </figure>
     <p class="don__button">
-        <a href="don.html" class="don__link">Soutenez-nous</a>
+        <a href="<?php the_field('don_cible-button');?>" class="don__link"><?php the_field('don_text-button');?></a>
     </p>
     <figure class="don__arrow-two">
-        <img src="img/flecheDon2.png" alt="" width="60" height="100"/>
+        <img src="<?php the_field('don_arrow-right');?>" alt="" width="60" height="100"/>
     </figure>
 </section>
 <?php

@@ -86,6 +86,7 @@
     }
 }
 .don{
+    margin-top: 50px;
     padding-bottom: 3.125em; //50px
     position: relative;
     height: 16.25em; //260px
@@ -94,7 +95,7 @@
     }
     &__arrow-one{
         position: absolute;
-        left: 600px;
+        left: 30%;
         top: 150px;
     }
     &__button{
@@ -104,7 +105,7 @@
     }
     &__arrow-two{
         position: absolute;
-        right: 600px;
+        right: 30%;
         top: 150px;
     }
 }

@@ -114,7 +114,7 @@
     }
 }
 .don{
-    background-color: $backgroundColorDonMovie;
+    background-color: $backgroundColorPartenaires;
     &__title{
         font-family: 'pwl';
         font-size: 5em; //80px
@@ -127,10 +127,13 @@
         border-radius: 0.3125em; //5px
     }
     &__link{
-        font-size: 1.875em; //30px
+        font-size: 1.5625em; //25px
+        display: block;
+        width: 100%;
+        height: 100%;
         text-decoration: none;
-        font-weight: 100;
+        font-weight: 500;
         font-family: 'roboto';
-        color: $colorBlack;
+        color: $colorAuthor;
     }
 }

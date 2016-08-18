@@ -59,14 +59,35 @@
     }
 }
 @media screen and (max-width: 1209px){
-    .fil-ariane{
-        &__size{
-            position: relative;
-            left: -27px;
+.fil-ariane{
+    &__size{
+        position: relative;
+        left: -27px;
+        max-width: 100%;
+    }
+}
+.projets{
+    margin: 0 50px;
+    &__title{
+        font-size: 5em; // 80px
+    }
+    &__movie{
+        &__content{
+            position: absolute;
+            top: 30%; //150px
+            right: 22%; //190px
+        }
+        &__title{
+            font-size: 4.375em; // 70px
+        }
+        &__link{
+            font-size: 1.875em; // 30px
         }
     }
+}
 
 }
+
 @media screen and (max-width: 1064px){
     .fil-ariane{
         &__chemin{
@@ -77,26 +98,124 @@
             left: 47px;
         }
     }
-    .container{
-    }
+}
+@media screen and (max-width: 975px) {
     .projets{
-        &__title{
-
-        }
         &__movie{
-            &__image{
-            }
             &__content{
+                position: absolute;
+                top: 30%; //150px
+                right: 18%; //190px
             }
             &__container{
-            }
-            &__title{
-
-            }
-            &__link{
 
             }
         }
     }
-
+}
+@media screen and (max-width: 850px) {
+    .projets{
+        &__title{
+            font-size: 3.75em; // 60px
+        }
+        &__movie{
+            &__content{
+                position: absolute;
+                top: 30%; //150px
+                right: 25%; //190px
+            }
+            &__title{
+                font-size: 3.125em; // 50px
+            }
+            &__link{
+                font-size: 1.25em; // 20px
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .projets{
+        &__movie{
+            &__content{
+                position: absolute;
+                top: 30%; //150px
+                right: 20%; //190px
+            }
+            &__title{
+                font-size: 2.8125em; // 45px
+            }
+            &__link{
+                font-size: 0.9375em; // 15px
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .projets{
+        &__movie{
+            &__content{
+                position: absolute;
+                top: 30%; //150px
+                right: 20%; //190px
+            }
+            &__title{
+                font-size: 2.5em; // 40px
+            }
+        }
+    }
+}
+@media screen and (max-width: 510px) {
+    .projets{
+        &__title{
+            font-size: 2.5em; //40px
+        }
+        &__movie{
+            &__content{
+                position: absolute;
+                top: 25%;
+                right: 15%;
+            }
+            &__title{
+                font-size: 2.1875em; // 35px
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .projets{
+        &__movie{
+            &__content{
+                position: absolute;
+                top: 20%;
+                right: 15%;
+            }
+            &__title{
+                font-size: 1.875em; // 35px
+                padding: 0.142857em; // 5px (35px)
+            }
+            &__link{
+                font-size: 0.625em; // 10px
+            }
+        }
+    }
+}
+@media screen and (max-width: 390px) {
+    .projets{
+        &__title{
+            font-size: 1.875em; // 30px
+        }
+        &__movie{
+            &__content{
+                position: absolute;
+                top: 15%;
+                right: 10%;
+            }
+            &__title{
+                margin-bottom: 0.833333em; // 25px (30px)
+            }
+            &__link{
+                font-size: 0.625em; // 10px
+            }
+        }
+    }
 }

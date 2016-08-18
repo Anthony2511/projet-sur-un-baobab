@@ -10,7 +10,7 @@ main{
 
 .container{
     &__size{
-        width: 60.625em; //970px
+        max-width: 60.625em; //970px
         margin: 0 auto;
         font-family: 'roboto';
     }
