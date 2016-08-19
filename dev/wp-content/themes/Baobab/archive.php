@@ -29,9 +29,11 @@ get_header('home');
                 <img src="<?php the_field('article_image');?>" alt="Projection de Safidn'i Pela" class="actus__link__images" width="450" height="300"/>
                 <section class="actus__link__content">
                     <h3 aria-level="3" class="actus__link__title"><?php the_title();?></h3>
+                    <p class="actus__link__syno">
+                        <?php the_field('article_syno');?>
+                    </p>
                     <a href="<?php the_permalink();?>" class="actus__link__view"><?php _e('Voir l\'article','b');?></a>
                 </section>
-                <div class="actus__link__opacity"></div>
             </div>
         </a>
     <?php endwhile; endif; ?>

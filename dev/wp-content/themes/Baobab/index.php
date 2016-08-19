@@ -55,8 +55,6 @@ if(is_page()){
     <div class="partenaires__logo">
         <img src="<?php echo get_template_directory_uri() . '/../../uploads/2016/04/ong2.jpg';?>" class="partenaires__logo__sponsor" alt="Logo ONG Avenir" width="600" height="240"/>
         <img src="<?php echo get_template_directory_uri() . '/../../uploads/2016/04/ong2.jpg';?>" class="partenaires__logo__sponsor" alt="Logo ONG Avenir" width="600" height="240"/>
-        <img src="<?php echo get_template_directory_uri() . '/../../uploads/2016/04/ong2.jpg';?>"  class="partenaires__logo__sponsor"alt="Logo ONG Avenir" width="600" height="240"/>
-        <img src="<?php echo get_template_directory_uri() . '/../../uploads/2016/04/ong2.jpg';?>"  class="partenaires__logo__sponsor"alt="Logo ONG Avenir" width="600" height="240"/>
     </div>
 </section>
 <?php

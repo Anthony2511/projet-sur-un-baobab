@@ -9,12 +9,12 @@
     <body>
         <div class="site-container">
             <div class="site-pusher">
-                <h1 aria-level="1" class="hidden">Baobab</h1>
+                <h1 aria-level="1" class="hidden"><?php the_title();?></h1>
                 <header class="topbar">
                     <div class="topbar__lang">
-                        <a href="#" class="topbar__lang__detail topbar__lang__detail--active">Français</a>
-                        <a href="#" class="topbar__lang__detail">Espagnol</a>
-                        <a href="#" class="topbar__lang__detail">Anglais</a>
+                        <a href="#" class="topbar__lang__detail topbar__lang__detail--active"><?php _e('Français','b');?></a>
+                        <a href="#" class="topbar__lang__detail"><?php _e('Espagnol','b');?></a>
+                        <a href="#" class="topbar__lang__detail"><?php _e('Anglais','b');?></a>
                     </div>
                     <figure class="topbar__figure-image">
                         <img class="topbar__image" src="<?php the_field('home_logo');?>" alt="logo du site"/>

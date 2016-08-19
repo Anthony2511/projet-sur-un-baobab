@@ -131,7 +131,7 @@
         margin-top: -0.3125em; //5px
         &__lang{
             text-align: center;
-            right: 420px;
+            right: 36%;
             &__detail{
                 font-size: 1.0625em; //17px
             }
@@ -140,9 +140,6 @@
             margin-top: 1.25em; //20px
             &__link{
                 font-size: 1.6875em; //27px
-            }
-            &__detail{
-
             }
             &__link + &__link{
                 margin-left: 2.5em; //40px
@@ -177,7 +174,7 @@
     .topbar{
         max-width: 100%;
         &__lang{
-            right: 360px;
+            right: 35%;
             &__detail{
                 font-size: 0.875em; //14px
             }
@@ -225,7 +222,6 @@
     .topbar{
         background-size: cover;
         &__lang{
-            right: 305px;
             &__detail{
                 font-size: 0.6875em; //11px
             }
@@ -273,7 +269,7 @@
             &__link{
                 height: 2.5em; //40px
                 text-align: center;
-                line-height: 1.25em; //20px
+                line-height: 1.4em; //20px
                 direction: rtl;
             }
             &__detail{
@@ -283,8 +279,7 @@
         &__intro{
             &__text{
                 font-size: 1.125em; //18px
-                padding: 0 150px;
-                min-width: 300px;
+                padding: 0 100px;
             }
             &__link{
                 &__button{
@@ -300,6 +295,24 @@
         }
         &__scroll-text{
             font-size: 25px;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .topbar{
+        &__intro{
+            margin: 4.8675em 0; // 75px
+            &__text{
+                padding: 0 50px;
+            }
+        }
+        &__scroll{
+            position: absolute;
+            left: 35%;
+        }
+        &__scroll-text{
+            position: absolute;
+            left: 40%;
         }
     }
 }

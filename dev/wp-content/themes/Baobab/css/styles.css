@@ -442,38 +442,24 @@ table {
     padding: 0 0.333333em; }
 
 .actus {
-  width: 68.75em;
+  max-width: 68.625em;
   margin: 0 auto; }
   .actus__title {
     margin-bottom: 1em; }
   .actus__link__container {
-    position: relative;
-    margin-bottom: 1.875em;
-    max-width: 28.125em;
-    height: 18.75em;
-    display: inline-block;
-    margin: 0 3.125em 3.125em 0; }
-  .actus__link__images {
-    width: 100%;
-    height: 100%; }
+    margin-bottom: 100px; }
   .actus__link__content {
-    position: absolute;
-    top: 0;
-    right: 10%;
-    z-index: 10; }
+    display: inline-block;
+    max-width: 500px; }
   .actus__link__title {
-    margin: 2em 0;
-    max-width: 11.25em; }
-  .actus__link__view {
-    padding: 0.2em 0.4em;
     position: relative;
-    top: 50%; }
-  .actus__link__opacity {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+    top: -90px;
+    right: 20%;
+    width: 550px; }
+  .actus__link__view {
+    padding: 0.4em 0.8em;
+    position: relative;
+    left: 65%; }
 
 .article::after {
   clear: both;
@@ -655,7 +641,7 @@ table {
     margin-top: -0.3125em; }
     .topbar__lang {
       text-align: center;
-      right: 420px; }
+      right: 36%; }
       .topbar__lang__detail {
         font-size: 1.0625em; }
     .topbar__list {
@@ -684,7 +670,7 @@ table {
   .topbar {
     max-width: 100%; }
     .topbar__lang {
-      right: 360px; }
+      right: 35%; }
       .topbar__lang__detail {
         font-size: 0.875em; }
     .topbar__list {
@@ -712,10 +698,8 @@ table {
 @media screen and (max-width: 919px) {
   .topbar {
     background-size: cover; }
-    .topbar__lang {
-      right: 305px; }
-      .topbar__lang__detail {
-        font-size: 0.6875em; }
+    .topbar__lang__detail {
+      font-size: 0.6875em; }
     .topbar__list__link {
       font-size: 1.3125em; }
     .topbar__list__link + .topbar__list__link {
@@ -739,12 +723,11 @@ table {
     .topbar__list__link {
       height: 2.5em;
       text-align: center;
-      line-height: 1.25em;
+      line-height: 1.4em;
       direction: rtl; }
   .topbar__intro__text {
     font-size: 1.125em;
-    padding: 0 150px;
-    min-width: 300px; }
+    padding: 0 100px; }
   .topbar__intro__link__button {
     font-size: 1.125em; }
   .topbar__scroll {
@@ -754,6 +737,18 @@ table {
     top: 87.5%; }
   .topbar__scroll-text {
     font-size: 25px; } }
+
+@media screen and (max-width: 500px) {
+  .topbar__intro {
+    margin: 4.8675em 0; }
+    .topbar__intro__text {
+      padding: 0 50px; }
+  .topbar__scroll {
+    position: absolute;
+    left: 35%; }
+  .topbar__scroll-text {
+    position: absolute;
+    left: 40%; } }
 
 /****COMPONENTS****/
 /**ACCUEIL ACTU**/
@@ -979,7 +974,6 @@ table {
   font-family: 'roboto'; }
 
 .fil-ariane__size {
-  width: 300px;
   margin: 1.875em 0 3.125em 0;
   position: relative;
   left: -10%; }
@@ -1039,11 +1033,13 @@ table {
       font-size: 1.875em; } }
 
 @media screen and (max-width: 1064px) {
-  .fil-ariane__chemin {
-    font-size: 1.25em; }
-  .fil-ariane__size {
-    position: relative;
-    left: 47px; } }
+  .fil-ariane {
+    width: 300px; }
+    .fil-ariane__chemin {
+      font-size: 1.25em; }
+    .fil-ariane__size {
+      position: relative;
+      left: 47px; } }
 
 @media screen and (max-width: 975px) {
   .projets__movie__content {
@@ -1157,10 +1153,12 @@ table {
     margin: 30px 0;
     color: #e3a558; }
   .movie__section-text {
+    color: #a8a8a8;
     font-size: 20px;
     font-weight: 100;
     line-height: 30px; }
   .movie__section-textWidth {
+    color: #a8a8a8;
     font-size: 20px;
     font-weight: 100;
     line-height: 30px;
@@ -1346,28 +1344,34 @@ table {
 
 .actus__link {
   text-decoration: none; }
-  .actus__link__content {
-    text-align: center; }
   .actus__link__title {
     word-wrap: break-word;
     font-family: 'pwl';
     color: white;
-    font-size: 2em; }
+    font-size: 1.5em;
+    transform: skewX(-10deg);
+    background-color: #f2673f;
+    padding: 20px 0 20px 20px; }
+  .actus__link__syno {
+    margin: 20px 0 0 20px;
+    position: relative;
+    top: -90px;
+    font-size: 1.25em;
+    color: #a8a8a8;
+    line-height: 1.5em;
+    font-weight: lighter; }
   .actus__link__date {
     font-size: 1.25em;
     font-weight: normal;
     color: white; }
   .actus__link__view {
+    color: #f2673f;
     text-decoration: none;
-    color: white;
     font-size: 1.5625em;
-    border: 0.0625em solid white;
-    border-radius: 0.3125em; }
+    border: 0.0625em solid #f2673f; }
     .actus__link__view:hover {
-      background-color: #e3a558; }
-  .actus__link__opacity {
-    background-color: black;
-    opacity: 0.5; }
+      background-color: #f2673f;
+      color: white; }
 
 .article__title {
   font-size: 6.25em;
