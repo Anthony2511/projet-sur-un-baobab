@@ -23,7 +23,7 @@
                     <?php wp_reset_postdata(); ?>
                 <?php endwhile; endif; ?>
             </section>
-            <section class="footer__section-one__contact">
+            <section class="footer__section-one__contact footer__section-one__contact--none">
                 <h2 aria-level="2" class="footer__section-one__title"><?php echo $easy_options['titresection3'];?></h2>
                 <ul class="footer__section-one__list">
                     <li class="footer__section-one__detail"><a href="<?php echo get_home_url(); ?>" class="footer__section-one__link">Accueil</a></li>
@@ -56,7 +56,7 @@
                 </a>
             </div>
             <div class="footer__section-two__back">
-                <a href="#" class="footer__section-two__high">Revenir en haut</a>
+                <a href="#" class="footer__section-two__high"><?php _e('Revenir en haut','b');?></a>
             </div>
         </div>
     </div>

@@ -2,7 +2,7 @@
 /**FOOTER**/
 .footer{
     &__section-one{
-        max-width: 68.625em; //930px
+        max-width: 68.625em; //825px
         margin: 0 auto;
         padding: 2.5em 0; //40px
         &__contact{
@@ -29,7 +29,7 @@
         }
     }
     &__section-two{
-        max-width: 58.125em; //930px
+        max-width: 51.5em; //930px
         margin: 0 auto;
         border-top: 0.0625em solid white; //1px
         padding-top: 1.25em; //20px
@@ -46,8 +46,8 @@
             display: inline-block;
             width: 14.375em; //230px
             position: relative;
-            left: 200px;
-            top: -10px;
+            left: 14%;
+            top: -5px;
         }
         &__link + &__link{
             margin-left: 0.625em; //10px
