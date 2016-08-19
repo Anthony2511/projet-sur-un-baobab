@@ -157,13 +157,13 @@ get_header('home');
 <section class="don">
     <h2 aria-level="2" class="don__title"><?php the_field('don_title');?></h2>
     <figure class="don__arrow-one">
-        <img src="<?php the_field('don_arrow-left');?>" alt="" width="60" height="100" />
+        <img class="don__arrow-width" src="<?php the_field('don_arrow-left');?>" alt="" width="60" height="100" />
     </figure>
     <p class="don__button">
         <a href="<?php the_field('don_cible-button');?>" class="don__link"><?php the_field('don_text-button');?></a>
     </p>
     <figure class="don__arrow-two">
-        <img src="<?php the_field('don_arrow-right');?>" alt="" width="60" height="100"/>
+        <img class="don__arrow-width" src="<?php the_field('don_arrow-right');?>" alt="" width="60" height="100"/>
     </figure>
 </section>
 <?php

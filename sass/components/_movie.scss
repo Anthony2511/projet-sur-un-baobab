@@ -137,3 +137,134 @@
         color: $colorAuthor;
     }
 }
+@media screen and (max-width: 1064px){
+    .movie{
+        &__title{
+            font-size: 5em; // 80px
+        }
+    }
+    .don{
+        padding-bottom: 1.875em; // 30px
+        &__title{
+            font-size: 3.75em; // 60px
+        }
+        &__link{
+            font-size: 1.25em; //20px
+        }
+        &__button{
+            padding: 0.625em 0; // 10px 0
+            max-width: 15.625em; // 250px
+        }
+        &__arrow-width{
+            max-width: 75%;
+            height: auto;
+        }
+        &__arrow-one{
+            position: absolute;
+            left: 25%;
+            top: 130px;
+        }
+        &__arrow-two{
+            position: absolute;
+            right: 25%;
+            top: 130px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .movie{
+        &__content{
+            margin: 0 50px;
+        }
+        &__title-section{
+            font-size: 1.875em; // 30px
+        }
+        &__section-title{
+            font-size: 1.5625em; // 25px
+        }
+        &__section-text{
+            font-size: 1.125em; // 18px
+        }
+        &__section-textWidth{
+            font-size: 1.125em; // 18px
+        }
+        &__fiche{
+            font-size: 1.125em; // 18px
+        }
+        &__section-legend{
+            font-size: 1.125em; // 18px
+        }
+    }
+    .don{
+        height: 12.5em; // 200px
+        &__title{
+            font-size: 2.5em; // 50px
+        }
+        &__arrow-one{
+            display: none;
+        }
+        &__arrow-two{
+            display: none;
+        }
+        &__button{
+            margin: 2.5em auto; // 40px
+            max-width: 12.5em; // 200px
+        }
+        &__link{
+            font-size: 0.9375em; // 15px
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .movie{
+        &__title{
+            font-size: 3.75em; // 60px
+        }
+        &__title-section{
+            font-size: 1.5625em; // 25px
+        }
+        &__section-title{
+            font-size: 1.25em; // 20px
+        }
+        &__section-text{
+            font-size: 1em; // 16px
+        }
+        &__section-textWidth{
+            font-size: 1em; // 16px
+        }
+        &__fiche{
+            font-size: 1em; // 16px
+        }
+        &__section-legend{
+            font-size: 0.9375em; // 15px
+        }
+        &__row{
+            &__head{
+                padding: 0.3125em 0.9375em 0.3125em 0.3125em; // 5px 15px 5px 5px
+            }
+            &__infos{
+                font-size: 0.875em; // 14px
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .movie{
+        &__title{
+            font-size: 2.5em; // 40px
+        }
+        &__title-section{
+            font-size: 1.4375em; // 23px
+            padding-left: 0;
+        }
+        &__fiche{
+            font-size: 0.875em; // 14px
+        }
+        &__row{
+            &__infos{
+                font-size: 0.75em; // 12px
+            }
+        }
+    }
+}
