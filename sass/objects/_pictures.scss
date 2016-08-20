@@ -24,7 +24,7 @@
     }
     &__pagination{
         margin : 3.125em 0; //50px
-        width: 60.625em; //970px
+        max-width: 60.625em; //970px
     }
     &__link{
         padding: 0 0.333333em; //0 10px (30px)

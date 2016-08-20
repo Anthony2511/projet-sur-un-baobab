@@ -16,6 +16,7 @@ get_header('home');
                 </p>
             </div>
             <div class="article">
+                <h2 aria-level="2" class="article__title"><?php the_title();?></h2>
                 <span class="article__date"><?php the_date();?></span>
                 <img src="<?php the_field('article_image');?>" class="article__image" alt="Sur un Baobab a un an" width="1000" height="667"/>
                 <div class="article__texte">

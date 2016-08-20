@@ -181,6 +181,18 @@
         }
     }
 }
+@media screen and (max-width: 671px){
+    .partenaires{
+        &__logo{
+            &__sponsor{
+                width: 90%;
+            }
+            &__sponsor + &__sponsor{
+                margin-left: 0;
+            }
+        }
+    }
+}
 @media screen and (max-width: 510px){
     .head{
         &__actu{

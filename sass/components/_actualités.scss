@@ -11,13 +11,12 @@
     &__link{
         text-decoration: none;
         &__content{
-
         }
         &__title{
             word-wrap: break-word;
             font-family: 'pwl';
             color: $colorWhite;
-            font-size: 1.5em; //40px
+            font-size: 1.5em; //24px
             transform: skewX(-10deg);
             background-color: $colorFilAriane;
             padding: 20px 0 20px 20px;
@@ -50,12 +49,54 @@
 }
 
 @media screen and (max-width: 1209px){
-    .actu{
+    .actus{
+        &__title{
+            font-size: 5em; // 80px
+        }
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .actus{
+        margin: 0 50px;
         &__link{
             &__container{
+                text-align: center;
+            }
+            &__content{
+                max-width: 500px;
+            }
+            &__title{
+                position: relative;
+                right: 0%;
+                top: -120px;
+                font-size: 1.25em;
+            }
+            &__syno{
+                position: relative;
+                top: -70px;
+            }
+            &__view{
+                position: relative;
+                left: 0;
             }
         }
-        &__images{
+    }
+}
+@media screen and (max-width: 500px) {
+    .actus{
+        &__title{
+            font-size: 2.5em; // 40px
+        }
+        &__link{
+            &__syno{
+                position: relative;
+                top: -40px;
+            }
+            &__title{
+                font-size: 1em;
+                padding: 10px 0 10px 10px;
+            }
         }
     }
 }
