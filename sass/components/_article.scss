@@ -16,7 +16,7 @@
         font-weight: 500;
         color: $colorFilAriane;
         &--right{
-            margin-right: 20px;
+            margin-right: 10px;
         }
     }
     &__texte{
@@ -34,7 +34,7 @@
         }
     }
     &__commentaires{
-        width: 54.375em; //870px
+        max-width: 60.625em; //970px
         margin: 0 auto;
         background-color: $colorGreyTwo;
         border-radius: 10px;
@@ -67,7 +67,7 @@
         background-color: $colorWhite;
         font-family: $roboto;
         font-size: 15px;
-        margin-top: 20px;
+        margin: 20px 0;
         border-radius: 5px;
         &:hover{
             background-color: $colorTitle;
@@ -89,6 +89,7 @@
         padding: 10px;
         font-family: $roboto;
         font-size: 15px;
+        margin-right: 10px;
     }
     &__form{
         display: inline-block;
@@ -101,5 +102,35 @@
         width: 24.2em; //605px (25px);
         padding: 0.14em 0; //3.5px 0 (25px)
     }
-
+}
+@media screen and (max-width : 1064px ) {
+    .article{
+        margin: 0 20px;
+        &__commentaires{
+            margin: 0 20px 50px;
+        }
+    }
+}
+@media screen and (max-width : 850px ) {
+    .article{
+        &__title{
+            font-size: 2.5em;
+        }
+        &__infos-detail{
+            font-size: 14px;
+        }
+        &__texte{
+            font-size: 18px;
+        }
+        &__title-commentaire{
+            font-size: 35px;
+        }
+    }
+}
+@media screen and (max-width : 600px ) {
+    .article{
+        &__title{
+            font-size: 1.875em; // 30px
+        }
+    }
 }

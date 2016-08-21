@@ -46,17 +46,7 @@ get_header('home');
             <div class="article__commentaires">
                 <h2 class="article__title-commentaire">Laissez-nous votre avis</h2>
                 <p class="article__champ-obli">Les champs * sont obligatoires</p>
-                <form class="article__form" action="index.html" method="post">
-                    <p class="article__champ">
-                        <label for="pseudo" class="article__label">Votre nom<span class="asterix">*</span>&nbsp;:</label>
-                        <input type="text" class="article__input" name="pseudo" id="pseudo" required="required">
-                    </p>
-                    <p class="article__champ">
-                        <label for="commentaire" class="article__label">Votre commentaire <span class="asterix">*</span>&nbsp;:</label>
-                        <textarea name="commentaire" class="article__area" id="commentaire" rows="8" cols="50" required="required"></textarea>
-                    </p>
-                    <input type="submit" class="article__button-commentaire" value="Laissez votre commentaire" />
-                </form>
+                <?php echo do_shortcode( '[contact-form-7 id="204" title="Laissez nous votre avis"]' ); ?>
             </div>
             <?php
                 get_footer();
