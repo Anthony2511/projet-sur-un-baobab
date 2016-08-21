@@ -1,36 +1,25 @@
 //****OBJECTS****//
 //**ARTICLE**//
 .article{
-    &::after{
-        clear: both;
-        display: block;
-        content: "";
+    &__image-article{
+        max-width: 500px;
+        height: auto;
+        margin-bottom: 50px;
     }
     &__title{
-        margin: 1em 0 0.5em; // 100px 50px (100px)
+        margin-bottom: 0.833333em; //  50px (60px)
     }
     &__image{
         width: 100%;
         height: 100%;
-        margin-bottom: 6.25em; //100px
+        margin : 6.25em 0 1.25em ; //100px
+        border-radius: 10px;
     }
     &__partie-one{
-        &::after{
-            clear: both;
-            display: block;
-            content: "";
-        }
         &__title{
-            margin-bottom: 1.25em; //100px (80px)
+            margin: 1.25em 0; //100px (80px)
         }
     }
     &__paragraphe{
-        vertical-align: top;
-        width: 16.666666666em; //500px (30px)
-        display: inline-block;
-        margin-bottom: 3.333333em; //100px (30px)
-        &--float{
-            float: right;
-        }
     }
 }

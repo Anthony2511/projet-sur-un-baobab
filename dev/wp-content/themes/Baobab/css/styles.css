@@ -370,33 +370,6 @@ table {
       height: 8.4375em; }
     .movie__pictures__image + .movie__pictures__image {
       margin-left: 1.875em; }
-  .movie__commentaires {
-    width: 54.375em; }
-  .movie__mon-commentaire__profil {
-    margin-right: 1.25em;
-    width: 2.5em;
-    height: 2.5em; }
-  .movie__mon-commentaire__form {
-    display: inline-block;
-    position: relative;
-    top: -12px; }
-  .movie__mon-commentaire__champ {
-    width: 24.2em;
-    padding: 0.14em 0; }
-  .movie__publier {
-    margin-bottom: 3.125em; }
-    .movie__publier__text {
-      width: 28em;
-      margin: 1.2em 0 0 7.2em; }
-  .movie__person {
-    margin: 1.125em 0 0 1.25em;
-    padding-left: 3.75em; }
-    .movie__person__profil {
-      width: 2.5em;
-      height: 2.5em; }
-    .movie__person__author {
-      display: inline-block;
-      margin-left: 1em; }
 
 .don {
   margin-top: 50px;
@@ -464,34 +437,22 @@ table {
     position: relative;
     left: 65%; }
 
-.article::after {
-  clear: both;
-  display: block;
-  content: ""; }
+.article__image-article {
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 50px; }
 
 .article__title {
-  margin: 1em 0 0.5em; }
+  margin-bottom: 0.833333em; }
 
 .article__image {
   width: 100%;
   height: 100%;
-  margin-bottom: 6.25em; }
-
-.article__partie-one::after {
-  clear: both;
-  display: block;
-  content: ""; }
+  margin: 6.25em 0 1.25em;
+  border-radius: 10px; }
 
 .article__partie-one__title {
-  margin-bottom: 1.25em; }
-
-.article__paragraphe {
-  vertical-align: top;
-  width: 16.666666666em;
-  display: inline-block;
-  margin-bottom: 3.333333em; }
-  .article__paragraphe--float {
-    float: right; }
+  margin: 1.25em 0; }
 
 /****OBJECTS****/
 /**ABOUT**/
@@ -1195,17 +1156,6 @@ table {
       background-color: #c9c9c9; }
   .movie__pictures__croix {
     text-align: center; }
-  .movie__mon-commentaire__champ {
-    font-size: 1.5625em;
-    font-weight: lighter; }
-  .movie__publier__text {
-    font-size: 1.5265em; }
-  .movie__person {
-    border-left: 0.0625em solid black; }
-    .movie__person__author {
-      font-size: 1.875em;
-      color: #727272;
-      font-weight: 100; }
 
 .don {
   background-color: #e8a274; }
@@ -1416,24 +1366,100 @@ table {
     padding: 10px 0 10px 10px; } }
 
 .article__title {
-  font-size: 5em;
+  font-size: 3.75em;
   font-family: 'pwl';
   text-align: center;
   color: #e3a558; }
 
-.article__date {
-  font-family: 'roboto';
-  font-weight: 100;
-  font-size: 1.875em; }
+.article__infos-article {
+  margin-bottom: 40px;
+  color: #a8a8a8; }
+
+.article__infos-detail {
+  font-size: 16px;
+  font-weight: 500;
+  color: #f2673f; }
+  .article__infos-detail--right {
+    margin-right: 20px; }
 
 .article__texte {
-  font-size: 1.875em;
-  font-weight: 100; }
+  font-size: 1.3125em;
+  font-weight: lighter;
+  color: #262626;
+  padding: 0 50px;
+  line-height: 1.4em; }
 
 .article__partie-one__title {
   font-size: 2.666666em;
   font-family: 'pwl';
   color: #e3a558; }
+
+.article__commentaires {
+  width: 54.375em;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  padding-left: 10px;
+  color: #727272; }
+
+.article__champ-obli {
+  color: #e3a558;
+  margin-bottom: 20px;
+  font-weight: bold; }
+
+.article__asterix {
+  color: #e3a558; }
+
+.article__title-commentaire {
+  text-align: center;
+  font-size: 2.5em;
+  padding: 20px 0; }
+
+.article__label {
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 10px; }
+
+.article__button-commentaire {
+  border: 2px solid #727272;
+  padding: 10px;
+  background-color: white;
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  border-radius: 5px; }
+  .article__button-commentaire:hover {
+    background-color: #e3a558;
+    border: 2px solid rgba(255, 255, 255, 0);
+    color: white; }
+
+.article__input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px; }
+
+.article__area {
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px; }
+
+.article__form {
+  display: inline-block;
+  position: relative;
+  top: -12px; }
+
+.article__champ {
+  font-size: 1.5625em;
+  font-weight: lighter;
+  width: 24.2em;
+  padding: 0.14em 0; }
 
 .ateliers__title {
   font-size: 6.25em;

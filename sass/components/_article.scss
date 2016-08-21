@@ -2,19 +2,29 @@
 //**ARTICLE**//
 .article{
     &__title{
-        font-size: 5em; //100px
+        font-size: 3.75em; //60px
         font-family: 'pwl';
         text-align: center;
         color: $colorTitle;
     }
-    &__date{
-        font-family: 'roboto';
-        font-weight: 100;
-        font-size: 1.875em; //30px
+    &__infos-article{
+        margin-bottom: 40px;
+        color: $backgroundColorButtonProjet;
+    }
+    &__infos-detail{
+        font-size: 16px;
+        font-weight: 500;
+        color: $colorFilAriane;
+        &--right{
+            margin-right: 20px;
+        }
     }
     &__texte{
-        font-size: 1.875em; //30px
-        font-weight: 100;
+        font-size: 1.3125em; //30px
+        font-weight: lighter;
+        color: $colorGreyDark;
+        padding: 0 50px;
+        line-height: 1.4em;
     }
     &__partie-one{
         &__title{
@@ -23,4 +33,73 @@
             color: $colorTitle;
         }
     }
+    &__commentaires{
+        width: 54.375em; //870px
+        margin: 0 auto;
+        background-color: $colorGreyTwo;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        padding-left: 10px;
+        color: $colorAuthor;
+    }
+    &__champ-obli{
+        color: $colorTitle;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    &__asterix{
+        color: $colorTitle;
+    }
+    &__title-commentaire{
+        text-align: center;
+        font-size: 2.5em;
+        padding: 20px 0;
+    }
+    &__label{
+        display: block;
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+    &__button-commentaire{
+        border: 2px solid $colorAuthor;
+        padding: 10px;
+        background-color: $colorWhite;
+        font-family: $roboto;
+        font-size: 15px;
+        margin-top: 20px;
+        border-radius: 5px;
+        &:hover{
+            background-color: $colorTitle;
+            border: 2px solid $colorTransparent;
+            color: $colorWhite;
+        }
+    }
+    &__input{
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-family: $roboto;
+        font-size: 15px;
+    }
+    &__area{
+        border: none;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        font-family: $roboto;
+        font-size: 15px;
+    }
+    &__form{
+        display: inline-block;
+        position: relative;
+        top: -12px;
+    }
+    &__champ{
+        font-size: 1.5625em; //25px
+        font-weight: lighter;
+        width: 24.2em; //605px (25px);
+        padding: 0.14em 0; //3.5px 0 (25px)
+    }
+
 }
