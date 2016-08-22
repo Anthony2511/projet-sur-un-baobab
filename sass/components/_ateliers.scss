@@ -17,7 +17,7 @@
         display: inline-block;
 
         &__image{
-            width: 400px;
+            max-width: 100%;
             height: auto;
             margin-right: 30px;
         }
@@ -49,5 +49,65 @@
         position: absolute;
         bottom: 30px;
         right: 3%;
+    }
+}
+@media screen and (max-width:1064px) {
+    .ateliers{
+        &__title{
+            font-size: 3.75em; // 80px
+        }
+        margin: 0 20px;
+        &__content{
+            &__title{
+                font-size: 1.5625em; // 25px
+            }
+        }
+    }
+}
+@media screen and (max-width:874px) {
+    .ateliers{
+        &__tuto{
+            text-align: center;
+        }
+        &__link{
+            position: absolute;
+            right: 35%;
+        }
+        &__content{
+            &__image{
+                margin : 50px 0 70px;
+            }
+            &__title{
+                position: absolute;
+                right: 35%;
+            }
+        }
+        &__text{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .ateliers{
+        &__content{
+            &__title{
+                font-size: 1.25em; // 20px
+            }
+        }
+    }
+}
+@media screen and (max-width:352px) {
+    .ateliers{
+        &__link{
+            position: absolute;
+            right: 11%;
+        }
+        &__content{
+            &__title{
+                font-size: 1em;
+                position: absolute;
+                right: 20%;
+            }
+        }
     }
 }

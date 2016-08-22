@@ -27,7 +27,7 @@ get_header('home');
                 <div class="ateliers__tutos">
                     <div class="ateliers__tuto">
                         <figure class="ateliers__content">
-                            <img src="<?php the_field('tuto_image');?>" class="ateliers__content__image" alt="image du tuto 1" width="624" height="416"/>
+                            <img src="<?php the_field('tuto_image');?>" class="ateliers__content__image" alt="image du tuto 1" width="400" height="267"/>
                         </figure>
                         <div class="ateliers__content">
                             <h3 aria-level="3" class="ateliers__content__title"><?php the_title();?></h3>
