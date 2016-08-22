@@ -1501,7 +1501,8 @@ table {
   margin: 1em 0; }
 
 .ateliers__tuto {
-  border: 1px solid black;
+  border: 2px solid #c9c9c9;
+  border-radius: 5px;
   padding: 30px;
   margin-bottom: 100px;
   position: relative; }
@@ -1514,20 +1515,23 @@ table {
     margin-right: 30px; }
   .ateliers__content__title {
     font-family: 'pwl';
-    font-size: 40px;
+    font-size: 35px;
     position: absolute;
     top: 30px;
-    right: 30px; }
+    font-weight: bold;
+    color: #f2673f; }
 
 .ateliers__text {
   width: 300px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 100;
   position: relative;
-  top: -100px; }
+  top: -100px;
+  line-height: 1.5em;
+  color: #a8a8a8; }
 
 .ateliers__link {
-  background-color: #6f2317;
+  background-color: #f2673f;
   text-decoration: none;
   color: white;
   border-radius: 10px;
@@ -1535,7 +1539,7 @@ table {
   padding: 10px 30px;
   position: absolute;
   bottom: 30px;
-  right: 30px; }
+  right: 3%; }
 
 /****COMPONENTS****/
 /**ABOUT**/

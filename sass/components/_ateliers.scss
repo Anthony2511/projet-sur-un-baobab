@@ -6,11 +6,9 @@
         color: $colorTitle;
         margin : 1em 0; //100px (100px)
     }
-    &__tutos{
-
-    }
     &__tuto{
-        border: 1px solid black;
+        border: 2px solid $backgroundColorHoverButtonProjet;
+        border-radius: 5px;
         padding: 30px;
         margin-bottom: 100px;
         position: relative;
@@ -25,21 +23,24 @@
         }
         &__title{
             font-family: 'pwl';
-            font-size: 40px;
+            font-size: 35px;
             position: absolute;
             top: 30px;
-            right: 30px;
+            font-weight: bold;
+            color: $colorFilAriane;
         }
     }
     &__text{
         width: 300px;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 100;
         position: relative;
         top: -100px;
+        line-height: 1.5em;
+        color: $backgroundColorButtonProjet;
     }
     &__link{
-        background-color: $backgroundColorButtonDon;
+        background-color: $colorFilAriane;
         text-decoration: none;
         color: $colorWhite;
         border-radius: 10px;
@@ -47,6 +48,6 @@
         padding: 10px 30px;
         position: absolute;
         bottom: 30px;
-        right: 30px;
+        right: 3%;
     }
 }
