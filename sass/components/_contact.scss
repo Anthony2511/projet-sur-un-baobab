@@ -21,24 +21,68 @@
     &__name{
         font-size: 30px;
         margin-bottom: 20px;
+        color: $backgroundColorButtonProjet;
+        font-family: 'pwl';
+        &::before{
+            content: url('../img/WhatsApp.png');
+        }
     }
     &__tel{
-        font-size: 25px;
-        color : $colorMail;
+        font-size: 20px;
+        color : $colorFilAriane;
+        font-weight: lighter;
     }
     &__form{
         text-align: center;
+        max-width: 100%;
+        height: auto;
     }
+    &__bloc{
+        display: inline-block;
+    }
+    &__bloc + &__bloc {
+        margin-left: 20px;
+    }
+    &__form-label{
+        background-color: $colorFilAriane;
+        color: $colorWhite;
+        padding: 15px;
+        font-family: $roboto;
+    }
+
     &__form-detail{
-        max-width: 250px;
+        max-width: 150px;
         margin: 50px 0 30px;
-        font-size: 25px;
-        padding :10px;
+        font-size: 16px;
+        padding :17px;
+        background-color: $colorGrey;
+        color: $colorWhite;
+        border: none;
     }
     &__form-message{
-        width: 95%;
+        width: 85%;
+        font-family: $roboto;
+        padding: 20px;
+        font-size: 16px;
+        background-color: $colorGrey;
+        color: $colorWhite;
+        border: none;
     }
-    &__form-detail + &__form-detail{
-        margin-left: 50px;
+    &__form-button{
+        border: 1px solid $colorFilAriane;
+        background-color: $colorWhite;
+        color: $backgroundColorButtonProjet;
+        font-size: 25px;
+        padding: 15px 35px;
+        margin: 30px 0;
+        float: right;
+        position: relative;
+        left: -5%;
+        &:hover{
+            border: 1px solid $colorTransparent;
+            background-color: $colorFilAriane;
+            color: $colorWhite;
+        }
     }
+
 }

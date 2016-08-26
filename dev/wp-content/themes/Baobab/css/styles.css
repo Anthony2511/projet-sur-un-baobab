@@ -1376,6 +1376,9 @@ table {
   text-align: center;
   color: #e3a558; }
 
+.article__paragraphe {
+  color: #a8a8a8; }
+
 .article__infos-article {
   margin-bottom: 40px;
   color: #a8a8a8; }
@@ -1711,25 +1714,65 @@ h3 span {
 
 .contact__name {
   font-size: 30px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: #a8a8a8;
+  font-family: 'pwl'; }
+  .contact__name::before {
+    content: url("../img/WhatsApp.png"); }
 
 .contact__tel {
-  font-size: 25px;
-  color: #3690c1; }
+  font-size: 20px;
+  color: #f2673f;
+  font-weight: lighter; }
 
 .contact__form {
-  text-align: center; }
+  text-align: center;
+  max-width: 100%;
+  height: auto; }
+
+.contact__bloc {
+  display: inline-block; }
+
+.contact__bloc + .contact__bloc {
+  margin-left: 20px; }
+
+.contact__form-label {
+  background-color: #f2673f;
+  color: white;
+  padding: 15px;
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .contact__form-detail {
-  max-width: 250px;
+  max-width: 150px;
   margin: 50px 0 30px;
-  font-size: 25px;
-  padding: 10px; }
+  font-size: 16px;
+  padding: 17px;
+  background-color: #e0e0e0;
+  color: white;
+  border: none; }
 
 .contact__form-message {
-  width: 95%; }
+  width: 85%;
+  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #e0e0e0;
+  color: white;
+  border: none; }
 
-.contact__form-detail + .contact__form-detail {
-  margin-left: 50px; }
+.contact__form-button {
+  border: 1px solid #f2673f;
+  background-color: white;
+  color: #a8a8a8;
+  font-size: 25px;
+  padding: 15px 35px;
+  margin: 30px 0;
+  float: right;
+  position: relative;
+  left: -5%; }
+  .contact__form-button:hover {
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: #f2673f;
+    color: white; }
 
 /*# sourceMappingURL=styles.css.map */
