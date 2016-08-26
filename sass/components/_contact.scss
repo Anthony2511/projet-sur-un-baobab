@@ -55,9 +55,10 @@
             height: auto;
     }
     &__form-detail{
-        max-width: 150px;
+        width: 300px;
+        margin: 0 auto;
         margin: 50px 0 30px;
-        font-size: 16px;
+        font-size: 20px;
         padding :17px;
         background-color: $colorGrey;
         color: $colorWhite;

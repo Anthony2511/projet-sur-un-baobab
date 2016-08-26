@@ -1807,8 +1807,6 @@ h3 span {
     border: none;
     display: block;
     text-align: center; }
-    .second-don__form-detail::before {
-      content: url("../img/WhatsApp.png"); }
   .second-don__form-message {
     width: 45%;
     height: 150px;

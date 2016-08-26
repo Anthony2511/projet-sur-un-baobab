@@ -34,7 +34,7 @@
                             <p class="topbar__intro__text">
                                 <?php the_field('home_text-don'); ?>
                             </p>
-                            <a href="<?php the_field('home_cible-button-don') ?>" title="Vers la page Don" class="topbar__intro__link">
+                            <a href="<?php the_permalink('218'); ?>" title="Vers la page Don" class="topbar__intro__link">
                                 <span class="topbar__intro__link__button"><?php the_field('home_text-button-don') ?></span>
                             </a>
                         </div>

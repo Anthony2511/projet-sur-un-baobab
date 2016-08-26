@@ -160,7 +160,7 @@ get_header('home');
         <img class="don__arrow-width" src="<?php the_field('don_arrow-left');?>" alt="" width="60" height="100" />
     </figure>
     <p class="don__button">
-        <a href="<?php the_field('don_cible-button');?>" class="don__link"><?php the_field('don_text-button');?></a>
+        <a href="<?php the_permalink('218');?>" class="don__link"><?php the_field('don_text-button');?></a>
     </p>
     <figure class="don__arrow-two">
         <img class="don__arrow-width" src="<?php the_field('don_arrow-right');?>" alt="" width="60" height="100"/>
