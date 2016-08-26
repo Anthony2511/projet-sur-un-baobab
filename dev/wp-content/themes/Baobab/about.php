@@ -21,9 +21,6 @@ get_header('home');
                         <p class="about__paragraphe">
                             <?php the_field('about_section-one_paragraphe-one');?>
                         </p>
-                        <p class="about__paragraphe about__paragraphe--float">
-                            <?php the_field('about_section-one_paragraphe-two');?>
-                        </p>
                         <h3 aria-level="3" class="about__partie-one__title"><?php the_field('about_title-section-two');?></h3>
                         <div class="about__photos">
                             <div class="about__info">

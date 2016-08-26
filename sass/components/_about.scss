@@ -10,16 +10,22 @@
     &__sous-title{
         font-size: 3.75em; // 60px
         font-family: 'pwl';
-        text-align: left;
+        text-align: center;
         color: $colorTitle;
+        position: relative;
+         width: 400px;
+         border-radius: 50%;
+         transform: rotate(-50deg);
     }
     &__texte{
-        font-size: 1.875em; //30px
+        font-size: 1.25em; //26px
         font-weight: 100;
+        color: $backgroundColorButtonProjet;
+        line-height: 1.4em;
     }
     &__partie-one{
         &__title{
-            font-size: 2em; //60px (30px)
+            font-size: 3em; //60px (20px)
             font-family: 'pwl';
             color: $colorTitle;
         }
@@ -27,17 +33,63 @@
     &__photos{
         text-align: center;
     }
-    &__info-name{
-        font-size: 30px;
-        color: $colorAuthor;
-    }
-    &__info-mail{
-        color: $colorMail;
-        font-size: 30px;
-        text-decoration: underline;
-    }
     &__paragraphe{
         text-align: left;
-        vertical-align: top;
     }
+    &__info-name{
+        font-size: 30px;
+        color: $colorWhite;
+        background-color: $colorFilAriane;
+        transform: skewX(-15deg);
+        padding: 10px;
+    }
+    &__info-mail{
+        color: $colorFilAriane;
+        font-size: 20px;
+    }
+
 }
+h3 span{
+    height: 200px;
+    position: absolute;
+    width: 20px;
+    left: 95%;
+    top: 0;
+    transform-origin: bottom center;
+}
+.char1{
+    transform: rotate(8deg);
+};
+.char2{
+    transform: rotate(16deg);
+};
+.char3{
+    transform: rotate(24deg);
+};
+.char4{
+    transform: rotate(32deg);
+};
+.char5{
+    transform: rotate(40deg);
+};
+.char6{
+    transform: rotate(48deg);
+};
+.char7{
+    transform: rotate(56deg);
+};
+.char8{
+    transform: rotate(64deg);
+};
+.char9{
+    transform: rotate(72deg);
+};
+.char10{
+    transform: rotate(80deg);
+};
+.char11{
+    transform: rotate(88deg);
+};
+.char12{
+    transform: rotate(96deg);
+};

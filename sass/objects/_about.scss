@@ -2,19 +2,24 @@
 /**ABOUT**/
 .about{
     &__title{
-        margin: 1em 0 0.5em; // 100px 50px (100px)
+        margin: 1em 0 4em; // 100px 50px (100px)
     }
     &__sous-title{
         margin-top: 1.666666em; // 100px (60px)
+    }
+    &__texte{
+        padding: 0 50px;
     }
     &__image{
         width: 150px;
         height: 100%;
         position: relative;
-        left: 40%;
-        margin-top: 50px;
+        left: 41%;
+        top: -170px;
+        margin : 50px 0 -80px 0;
     }
     &__partie-one{
+        margin-bottom: 50px;
         &::after{
             clear: both;
             display: block;
@@ -40,15 +45,6 @@
         margin-bottom: 30px;
     }
     &__info + &__info{
-        margin-left: 300px;
-    }
-    &__paragraphe{
-        vertical-align: top;
-        width: 10em; //300px (30px)
-        display: inline-block;
-        margin: 3.333333em 0; // 100px (30px)
-        &--float{
-            float: right;
-        }
+        margin-left: 200px;
     }
 }

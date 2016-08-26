@@ -457,27 +457,32 @@ table {
 /****OBJECTS****/
 /**ABOUT**/
 .about__title {
-  margin: 1em 0 0.5em; }
+  margin: 1em 0 4em; }
 
 .about__sous-title {
   margin-top: 1.666666em; }
+
+.about__texte {
+  padding: 0 50px; }
 
 .about__image {
   width: 150px;
   height: 100%;
   position: relative;
-  left: 40%;
-  margin-top: 50px; }
+  left: 41%;
+  top: -170px;
+  margin: 50px 0 -80px 0; }
 
-.about__partie-one::after {
-  clear: both;
-  display: block;
-  content: ""; }
-
-.about__partie-one__title {
-  margin-bottom: 1.666666em;
-  width: 300px;
-  margin: 50px auto; }
+.about__partie-one {
+  margin-bottom: 50px; }
+  .about__partie-one::after {
+    clear: both;
+    display: block;
+    content: ""; }
+  .about__partie-one__title {
+    margin-bottom: 1.666666em;
+    width: 300px;
+    margin: 50px auto; }
 
 .about__photos {
   margin-top: 50px; }
@@ -493,15 +498,7 @@ table {
   margin-bottom: 30px; }
 
 .about__info + .about__info {
-  margin-left: 300px; }
-
-.about__paragraphe {
-  vertical-align: top;
-  width: 10em;
-  display: inline-block;
-  margin: 3.333333em 0; }
-  .about__paragraphe--float {
-    float: right; }
+  margin-left: 200px; }
 
 /****COMPONENTS****/
 /**TOPBAR**/
@@ -1587,33 +1584,84 @@ table {
 .about__sous-title {
   font-size: 3.75em;
   font-family: 'pwl';
-  text-align: left;
-  color: #e3a558; }
+  text-align: center;
+  color: #e3a558;
+  position: relative;
+  width: 400px;
+  border-radius: 50%;
+  transform: rotate(-50deg); }
 
 .about__texte {
-  font-size: 1.875em;
-  font-weight: 100; }
+  font-size: 1.25em;
+  font-weight: 100;
+  color: #a8a8a8;
+  line-height: 1.4em; }
 
 .about__partie-one__title {
-  font-size: 2em;
+  font-size: 3em;
   font-family: 'pwl';
   color: #e3a558; }
 
 .about__photos {
   text-align: center; }
 
+.about__paragraphe {
+  text-align: left; }
+
 .about__info-name {
   font-size: 30px;
-  color: #727272; }
+  color: white;
+  background-color: #f2673f;
+  transform: skewX(-15deg);
+  padding: 10px; }
 
 .about__info-mail {
-  color: #3690c1;
-  font-size: 30px;
-  text-decoration: underline; }
+  color: #f2673f;
+  font-size: 20px; }
 
-.about__paragraphe {
-  text-align: left;
-  vertical-align: top; }
+h3 span {
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 95%;
+  top: 0;
+  transform-origin: bottom center; }
+
+.char1 {
+  transform: rotate(8deg); }
+
+.char2 {
+  transform: rotate(16deg); }
+
+.char3 {
+  transform: rotate(24deg); }
+
+.char4 {
+  transform: rotate(32deg); }
+
+.char5 {
+  transform: rotate(40deg); }
+
+.char6 {
+  transform: rotate(48deg); }
+
+.char7 {
+  transform: rotate(56deg); }
+
+.char8 {
+  transform: rotate(64deg); }
+
+.char9 {
+  transform: rotate(72deg); }
+
+.char10 {
+  transform: rotate(80deg); }
+
+.char11 {
+  transform: rotate(88deg); }
+
+.char12 {
+  transform: rotate(96deg); }
 
 /****COMPONENTS****/
 /**CONTACT**/

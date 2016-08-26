@@ -11,4 +11,6 @@
         $('body').removeClass('with--sidebar');
     })
 
+    $(".about__sous-title").lettering();
+
 })(jQuery);
