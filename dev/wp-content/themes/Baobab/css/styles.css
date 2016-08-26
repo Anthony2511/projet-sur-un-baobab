@@ -484,9 +484,6 @@ table {
     width: 300px;
     margin: 50px auto; }
 
-.about__photos {
-  margin-top: 50px; }
-
 .about__info {
   display: inline-block;
   width: 300px; }
@@ -1662,6 +1659,37 @@ h3 span {
 
 .char12 {
   transform: rotate(96deg); }
+
+@media screen and (max-width: 975px) {
+  .about__title {
+    font-size: 4em; }
+  .about__sous-title {
+    display: none; }
+  .about__info {
+    display: block; }
+  .about__info + .about__info {
+    margin: 50px 0; }
+  .about__photos {
+    margin: 50px auto;
+    width: 350px; }
+  .about__photos-membres {
+    width: 200px; } }
+
+@media screen and (max-width: 500px) {
+  .about__info-name {
+    font-size: 1em;
+    padding: 5px; }
+  .about__photos {
+    width: 200px; }
+  .about__texte {
+    padding: 0 20px; }
+  .about__info {
+    width: 200px; } }
+
+@media screen and (max-width: 350px) {
+  .about__image {
+    position: relative;
+    left: 25%; } }
 
 /****COMPONENTS****/
 /**CONTACT**/
