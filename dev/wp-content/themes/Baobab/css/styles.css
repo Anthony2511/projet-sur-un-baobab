@@ -1696,83 +1696,93 @@ h3 span {
 
 /****COMPONENTS****/
 /**CONTACT**/
-.contact__title {
-  font-size: 6.25em;
-  font-family: 'pwl';
-  text-align: center;
-  color: #e3a558; }
-
-.contact__numero {
-  text-align: center;
-  margin-top: 100px; }
-
-.contact__type {
-  display: inline-block; }
-
-.contact__type + .contact__type {
-  margin-left: 200px; }
-
-.contact__name {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #a8a8a8;
-  font-family: 'pwl'; }
-  .contact__name::before {
-    content: url("../img/WhatsApp.png"); }
-
-.contact__tel {
-  font-size: 20px;
-  color: #f2673f;
-  font-weight: lighter; }
-
-.contact__form {
-  text-align: center;
-  max-width: 100%;
-  height: auto; }
-
-.contact__bloc {
-  display: inline-block; }
-
-.contact__bloc + .contact__bloc {
-  margin-left: 20px; }
-
-.contact__form-label {
-  background-color: #f2673f;
-  color: white;
-  padding: 15px;
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.contact__form-detail {
-  max-width: 150px;
-  margin: 50px 0 30px;
-  font-size: 16px;
-  padding: 17px;
-  background-color: #e0e0e0;
-  color: white;
-  border: none; }
-
-.contact__form-message {
-  width: 85%;
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 20px;
-  font-size: 16px;
-  background-color: #e0e0e0;
-  color: white;
-  border: none; }
-
-.contact__form-button {
-  border: 1px solid #f2673f;
-  background-color: white;
-  color: #a8a8a8;
-  font-size: 25px;
-  padding: 15px 35px;
-  margin: 30px 0;
-  float: right;
-  position: relative;
-  left: -5%; }
-  .contact__form-button:hover {
-    border: 1px solid rgba(255, 255, 255, 0);
+.contact {
+  max-width: 970px; }
+  .contact__title {
+    font-size: 6.25em;
+    font-family: 'pwl';
+    text-align: center;
+    color: #e3a558; }
+  .contact__numero {
+    text-align: center;
+    margin-top: 100px; }
+  .contact__type {
+    display: inline-block; }
+  .contact__type + .contact__type {
+    margin-left: 200px; }
+  .contact__name {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #a8a8a8;
+    font-family: 'pwl'; }
+    .contact__name::before {
+      content: url("../img/WhatsApp.png"); }
+  .contact__tel {
+    font-size: 20px;
+    color: #f2673f;
+    font-weight: lighter; }
+  .contact__form {
+    text-align: center;
+    max-width: 100%;
+    height: auto; }
+  .contact__bloc {
+    display: inline-block; }
+  .contact__bloc + .contact__bloc {
+    margin-left: 20px; }
+  .contact__form-label {
     background-color: #f2673f;
-    color: white; }
+    color: white;
+    padding: 15px;
+    font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .contact__form-info {
+    max-width: 100%;
+    height: auto; }
+  .contact__form-detail {
+    max-width: 150px;
+    margin: 50px 0 30px;
+    font-size: 16px;
+    padding: 17px;
+    background-color: #e0e0e0;
+    color: white;
+    border: none; }
+  .contact__form-message {
+    width: 85%;
+    font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #e0e0e0;
+    color: white;
+    border: none; }
+  .contact__form-button {
+    border: 1px solid #f2673f;
+    background-color: white;
+    color: #a8a8a8;
+    font-size: 25px;
+    padding: 15px 35px;
+    margin: 30px 0;
+    float: right;
+    position: relative;
+    left: -5%; }
+    .contact__form-button:hover {
+      border: 1px solid rgba(255, 255, 255, 0);
+      background-color: #f2673f;
+      color: white; }
+
+@media screen and (max-width: 816px) {
+  .contact__title {
+    font-size: 4em; }
+  .contact__bloc {
+    display: block; }
+  .contact__bloc-info {
+    width: 310px;
+    margin: 0 auto; }
+  .contact__bloc + .contact__bloc {
+    margin-left: 0; } }
+
+@media screen and (max-width: 580px) {
+  .contact__numero {
+    padding: 0 20px; }
+  .contact__type + .contact__type {
+    margin: 20px 0 0 20px; } }
 
 /*# sourceMappingURL=styles.css.map */

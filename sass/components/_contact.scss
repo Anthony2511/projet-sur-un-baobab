@@ -2,6 +2,7 @@
 /**CONTACT**/
 
 .contact{
+    max-width: 970px;
     &__title{
         font-size: 6.25em; //100px
         font-family: 'pwl';
@@ -49,7 +50,10 @@
         padding: 15px;
         font-family: $roboto;
     }
-
+    &__form-info{
+            max-width: 100%;
+            height: auto;
+    }
     &__form-detail{
         max-width: 150px;
         margin: 50px 0 30px;
@@ -84,5 +88,32 @@
             color: $colorWhite;
         }
     }
+}
+@media screen and (max-width: 816px) {
+    .contact{
+        &__title{
+            font-size: 4em; // 80px
+        }
+        &__bloc{
+            display: block;
+        }
+        &__bloc-info{
+            width: 310px;
+            margin: 0 auto;
 
+        }
+        &__bloc + &__bloc {
+            margin-left: 0;
+        }
+    }
+}
+@media screen and (max-width: 580px) {
+    .contact {
+        &__numero{
+            padding: 0 20px;
+        }
+        &__type + &__type{
+            margin: 20px 0 0 20px;
+        }
+    }
 }
